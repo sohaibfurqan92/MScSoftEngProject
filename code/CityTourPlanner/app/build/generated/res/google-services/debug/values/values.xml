@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://city-tour-planner.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">921658610309</string>
+    <string name="google_api_key" translatable="false">AIzaSyD6OWj9Roi1bm40jiD54B3V-h5FsgqaJ-0</string>
+    <string name="google_app_id" translatable="false">1:921658610309:android:0a33483e26b227f2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD6OWj9Roi1bm40jiD54B3V-h5FsgqaJ-0</string>
+    <string name="google_storage_bucket" translatable="false">city-tour-planner.appspot.com</string>
+    <string name="project_id" translatable="false">city-tour-planner</string>
+</resources>
