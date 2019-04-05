@@ -44,32 +44,32 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\8eba958c2de2f27c424ef5ef4995f05f\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
         "source": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_legacy_text_color_selector.xml.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_legacy_text_color_selector.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_spinner_textfield_background_material.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\color-v23\\abc_tint_default.xml"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_spinner_textfield_background_material.xml.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_checked_circle.xml.flat",
@@ -80,6 +80,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_background.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable\\com_facebook_button_background.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\layout\\design_navigation_menu.xml"
     },
@@ -88,32 +92,36 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\anim\\abc_tooltip_exit.xml"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\anim_fui_slide_out_left.xml.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\anim\\fui_slide_out_left.xml"
-    },
-    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_googleg_standard_color_18.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\8eba958c2de2f27c424ef5ef4995f05f\\res\\drawable-mdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\anim_fui_slide_out_left.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\anim\\fui_slide_out_left.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_icon.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_48dp.png.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png"
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_icon_blue.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-mdpi-v4\\com_facebook_button_icon_blue.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_48dp.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -140,12 +148,20 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tw__login_btn_default.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-3.1.1.aar\\6f297a2053584537f92e63b81acf7d95\\res\\drawable\\tw__login_btn_default.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_text_material.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\color-v23\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_button_icon_blue.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-hdpi-v4\\com_facebook_button_icon_blue.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_text_dark.xml.flat",
@@ -160,12 +176,12 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_activity_register_phone.xml.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\layout\\fui_activity_register_phone.xml"
-    },
-    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\8eba958c2de2f27c424ef5ef4995f05f\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_activity_register_phone.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\layout\\fui_activity_register_phone.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_background_cache_hint_selector_material_dark.xml.flat",
@@ -174,6 +190,10 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\dc6d90fc0737a7ecd3b0e5e5d982d4c4\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_login_logo.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable\\com_facebook_button_login_logo.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -300,12 +320,12 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_browser_actions_context_menu_row.xml.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\customtabs-28.0.0.aar\\8b90d5ad58cf0262d514b99e2db0aa92\\res\\layout\\browser_actions_context_menu_row.xml"
-    },
-    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_browser_actions_context_menu_row.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\customtabs-28.0.0.aar\\8b90d5ad58cf0262d514b99e2db0aa92\\res\\layout\\browser_actions_context_menu_row.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines_media.xml.flat",
@@ -316,12 +336,16 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\dc6d90fc0737a7ecd3b0e5e5d982d4c4\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-ldrtl-hdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_tab_indicator_material.xml.flat",
@@ -332,12 +356,12 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\drawable-xhdpi-v4\\design_ic_visibility_off.png"
-    },
-    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\8eba958c2de2f27c424ef5ef4995f05f\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\drawable-xhdpi-v4\\design_ic_visibility_off.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -352,16 +376,20 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-v21\\abc_dialog_material_background.xml"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_confirmation_code_layout.xml.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\layout\\fui_confirmation_code_layout.xml"
-    },
-    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_confirmation_code_layout.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\layout\\fui_confirmation_code_layout.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_separator.xml.flat",
@@ -424,12 +452,20 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\animator-v21\\design_appbar_state_list_animator.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_black_xout.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_xout.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_go_search_api_material.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-xhdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -444,12 +480,20 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\drawable-xxxhdpi-v4\\design_ic_visibility.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_topnub.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_content_include.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\layout\\abc_screen_content_include.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_activity_register_email.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\layout\\fui_activity_register_email.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_black_xout.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
@@ -492,6 +536,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_device_auth_dialog_fragment.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_ab_back_material.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
@@ -510,6 +558,10 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\8eba958c2de2f27c424ef5ef4995f05f\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_login_silver_background.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable\\com_facebook_button_login_silver_background.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_email_link_trouble_signing_in_layout.xml.flat",
@@ -534,6 +586,10 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_fab_background.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -576,12 +632,20 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\layout\\design_layout_snackbar.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_favicon_blue.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable\\com_facebook_favicon_blue.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_text_input_password_icon.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_tw__activity_oauth.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-3.1.1.aar\\6f297a2053584537f92e63b81acf7d95\\res\\layout\\tw__activity_oauth.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -620,6 +684,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\8eba958c2de2f27c424ef5ef4995f05f\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_icon_white.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-mdpi-v4\\com_facebook_button_icon_white.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_close_icon_tint.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\color\\mtrl_chip_close_icon_tint.xml"
     },
@@ -652,6 +720,14 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_auth_dialog_background.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable\\com_facebook_auth_dialog_background.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -680,12 +756,12 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_design_ic_visibility.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\drawable-xhdpi-v4\\design_ic_visibility.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_linear.xml.flat",
@@ -708,6 +784,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_button_like_icon_selected.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-hdpi-v4\\com_facebook_button_like_icon_selected.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
@@ -722,6 +802,10 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_fui_idp_button_background_phone.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\drawable-v21\\fui_idp_button_background_phone.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
@@ -764,8 +848,16 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\anim\\abc_fade_in.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_like_icon_selected.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-mdpi-v4\\com_facebook_button_like_icon_selected.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_expanded_menu_layout.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -820,12 +912,20 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_facebook_button_icon_white.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-xxhdpi-v4\\com_facebook_button_icon_white.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13_mtrl_layout_snackbar.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\layout-sw600dp-v13\\mtrl_layout_snackbar.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tw__login_btn_disabled.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-3.1.1.aar\\6f297a2053584537f92e63b81acf7d95\\res\\drawable\\tw__login_btn_disabled.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -900,6 +1000,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_smart_device_dialog_fragment.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
@@ -920,8 +1024,20 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\drawable-hdpi-v4\\design_ic_visibility.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_background.9.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tooltip_frame_light.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable\\tooltip_frame_light.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_like_background.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable\\com_facebook_button_like_background.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_tw__ic_logo_default.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-3.1.1.aar\\6f297a2053584537f92e63b81acf7d95\\res\\drawable-mdpi-v4\\tw__ic_logo_default.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_support_simple_spinner_dropdown_item.xml.flat",
@@ -948,12 +1064,20 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\anim\\abc_popup_exit.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tw__login_btn_pressed.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-3.1.1.aar\\6f297a2053584537f92e63b81acf7d95\\res\\drawable\\tw__login_btn_pressed.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_fui_idp_button_background_twitter.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\drawable-v21\\fui_idp_button_background_twitter.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -980,12 +1104,12 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\layout\\fui_idp_button_facebook.xml"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
-    },
-    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_idp_button_github.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\layout\\fui_idp_button_github.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1048,12 +1172,20 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_close.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-hdpi-v4\\com_facebook_close.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\5fd96776bf6a90f9577c5bab18180fb5\\res\\layout\\notification_template_big_media.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_out.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_activity_layout.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\layout\\com_facebook_activity_layout.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -1068,12 +1200,20 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\color\\mtrl_tabs_icon_color_selector_colored.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_tw__ic_logo_default.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-3.1.1.aar\\6f297a2053584537f92e63b81acf7d95\\res\\drawable-hdpi-v4\\tw__ic_logo_default.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -1136,6 +1276,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\layout\\fui_welcome_back_password_prompt_layout.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_profile_picture_blank_square.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-mdpi-v4\\com_facebook_profile_picture_blank_square.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\8eba958c2de2f27c424ef5ef4995f05f\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
     },
@@ -1158,6 +1302,10 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_chip_state_list_anim.xml.flat",
@@ -1292,6 +1440,14 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\drawable-xxxhdpi-v4\\design_ic_visibility_off.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_button_icon_white.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-xhdpi-v4\\com_facebook_button_icon_white.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_login_fragment.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\layout\\com_facebook_login_fragment.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_design_ic_visibility.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     },
@@ -1380,6 +1536,14 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\drawable-v21\\fui_idp_button_background_email.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_background.9.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_background.9.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\8eba958c2de2f27c424ef5ef4995f05f\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
@@ -1430,6 +1594,10 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_button_icon_white.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-hdpi-v4\\com_facebook_button_icon_white.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
@@ -1496,6 +1664,14 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_close.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-mdpi-v4\\com_facebook_close.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_topnub.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
@@ -1516,6 +1692,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\color_com_facebook_button_text_color.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\color\\com_facebook_button_text_color.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png"
     },
@@ -1528,16 +1708,20 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1546,6 +1730,14 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\dc6d90fc0737a7ecd3b0e5e5d982d4c4\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_background.9.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -1576,6 +1768,14 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_black_xout.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_xout.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_bottomnub.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
@@ -1602,6 +1802,10 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-xxhdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -1696,6 +1900,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_bottomnub.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable\\abc_btn_radio_material.xml"
     },
@@ -1736,6 +1944,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\dc6d90fc0737a7ecd3b0e5e5d982d4c4\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__ic_logo_default.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-3.1.1.aar\\6f297a2053584537f92e63b81acf7d95\\res\\drawable-xhdpi-v4\\tw__ic_logo_default.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -1758,6 +1970,10 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_common_google_signin_btn_text_disabled.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-16.0.1.aar\\26810f3568bcaaf16ceeec4fbd3bf506\\res\\drawable-watch-v20\\common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -1798,6 +2014,10 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_close_item_material.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_facebook_button_icon_blue.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-xxhdpi-v4\\com_facebook_button_icon_blue.png"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
@@ -1858,6 +2078,10 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\8eba958c2de2f27c424ef5ef4995f05f\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_auth_dialog_cancel_background.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable\\com_facebook_auth_dialog_cancel_background.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1944,6 +2168,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\color\\mtrl_tabs_icon_color_selector.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_tooltip_bubble.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\layout\\com_facebook_tooltip_bubble.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -1956,12 +2184,24 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_profile_picture_blank_portrait.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-mdpi-v4\\com_facebook_profile_picture_blank_portrait.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_button_icon_blue.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-xhdpi-v4\\com_facebook_button_icon_blue.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_icon.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable\\com_facebook_button_icon.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -2068,6 +2308,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_topnub.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
@@ -2156,6 +2400,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_tw__ic_logo_default.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-3.1.1.aar\\6f297a2053584537f92e63b81acf7d95\\res\\drawable-xxhdpi-v4\\tw__ic_logo_default.png"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\dc6d90fc0737a7ecd3b0e5e5d982d4c4\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
     },
@@ -2176,8 +2424,16 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\3360bf4e249c3b1809c735ecf1cdf357\\res\\layout\\design_navigation_item.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_login_background.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.41.0.aar\\b57302eebaaea32c0b991d12fd8f6235\\res\\drawable\\com_facebook_button_login_background.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tw__login_btn.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-3.1.1.aar\\6f297a2053584537f92e63b81acf7d95\\res\\drawable\\tw__login_btn.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tooltip_frame_dark.xml.flat",
@@ -2186,6 +2442,10 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_header_item_layout.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_auth_dialog_header_background.xml.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable\\com_facebook_auth_dialog_header_background.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_navigation_item.xml.flat",
@@ -2226,5 +2486,9 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\dc6d90fc0737a7ecd3b0e5e5d982d4c4\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_close.png.flat",
+        "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.41.0.aar\\d1870d172ba1315ecd42b5c238da7068\\res\\drawable-xhdpi-v4\\com_facebook_close.png"
     }
 ]

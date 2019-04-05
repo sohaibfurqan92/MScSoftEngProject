@@ -87,6 +87,23 @@
                         "endColumns": "100",
                         "endOffsets": "14463"
                     }
+                },
+                {
+                    "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-3.1.1.aar\\6f297a2053584537f92e63b81acf7d95\\res\\values-bg\\values-bg.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "60",
+                        "endOffsets": "111"
+                    },
+                    "to": {
+                        "startLines": "136",
+                        "startColumns": "4",
+                        "startOffsets": "14468",
+                        "endColumns": "60",
+                        "endOffsets": "14524"
+                    }
                 }
             ]
         }

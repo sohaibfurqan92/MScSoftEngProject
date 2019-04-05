@@ -3,4 +3,12 @@
 
     <!--This should have been added by default by firebaseAuth but was not -->
     <string name="default_web_client_id" translatable="false">921658610309-4dhq16mrdgfd45jkrt0vo9hmlr1m4ju7.apps.googleusercontent.com</string>
+
+        <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+        <string name="facebook_application_id" translatable="false">653455725109480</string>
+        <string name="facebook_login_protocol_scheme" translatable="false">fb653455725109480</string>
+        <!-- Twitter consumer key and secret -->
+        <string name="twitter_consumer_key" translatable="false">YOUR_CONSUMER_KEY</string>
+        <string name="twitter_consumer_secret" translatable="false">YOUR_CONSUMER_SECRET</string>
+
 </resources>
