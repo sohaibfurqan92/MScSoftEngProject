@@ -4,6 +4,23 @@
             "outputFile": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\places-1.1.0.aar\\8b7a08350ad3333127e02ab47449de2d\\res\\values-lv\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11",
+                        "startColumns": "0,0,0,0,0,0,0,0",
+                        "startOffsets": "184,270,334,431,494,539,613,694",
+                        "endColumns": "85,63,96,62,44,73,80,56",
+                        "endOffsets": "269,333,430,493,538,612,693,750"
+                    },
+                    "to": {
+                        "startLines": "134,135,136,137,138,139,140,141",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "14858,14948,15016,15117,15184,15233,15311,15396",
+                        "endColumns": "89,67,100,66,48,77,84,60",
+                        "endOffsets": "14943,15011,15112,15179,15228,15306,15391,15452"
+                    }
+                },
+                {
                     "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.2.0.aar\\e02166703835ffb3c5e53d177d1a1ad8\\res\\values-lv\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -30,11 +47,11 @@
                         "endOffsets": "220,328,437,523,627,749,831,913,1023,1131,1238,1347,1459,1562,1674,1781,1886,1986,2071,2180,2292,2391,2502,2611,2716,2890,2989,3071"
                     },
                     "to": {
-                        "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,134",
+                        "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,142",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "532,652,760,869,955,1059,1181,1263,1345,1455,1563,1670,1779,1891,1994,2106,2213,2318,2418,2503,2612,2724,2823,2934,3043,3148,3322,14858",
+                        "startOffsets": "532,652,760,869,955,1059,1181,1263,1345,1455,1563,1670,1779,1891,1994,2106,2213,2318,2418,2503,2612,2724,2823,2934,3043,3148,3322,15457",
                         "endColumns": "119,107,108,85,103,121,81,81,109,107,106,108,111,102,111,106,104,99,84,108,111,98,110,108,104,173,98,81",
-                        "endOffsets": "647,755,864,950,1054,1176,1258,1340,1450,1558,1665,1774,1886,1989,2101,2208,2313,2413,2498,2607,2719,2818,2929,3038,3143,3317,3416,14935"
+                        "endOffsets": "647,755,864,950,1054,1176,1258,1340,1450,1558,1665,1774,1886,1989,2101,2208,2313,2413,2498,2607,2719,2818,2929,3038,3143,3317,3416,15534"
                     }
                 },
                 {
@@ -64,15 +81,15 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "135",
+                        "startLines": "143",
                         "startColumns": "4",
-                        "startOffsets": "14940",
+                        "startOffsets": "15539",
                         "endColumns": "100",
-                        "endOffsets": "15036"
+                        "endOffsets": "15635"
                     }
                 },
                 {
-                    "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\8eba958c2de2f27c424ef5ef4995f05f\\res\\values-lv\\values.xml",
+                    "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.1.0.aar\\4d16c39dd3c4f40e784d58b81b4d69e8\\res\\values-lv\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

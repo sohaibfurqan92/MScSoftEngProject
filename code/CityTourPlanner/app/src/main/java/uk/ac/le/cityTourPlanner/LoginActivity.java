@@ -1,9 +1,14 @@
 package uk.ac.le.cityTourPlanner;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v4.widget.TextViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
@@ -21,16 +26,22 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener mAuthStateListener;
     private static int RC_SIGN_IN = 1 ;
 
+    //private ProgressBar mProgressBar;
+    private TextView mProgressStatusTextView;
+
     List<AuthUI.IdpConfig> providers = Arrays.asList(
             new AuthUI.IdpConfig.EmailBuilder().build(),
-            new AuthUI.IdpConfig.GoogleBuilder().build(),
-            new AuthUI.IdpConfig.FacebookBuilder().build()
-            //new AuthUI.IdpConfig.TwitterBuilder().build()
+            new AuthUI.IdpConfig.GoogleBuilder().build()
     );
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        //mProgressBar = findViewById(R.id.progressBar);
+
+
+        HandleProgressBar();
 
         mFirebaseAuth=FirebaseAuth.getInstance();
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
@@ -38,7 +49,9 @@ public class LoginActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if(user!=null){
-                    Toast.makeText(LoginActivity.this, "user signed in!", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(LoginActivity.this, "user signed in!", Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(LoginActivity.this,MainActivity.class));
+
                 }
                 else{
                     startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder().setAvailableProviders(providers).
@@ -46,6 +59,30 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         };
+        
+
+    }
+
+    private void HandleProgressBar() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    mProgressStatusTextView = findViewById(R.id.progressStatusTextView);
+                    Thread.sleep(5000);
+                    mProgressStatusTextView.setText(getString(R.string.progress_message_1));
+                    Thread.sleep(5000);
+                    mProgressStatusTextView.setText(getString(R.string.progress_message_2));
+                    Thread.sleep(5000);
+
+
+
+
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     @Override

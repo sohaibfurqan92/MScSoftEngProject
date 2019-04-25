@@ -3,12 +3,21 @@
 
     <!--This should have been added by default by firebaseAuth but was not -->
     <string name="default_web_client_id" translatable="false">921658610309-4dhq16mrdgfd45jkrt0vo9hmlr1m4ju7.apps.googleusercontent.com</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Scheduled</string>
+    <string name="tab_text_2">Past</string>
+    <string name="tab_text_3">Trash</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 
-        <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
-        <string name="facebook_application_id" translatable="false">653455725109480</string>
-        <string name="facebook_login_protocol_scheme" translatable="false">fb653455725109480</string>
-        <!-- Twitter consumer key and secret -->
-        <string name="twitter_consumer_key" translatable="false">YOUR_CONSUMER_KEY</string>
-        <string name="twitter_consumer_secret" translatable="false">YOUR_CONSUMER_SECRET</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_logout">Log out</string>
+    <string name="title_activity_new_trip_creation">Create a new trip</string>
+    <string name="newTrip_searchView_hint">Search for a city here</string>
+    <string name="googlePlacesAPIKey">AIzaSyBrqqD2yEMKBRABm-3hFUzZy3xzZ-hI-to</string>
+    <string name="permission_not_granted_message">Need to enable the required permissions to proceed</string>
+    <string name="progress_message_1">Initializing application...</string>
+    <string name="progress_message_2">Housekeeping...</string>
 
 </resources>
