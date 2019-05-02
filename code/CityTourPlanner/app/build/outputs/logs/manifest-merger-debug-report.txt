@@ -115,7 +115,7 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:
 	android:name
 		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:6:5-78
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:6:5-79
 MERGED from [com.google.android.libraries.places:places:1.1.0] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\places-1.1.0.aar\8b7a08350ad3333127e02ab47449de2d\AndroidManifest.xml:9:5-79
 MERGED from [com.google.android.libraries.places:places:1.1.0] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\places-1.1.0.aar\8b7a08350ad3333127e02ab47449de2d\AndroidManifest.xml:9:5-79
 	android:name

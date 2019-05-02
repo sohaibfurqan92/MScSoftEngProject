@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
         //mProgressBar = findViewById(R.id.progressBar);
 
 
-        HandleProgressBar();
+
 
         mFirebaseAuth=FirebaseAuth.getInstance();
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
@@ -68,14 +68,12 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    mProgressStatusTextView = findViewById(R.id.progressStatusTextView);
+                    //mProgressStatusTextView = findViewById(R.id.progressStatusTextView);
                     Thread.sleep(5000);
-                    mProgressStatusTextView.setText(getString(R.string.progress_message_1));
+                   //mProgressStatusTextView.setText(getString(R.string.progress_message_1));
                     Thread.sleep(5000);
-                    mProgressStatusTextView.setText(getString(R.string.progress_message_2));
+                    //mProgressStatusTextView.setText(getString(R.string.progress_message_2));
                     Thread.sleep(5000);
-
-
 
 
                 } catch (InterruptedException e) {
@@ -89,6 +87,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         mFirebaseAuth.addAuthStateListener(mAuthStateListener);
+        HandleProgressBar();
     }
 
     @Override
@@ -97,13 +96,4 @@ public class LoginActivity extends AppCompatActivity {
         mFirebaseAuth.removeAuthStateListener(mAuthStateListener);
     }
 
-    public void signOut(View view) {
-        AuthUI.getInstance().signOut(this).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                Toast.makeText(LoginActivity.this, "user signed out!", Toast.LENGTH_LONG).show();
-                finish();
-            }
-        });
-    }
 }

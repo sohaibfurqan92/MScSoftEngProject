@@ -1588,6 +1588,7 @@ id alertTitle
 id all
 id always
 id anonymous_button
+id appBarLayout
 id appbar
 id async
 id auto
@@ -1651,7 +1652,6 @@ id email_footer_tos_and_pp_text
 id email_layout
 id email_top_layout
 id email_tos_and_pp_text
-id enablePermissionsButton
 id end
 id end_padder
 id enterAlways
@@ -1732,7 +1732,6 @@ id parent_matrix
 id password
 id password_layout
 id percent
-id permissionNotGrantedTextView
 id phone_button
 id phone_layout
 id phone_number
@@ -1804,6 +1803,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id splash_title_text_view
 id split_action_bar
 id spread
 id spread_inside
@@ -1812,6 +1812,7 @@ id src_in
 id src_over
 id standard
 id start
+id startTripButton
 id status_bar_latest_event_content
 id stretch
 id submenuarrow
@@ -1851,6 +1852,8 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tripDateEditText
+id tripNameEditText
 id trouble_signing_in
 id trouble_signing_in_possible_fixes
 id uniform
@@ -1921,7 +1924,6 @@ layout activity_main
 layout activity_new_trip_creation
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
-layout content_new_trip_creation
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -2186,11 +2188,11 @@ string places_cancel
 string places_powered_by_google
 string places_search_error
 string places_try_again
-string progress_message_1
-string progress_message_2
 string project_id
 string search_menu_title
 string section_format
+string splash_image_description
+string start_trip_button_title
 string status_bar_notification_info_overflow
 string tab_text_1
 string tab_text_2
@@ -2200,6 +2202,9 @@ string tedpermission_confirm
 string tedpermission_setting
 string title_activity_main
 string title_activity_new_trip_creation
+string trip_city_hint
+string trip_date_hint
+string trip_name_hint
 string twitter_consumer_key
 string twitter_consumer_secret
 style AlertDialog_AppCompat

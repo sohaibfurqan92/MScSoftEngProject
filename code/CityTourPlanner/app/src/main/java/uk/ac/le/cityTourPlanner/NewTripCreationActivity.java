@@ -6,18 +6,23 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.libraries.places.api.Places;
 import com.google.android.libraries.places.api.net.PlacesClient;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
@@ -25,11 +30,18 @@ import java.util.List;
 
 public class NewTripCreationActivity extends AppCompatActivity {
 
-    private static final int ALL_PERMISSIONS_CODE =1 ;
-    private String[] requestedPermissions;
+    private static final String TRIP_NAME = "uk.ac.le.cityTourPlanner.TRIP_NAME";
+    private static final String TRIP_DATE = "uk.ac.le.cityTourPlanner.TRIP_DATE";
 
     private PlacesClient mPlacesClient;
     private PermissionListener mPermissionListener;
+    private Button mCreateTripButton;
+    private DatabaseReference mDatabaseReference;
+    private EditText mTripNameEditText;
+    private EditText mTripDateEditText;
+    private TextView mPermissionsDeniedMessageTV;
+
+
 
 
     @Override
@@ -44,33 +56,20 @@ public class NewTripCreationActivity extends AppCompatActivity {
         InitializePlacesAPI(getString(R.string.googlePlacesAPIKey));
 
         //request permissions at runtime
-        //requestedPermissions = new String[]{Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_WIFI_STATE};
-        StartTedPermissions();
+       //StartTedPermissions();
 
+        //get necessary references
+        getReferencesInCode();
 
 
     }
 
-    private void StartTedPermissions() {
-        mPermissionListener = new PermissionListener() {
-            @Override
-            public void onPermissionGranted() {
+    private void getReferencesInCode() {
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference();
+        mCreateTripButton = (Button)findViewById(R.id.startTripButton);
+        mTripNameEditText = (EditText) findViewById(R.id.tripNameEditText);
+        mTripDateEditText = (EditText)findViewById(R.id.tripDateEditText);
 
-            }
-
-            @Override
-            public void onPermissionDenied(List<String> deniedPermissions) {
-                for(String item:deniedPermissions){
-                    TedPermission.with(NewTripCreationActivity.this).setPermissions(item).check();
-                }
-            }
-        };
-        TedPermission.with(this)
-                .setPermissionListener(mPermissionListener)
-                .setRationaleMessage("This application needs to use certain features to work correctly. Please allow")
-                .setDeniedMessage("If you reject permission,you can not use this service\n\nPlease turn on permissions at [Setting] > [Permission]")
-                .setPermissions(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_WIFI_STATE)
-                .check();
     }
 
 
@@ -78,5 +77,13 @@ public class NewTripCreationActivity extends AppCompatActivity {
     private void InitializePlacesAPI(String API_KEY) {
         Places.initialize(getApplicationContext(), API_KEY );
         mPlacesClient = Places.createClient(this);
+    }
+
+
+    public void createTripButton_click(View view) {
+        Intent intent = new Intent();
+        intent.putExtra(TRIP_NAME,mTripNameEditText.getText());
+        intent.putExtra(TRIP_DATE,mTripDateEditText.getText());
+        startActivity(intent);
     }
 }

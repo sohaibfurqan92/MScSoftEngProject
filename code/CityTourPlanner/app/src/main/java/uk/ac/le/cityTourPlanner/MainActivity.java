@@ -1,5 +1,6 @@
 package uk.ac.le.cityTourPlanner;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.PersistableBundle;
@@ -29,6 +30,10 @@ import android.widget.TextView;
 import com.firebase.ui.auth.data.model.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.gun0912.tedpermission.PermissionListener;
+import com.gun0912.tedpermission.TedPermission;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -48,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ViewPager mViewPager;
     private FirebaseAuth mFirebaseAuth;
     private FirebaseUser mUser;
+    private PermissionListener mPermissionListener;
 
 
     @Override
@@ -83,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,NewTripCreationActivity.class));
+                StartTedPermissions();  //check permissions
             }
         });
 
@@ -134,6 +140,42 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Log.d("Error",  e.getMessage());
             }
         }
+    }
+
+    private void StartTedPermissions() {
+        mPermissionListener = new PermissionListener() {
+            @Override
+            public void onPermissionGranted() {
+                //make views visible so that user can continue
+//                mTripNameEditText.setVisibility(View.VISIBLE);
+//                mTripDateEditText.setVisibility(View.VISIBLE);
+//                mCreateTripButton.setVisibility(View.VISIBLE);
+//                mPermissionsDeniedMessageTV.setVisibility(View.INVISIBLE);
+                startActivity(new Intent(MainActivity.this,NewTripCreationActivity.class));
+            }
+
+            @Override
+            public void onPermissionDenied(List<String> deniedPermissions) {
+                for(String item:deniedPermissions){
+                    TedPermission.with(MainActivity.this).setPermissions(item).check();
+                }
+
+//                //make views invisible so that user cannot continue
+//                mTripNameEditText.setVisibility(View.INVISIBLE);
+//                mTripDateEditText.setVisibility(View.INVISIBLE);
+//                mCreateTripButton.setVisibility(View.INVISIBLE);
+//                mPermissionsDeniedMessageTV.setVisibility(View.VISIBLE);
+
+
+            }
+        };
+        TedPermission.with(this)
+                .setPermissionListener(mPermissionListener)
+                .setRationaleMessage("This application needs to use certain features to work correctly. Please allow")
+                .setDeniedMessage("If you reject permission,you can not use this service\n\nPlease turn on permissions at [Setting] > [Permission]")
+                .setRationaleConfirmText("OK")
+                .setPermissions(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_WIFI_STATE)
+                .check();
     }
 
     @Override
@@ -209,3 +251,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 }
+
+
