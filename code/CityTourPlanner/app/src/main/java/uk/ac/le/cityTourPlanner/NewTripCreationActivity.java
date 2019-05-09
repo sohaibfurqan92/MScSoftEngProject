@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.libraries.places.api.Places;
+import com.google.android.libraries.places.api.model.Place;
 import com.google.android.libraries.places.api.net.PlacesClient;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -81,7 +82,7 @@ public class NewTripCreationActivity extends AppCompatActivity {
 
 
     public void createTripButton_click(View view) {
-        Intent intent = new Intent();
+        Intent intent = new Intent(NewTripCreationActivity.this, PlaceSearchActivity.class);
         intent.putExtra(TRIP_NAME,mTripNameEditText.getText());
         intent.putExtra(TRIP_DATE,mTripDateEditText.getText());
         startActivity(intent);
