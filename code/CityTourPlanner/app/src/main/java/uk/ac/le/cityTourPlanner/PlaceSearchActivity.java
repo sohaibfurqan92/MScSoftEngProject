@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.widget.TextView;
 
@@ -35,6 +36,7 @@ public class PlaceSearchActivity extends AppCompatActivity {
     private searchedPlacesAdapter mSearchedPlacesAdapter;
     private ArrayList<searchedPlacesItem> mSearchedPlacesList;
     private RequestQueue mRequestQueue;
+    ;
 
 
     @Override
@@ -46,6 +48,8 @@ public class PlaceSearchActivity extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(PlaceSearchActivity.this));
         mSearchedPlacesList = new ArrayList<>();
+
+
 
         mRequestQueue = Volley.newRequestQueue(this);
 
@@ -97,8 +101,9 @@ public class PlaceSearchActivity extends AppCompatActivity {
                         String placeName = result.getString("name");
                         Log.d("placeName", "onResponse: placeName "+placeName);
                         String placeSummary = result.getString("vicinity");
+                        String iconURL = result.getString("icon");
 
-                        mSearchedPlacesList.add(new searchedPlacesItem(placeName,placeSummary));
+                        mSearchedPlacesList.add(new searchedPlacesItem(placeName,placeSummary,iconURL));
 
 
 

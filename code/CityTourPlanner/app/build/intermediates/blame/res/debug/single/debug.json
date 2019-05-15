@@ -580,10 +580,6 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_black_24dp.xml.flat",
-        "source": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\src\\main\\res\\drawable\\ic_add_black_24dp.xml"
-    },
-    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_ab_back_material.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
@@ -1740,6 +1736,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_fab.xml.flat",
+        "source": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\src\\main\\res\\drawable\\ic_add_fab.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
@@ -2566,6 +2566,10 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_btn_colored_material.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_recyclerview.xml.flat",
+        "source": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\src\\main\\res\\drawable\\ic_add_recyclerview.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_indicator_material.xml.flat",

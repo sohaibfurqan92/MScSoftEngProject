@@ -6,7 +6,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -32,9 +35,12 @@ public class searchedPlacesAdapter extends RecyclerView.Adapter<searchedPlacesAd
         searchedPlacesItem searchedPlacesItem = mPlacesList.get(i);
         String placeName = searchedPlacesItem.getPlaceName();
         String placeDesc = searchedPlacesItem.getPlaceDesc();
+        String placeIconURL = searchedPlacesItem.getIconURL();
+
 
         searchedPlacesViewHolder.mTextViewPlaceName.setText(placeName);
         searchedPlacesViewHolder.mTextViewPlaceDesc.setText(placeDesc);
+        Picasso.with(mContext).load(placeIconURL).fit().centerInside().into(searchedPlacesViewHolder.mImageViewIcon);
 
 
 
@@ -49,10 +55,12 @@ public class searchedPlacesAdapter extends RecyclerView.Adapter<searchedPlacesAd
 
         public TextView mTextViewPlaceName;
         public TextView mTextViewPlaceDesc;
+        public ImageView mImageViewIcon;
 
 
         public searchedPlacesViewHolder(@NonNull View itemView) {
             super(itemView);
+            mImageViewIcon = itemView.findViewById(R.id.icon_imageview);
             mTextViewPlaceName = itemView.findViewById(R.id.place_name_textview);
             mTextViewPlaceDesc = itemView.findViewById(R.id.place_summary_textview);
         }

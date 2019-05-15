@@ -5,47 +5,110 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="METHOD_DELETED"
+    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.3.2"
-    timestamp="1557426098961"
+    timestamp="1557770875959"
     token="-5216836137821048865"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="3346" />
+        duration="7742" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="371" />
+        duration="544" />
     <task
         name="verifier"
-        duration="37" />
+        duration="301" />
 
+    <artifact
+        location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
     <artifact
         location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1557418110979"
+        timestamp="1557765293085"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1557770875959"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
@@ -54,29 +117,26 @@
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="METHOD_DELETED"
-        timestamp="1557426098961"
-        verifier="COLD_SWAP_REQUESTED" >
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
