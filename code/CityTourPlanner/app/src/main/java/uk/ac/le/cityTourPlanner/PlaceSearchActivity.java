@@ -1,13 +1,11 @@
 package uk.ac.le.cityTourPlanner;
 
-import android.app.DownloadManager;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
-import android.widget.TextView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -26,17 +24,17 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class PlaceSearchActivity extends AppCompatActivity {
+public class PlaceSearchActivity extends AppCompatActivity implements SearchedPlacesAdapter.onItemClickListener {
+    public static final String EXTRA_PLACE_ID = "uk.ac.le.cityTourPlanner.PLACE_ID";
 
     private RecyclerView mRecyclerView;
-    private searchedPlacesAdapter mSearchedPlacesAdapter;
-    private ArrayList<searchedPlacesItem> mSearchedPlacesList;
+    private SearchedPlacesAdapter mSearchedPlacesAdapter;
+    private ArrayList<SearchedPlacesItem> mSearchedPlacesList;
     private RequestQueue mRequestQueue;
-    ;
+
 
 
     @Override
@@ -75,8 +73,8 @@ public class PlaceSearchActivity extends AppCompatActivity {
                      longitude = latLng.longitude;
                 }
 
-                 String requestURL = generateRequestURL(latitude,longitude);
-                parseJSON(requestURL);
+                 String requestURL = generateNearbyRequestURL(latitude,longitude);
+                ParseNearbySearchJSON(requestURL);
                 //nearbyPlaceSearch(place);
                 Log.i("Place details", "Place: " + place.getName() + ", " + place.getId());
             }
@@ -89,7 +87,7 @@ public class PlaceSearchActivity extends AppCompatActivity {
         });
     }
 
-    private void parseJSON(String requestURL) {
+    private void ParseNearbySearchJSON(String requestURL) {
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, requestURL, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -98,18 +96,20 @@ public class PlaceSearchActivity extends AppCompatActivity {
                     for(int i=0; i<jsonArray.length();i++){
                         JSONObject result = jsonArray.getJSONObject(i);
 
+                        String placeID = result.getString("place_id");
                         String placeName = result.getString("name");
                         Log.d("placeName", "onResponse: placeName "+placeName);
                         String placeSummary = result.getString("vicinity");
                         String iconURL = result.getString("icon");
 
-                        mSearchedPlacesList.add(new searchedPlacesItem(placeName,placeSummary,iconURL));
+                        mSearchedPlacesList.add(new SearchedPlacesItem(placeName,placeSummary,iconURL,placeID));
 
 
 
                     }
-                    mSearchedPlacesAdapter = new searchedPlacesAdapter(PlaceSearchActivity.this,mSearchedPlacesList);
+                    mSearchedPlacesAdapter = new SearchedPlacesAdapter(PlaceSearchActivity.this,mSearchedPlacesList);
                     mRecyclerView.setAdapter(mSearchedPlacesAdapter);
+                    mSearchedPlacesAdapter.SetOnItemClickListener(PlaceSearchActivity.this);
                     mSearchedPlacesAdapter.notifyDataSetChanged();
                 } catch (JSONException e) {
                    Log.d("Parse error",e.toString());
@@ -125,19 +125,32 @@ public class PlaceSearchActivity extends AppCompatActivity {
         mRequestQueue.add(request);
     }
 
-    private String generateRequestURL(double latitude, double longitude) {
+    private String generateNearbyRequestURL(double latitude, double longitude) {
         //requestURL = "https://maps.googleapis.com/maps/api/place/nearbysearch/
         // json?location=-33.8670522,151.1957362&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyBrqqD2yEMKBRABm-3hFUzZy3xzZ-hI-to";
 
         double radius = 50000;
         String type = "point_of_interest";
         String outputFormat = "json";
-        String FormattedRequestURL;
+        String FormattedNearbyRequestURL;
 
-        FormattedRequestURL = "https://maps.googleapis.com/maps/api/place/nearbysearch/"
+        FormattedNearbyRequestURL = "https://maps.googleapis.com/maps/api/place/nearbysearch/"
                 + outputFormat + "?location=" + latitude + "," + longitude + "&radius=" + radius + "&type=" + type + "&key=" + getString(R.string.googlePlacesAPIKey);
 
-        return FormattedRequestURL;
+        return FormattedNearbyRequestURL;
         }
 
+    @Override
+    public void onItemClicked(int position) {
+        Intent detailIntent = new Intent(this,PlaceDetailActivity.class);
+        SearchedPlacesItem clickedItem = mSearchedPlacesList.get(position);
+        detailIntent.putExtra(EXTRA_PLACE_ID,clickedItem.getPlaceID());
+        startActivity(detailIntent);
+
+    }
+
+    @Override
+    public void onAddClicked(int position) {
+
+    }
 }

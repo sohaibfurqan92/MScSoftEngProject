@@ -22,5 +22,7 @@
     <string name="trip_date_hint">Choose the date of your trip</string>
     <string name="trip_city_hint">Select a city</string>
     <string name="start_trip_button_title">Start creating trip</string>
+    <string name="title_activity_place_detail">PlaceDetailActivity</string>
+    <string name="place_details_imageview_desc">Place Details ImageView</string>
 
 </resources>

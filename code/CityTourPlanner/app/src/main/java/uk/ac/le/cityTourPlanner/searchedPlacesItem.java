@@ -1,11 +1,13 @@
 package uk.ac.le.cityTourPlanner;
 
-public class searchedPlacesItem {
+public class SearchedPlacesItem {
+    private String mPlaceID;
     private String mPlaceName;
     private String mPlaceDesc;
     private String mIconURL;
 
-    public searchedPlacesItem(String placeName, String placeDescription, String iconURL){
+    public SearchedPlacesItem(String placeName, String placeDescription, String iconURL, String placeID){
+        mPlaceID = placeID;
         mPlaceName=placeName;
         mPlaceDesc=placeDescription;
         mIconURL = iconURL;
@@ -20,7 +22,8 @@ public class searchedPlacesItem {
         return mPlaceDesc;
     }
 
-
-
     public String getIconURL() { return mIconURL; }
+
+    public String getPlaceID(){return mPlaceID;}
+
 }

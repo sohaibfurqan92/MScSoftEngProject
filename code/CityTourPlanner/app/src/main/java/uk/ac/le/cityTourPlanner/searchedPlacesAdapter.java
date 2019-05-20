@@ -14,25 +14,35 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 
-public class searchedPlacesAdapter extends RecyclerView.Adapter<searchedPlacesAdapter.searchedPlacesViewHolder> {
+public class SearchedPlacesAdapter extends RecyclerView.Adapter<SearchedPlacesAdapter.searchedPlacesViewHolder> {
     private Context mContext;
-    private ArrayList<searchedPlacesItem> mPlacesList;
+    private ArrayList<SearchedPlacesItem> mPlacesList;
+    private onItemClickListener mListener;
 
-    public searchedPlacesAdapter(Context context, ArrayList<searchedPlacesItem> placesList ){
+    public SearchedPlacesAdapter(Context context, ArrayList<SearchedPlacesItem> placesList ){
         mContext = context;
         mPlacesList = placesList;
+    }
+
+    public void SetOnItemClickListener(onItemClickListener listener){
+        mListener = listener;
+    }
+
+    public interface onItemClickListener{
+        void onItemClicked(int position);
+        void onAddClicked(int position);
     }
 
     @NonNull
     @Override
     public searchedPlacesViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.searched_places_item,viewGroup,false);
-        return new searchedPlacesViewHolder(view);
+        return new searchedPlacesViewHolder(view,mListener);
     }
 
     @Override
     public void onBindViewHolder(searchedPlacesViewHolder searchedPlacesViewHolder, int i) {
-        searchedPlacesItem searchedPlacesItem = mPlacesList.get(i);
+        SearchedPlacesItem searchedPlacesItem = mPlacesList.get(i);
         String placeName = searchedPlacesItem.getPlaceName();
         String placeDesc = searchedPlacesItem.getPlaceDesc();
         String placeIconURL = searchedPlacesItem.getIconURL();
@@ -51,18 +61,39 @@ public class searchedPlacesAdapter extends RecyclerView.Adapter<searchedPlacesAd
         return mPlacesList.size();
     }
 
-    public class searchedPlacesViewHolder extends RecyclerView.ViewHolder{
+    public static class searchedPlacesViewHolder extends RecyclerView.ViewHolder{
 
         public TextView mTextViewPlaceName;
         public TextView mTextViewPlaceDesc;
         public ImageView mImageViewIcon;
+        public ImageView mImageViewAddPlace;
 
 
-        public searchedPlacesViewHolder(@NonNull View itemView) {
+        public searchedPlacesViewHolder(@NonNull View itemView, final onItemClickListener listener) {
             super(itemView);
             mImageViewIcon = itemView.findViewById(R.id.icon_imageview);
             mTextViewPlaceName = itemView.findViewById(R.id.place_name_textview);
             mTextViewPlaceDesc = itemView.findViewById(R.id.place_summary_textview);
+            mImageViewAddPlace= itemView.findViewById(R.id.add_place_btn);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(listener!=null){
+                        int position = getAdapterPosition();
+                        if(position!=RecyclerView.NO_POSITION){
+                            listener.onItemClicked(position);
+                        }
+                    }
+                }
+            });
+
+            mImageViewAddPlace.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
         }
     }
 }

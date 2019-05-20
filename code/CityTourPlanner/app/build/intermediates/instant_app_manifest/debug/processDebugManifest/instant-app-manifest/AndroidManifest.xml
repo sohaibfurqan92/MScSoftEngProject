@@ -32,6 +32,15 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="uk.ac.le.cityTourPlanner.PlaceDetailActivity"
+            android:label="@string/title_activity_place_detail"
+            android:parentActivityName="uk.ac.le.cityTourPlanner.PlaceSearchActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.ac.le.cityTourPlanner.PlaceSearchActivity" />
+        </activity>
         <activity android:name="uk.ac.le.cityTourPlanner.PlaceSearchActivity" />
         <activity
             android:name="uk.ac.le.cityTourPlanner.NewTripCreationActivity"

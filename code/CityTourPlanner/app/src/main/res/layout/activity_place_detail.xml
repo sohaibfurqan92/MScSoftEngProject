@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlaceDetailActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/place_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+        </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:id="@+id/place_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/place_details_imageview_desc"
+        android:layout_below="@id/place_detail_toolbar"/>
+
+    <TextView
+        android:id="@+id/textViewName_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="Place name"
+        android:layout_below="@id/place_image_view"/>
+
+    <TextView
+        android:id="@+id/textViewAddress_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Place address"
+        android:textSize="25dp"
+        android:layout_below="@+id/textViewName_details"/>
+
+        <TextView
+        android:id="@+id/textViewPhoneNum_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+            android:text="Phone Number"
+        android:textSize="25dp"
+        android:layout_below="@+id/textViewAddress_details"/>
+
+    <TextView
+        android:id="@+id/textViewRatings_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="rating"
+        android:textSize="25dp"
+        android:layout_below="@id/textViewPhoneNum_details"/>
+
+    <TextView
+        android:id="@+id/textViewWebsite_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="place website"
+        android:textSize="25dp"
+        android:layout_below="@id/textViewRatings_details"/>
+
+    <Button
+        android:id="@+id/save_remove_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Click Here"
+        android:autoLink="web"
+        android:layout_below="@id/textViewWebsite_details"
+        android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</ScrollView>

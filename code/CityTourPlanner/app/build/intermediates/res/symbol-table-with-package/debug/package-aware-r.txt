@@ -1513,6 +1513,7 @@ drawable fui_idp_button_background_phone
 drawable fui_idp_button_background_twitter
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_add_black_24dp
 drawable ic_add_fab
 drawable ic_add_recyclerview
 drawable ic_launcher_background
@@ -1742,6 +1743,8 @@ id phone_button
 id phone_layout
 id phone_number
 id pin
+id place_detail_toolbar
+id place_image_view
 id place_name_textview
 id place_search_recyclerview
 id place_search_toolbar
@@ -1778,6 +1781,7 @@ id root
 id satellite
 id save_image_matrix
 id save_non_transition_alpha
+id save_remove_place
 id save_scale_type
 id scheduledFragmentTextView
 id screen
@@ -1842,6 +1846,11 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textViewAddress_details
+id textViewName_details
+id textViewPhoneNum_details
+id textViewRatings_details
+id textViewWebsite_details
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1932,6 +1941,7 @@ layout abc_tooltip
 layout activity_login
 layout activity_main
 layout activity_new_trip_creation
+layout activity_place_detail
 layout activity_place_search
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -2193,6 +2203,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string permission_not_granted_message
+string place_details_imageview_desc
 string places_autocomplete_clear_button
 string places_autocomplete_label
 string places_autocomplete_no_results_for_query
@@ -2215,6 +2226,7 @@ string tedpermission_confirm
 string tedpermission_setting
 string title_activity_main
 string title_activity_new_trip_creation
+string title_activity_place_detail
 string trip_city_hint
 string trip_date_hint
 string trip_name_hint
