@@ -20,7 +20,7 @@ public class PlaceDetailsViewpagerAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return 5;
+        return imageURLs.length;
     }
 
     @Override
@@ -32,7 +32,7 @@ public class PlaceDetailsViewpagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
         ImageView placeImageView = new ImageView(mContext);
-        Picasso.with(mContext).load(imageURLs[position]).fit().centerInside().into(placeImageView);
+        Picasso.with(mContext).load(imageURLs[position]).resize(400,400).centerInside().into(placeImageView);
         container.addView(placeImageView);
 
         return placeImageView;

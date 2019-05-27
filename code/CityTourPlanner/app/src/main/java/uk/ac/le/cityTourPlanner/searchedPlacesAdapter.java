@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 
 public class SearchedPlacesAdapter extends RecyclerView.Adapter<SearchedPlacesAdapter.searchedPlacesViewHolder> {
     private Context mContext;
-    private ArrayList<SearchedPlacesItem> mPlacesList;
+    private ArrayList<SearchedPlacesItem> mPlacesList;  //to hold list of all places
     private onItemClickListener mListener;
 
     public SearchedPlacesAdapter(Context context, ArrayList<SearchedPlacesItem> placesList ){
@@ -29,8 +30,8 @@ public class SearchedPlacesAdapter extends RecyclerView.Adapter<SearchedPlacesAd
     }
 
     public interface onItemClickListener{
-        void onItemClicked(int position);
-        void onAddClicked(int position);
+        void onItemClick(int position);
+        void onCheckboxClick(int position, CheckBox chk);
     }
 
     @NonNull
@@ -52,8 +53,6 @@ public class SearchedPlacesAdapter extends RecyclerView.Adapter<SearchedPlacesAd
         searchedPlacesViewHolder.mTextViewPlaceDesc.setText(placeDesc);
         Picasso.with(mContext).load(placeIconURL).fit().centerInside().into(searchedPlacesViewHolder.mImageViewIcon);
 
-
-
     }
 
     @Override
@@ -66,7 +65,7 @@ public class SearchedPlacesAdapter extends RecyclerView.Adapter<SearchedPlacesAd
         public TextView mTextViewPlaceName;
         public TextView mTextViewPlaceDesc;
         public ImageView mImageViewIcon;
-        public ImageView mImageViewAddPlace;
+        public CheckBox mCheckBoxPlace;
 
 
         public searchedPlacesViewHolder(@NonNull View itemView, final onItemClickListener listener) {
@@ -74,7 +73,10 @@ public class SearchedPlacesAdapter extends RecyclerView.Adapter<SearchedPlacesAd
             mImageViewIcon = itemView.findViewById(R.id.icon_imageview);
             mTextViewPlaceName = itemView.findViewById(R.id.place_name_textview);
             mTextViewPlaceDesc = itemView.findViewById(R.id.place_summary_textview);
-            mImageViewAddPlace= itemView.findViewById(R.id.add_place_btn);
+            mCheckBoxPlace= itemView.findViewById(R.id.placeCheckBox);
+
+
+
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -82,18 +84,25 @@ public class SearchedPlacesAdapter extends RecyclerView.Adapter<SearchedPlacesAd
                     if(listener!=null){
                         int position = getAdapterPosition();
                         if(position!=RecyclerView.NO_POSITION){
-                            listener.onItemClicked(position);
+                            listener.onItemClick(position);
                         }
                     }
                 }
             });
 
-            mImageViewAddPlace.setOnClickListener(new View.OnClickListener() {
+            mCheckBoxPlace.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    if(listener!=null){
+                        int position = getAdapterPosition();
+                        if(position!=RecyclerView.NO_POSITION){
+                            CheckBox checkBox = (CheckBox)v;
+                            listener.onCheckboxClick(position,checkBox);
+                        }
+                    }
                 }
             });
+
         }
     }
 }

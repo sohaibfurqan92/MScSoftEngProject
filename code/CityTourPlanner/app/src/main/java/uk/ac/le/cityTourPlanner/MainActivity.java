@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //                mTripDateEditText.setVisibility(View.VISIBLE);
 //                mCreateTripButton.setVisibility(View.VISIBLE);
 //                mPermissionsDeniedMessageTV.setVisibility(View.INVISIBLE);
-                startActivity(new Intent(MainActivity.this,NewTripCreationActivity.class));
+                startActivity(new Intent(MainActivity.this,PlaceSearchActivity.class));
             }
 
             @Override

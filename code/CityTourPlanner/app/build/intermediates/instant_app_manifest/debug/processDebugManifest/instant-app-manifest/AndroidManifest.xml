@@ -33,6 +33,15 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="uk.ac.le.cityTourPlanner.PlaceSearchActivity"
+            android:label="@string/title_activity_place_search"
+            android:parentActivityName="uk.ac.le.cityTourPlanner.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.ac.le.cityTourPlanner.MainActivity" />
+        </activity>
+        <activity
             android:name="uk.ac.le.cityTourPlanner.PlaceDetailActivity"
             android:label="@string/title_activity_place_detail"
             android:parentActivityName="uk.ac.le.cityTourPlanner.PlaceSearchActivity"
@@ -40,16 +49,6 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="uk.ac.le.cityTourPlanner.PlaceSearchActivity" />
-        </activity>
-        <activity android:name="uk.ac.le.cityTourPlanner.PlaceSearchActivity" />
-        <activity
-            android:name="uk.ac.le.cityTourPlanner.NewTripCreationActivity"
-            android:label="@string/title_activity_new_trip_creation"
-            android:parentActivityName="uk.ac.le.cityTourPlanner.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="uk.ac.le.cityTourPlanner.MainActivity" />
         </activity>
         <activity
             android:name="uk.ac.le.cityTourPlanner.MainActivity"

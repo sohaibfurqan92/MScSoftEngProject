@@ -21,14 +21,13 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme">
         </android.support.v7.widget.Toolbar>
-    <ImageView
-        android:id="@+id/place_image_view"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:src="@mipmap/ic_launcher"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/place_details_imageview_desc"
-        android:layout_below="@id/place_detail_toolbar"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/place_image_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/place_detail_toolbar"></android.support.v4.view.ViewPager>
+
 
     <TextView
         android:id="@+id/textViewName_details"
@@ -38,7 +37,7 @@
         android:gravity="center"
         android:textSize="25dp"
         android:text="Place name"
-        android:layout_below="@id/place_image_view"/>
+        android:layout_below="@id/place_image_viewpager"/>
 
     <TextView
         android:id="@+id/textViewAddress_details"

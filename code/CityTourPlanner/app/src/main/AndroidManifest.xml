@@ -13,6 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".PlaceSearchActivity"
+            android:label="@string/title_activity_place_search"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.ac.le.cityTourPlanner.MainActivity" />
+        </activity>
+        <activity
             android:name=".PlaceDetailActivity"
             android:label="@string/title_activity_place_detail"
             android:parentActivityName=".PlaceSearchActivity"
@@ -20,16 +29,6 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="uk.ac.le.cityTourPlanner.PlaceSearchActivity" />
-        </activity>
-        <activity android:name=".PlaceSearchActivity" />
-        <activity
-            android:name=".NewTripCreationActivity"
-            android:label="@string/title_activity_new_trip_creation"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="uk.ac.le.cityTourPlanner.MainActivity" />
         </activity>
         <activity
             android:name=".MainActivity"

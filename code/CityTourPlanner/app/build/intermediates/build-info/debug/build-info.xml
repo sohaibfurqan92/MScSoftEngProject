@@ -2,35 +2,36 @@
 <instant-run
     abi="x86"
     api-level="28"
-    build-mode="HOT_WARM"
+    build-mode="COLD"
     density="420dpi"
     format="10"
     plugin-version="3.3.2"
-    timestamp="1558383273917"
+    timestamp="1558984070452"
     token="-5216836137821048865"
-    verifier="COMPATIBLE" >
+    verifier="METHOD_ADDED" >
 
     <task
         name="javac"
-        duration="2724" />
+        duration="5941" />
     <task
         name="instant-run-dex"
-        duration="30" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="212" />
+        duration="247" />
     <task
         name="verifier"
-        duration="12" />
+        duration="34" />
 
     <artifact
-        location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1558381724324"
-        verifier="FULL_BUILD_REQUESTED" >
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1558955171584"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
@@ -41,19 +42,19 @@
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
@@ -73,16 +74,17 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1558382255122"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1558957304546"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
@@ -102,23 +104,20 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="METHOD_DELETED"
-        timestamp="1558382889735"
+        ir-eligibility="FIELD_ADDED"
+        timestamp="1558982660452"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1558984070452"
+        verifier="METHOD_ADDED" >
         <artifact
             location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1558383273917"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
