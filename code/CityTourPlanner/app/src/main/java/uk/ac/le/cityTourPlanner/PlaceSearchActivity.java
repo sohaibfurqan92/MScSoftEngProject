@@ -1,20 +1,31 @@
 package uk.ac.le.cityTourPlanner;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.constraint.ConstraintLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.CheckBox;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -45,12 +56,19 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
     int AUTOCOMPLETE_REQUEST_CODE = 1;
     public static final String EXTRA_PLACE_ID = "uk.ac.le.cityTourPlanner.PLACE_ID";
 
+
     private RecyclerView mRecyclerView;
     private SearchedPlacesAdapter mSearchedPlacesAdapter;
     private ArrayList<SearchedPlacesItem> mSearchedPlacesList;
     private ArrayList<SearchedPlacesItem> mSelectedPlacesList;
     private RequestQueue mRequestQueue;
     PlacesClient mPlacesClient;
+    int mSelectedPlacesCount;
+    private ConstraintLayout mEmptyRecyclerLayout;
+    AlertDialog.Builder progressBarDialogBuilder;
+    private AlertDialog mDialog;
+    private TextView mHeadingTextView;
+    private TextView mMessageTextView;
 
 
     @Override
@@ -66,12 +84,34 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
         mRecyclerView.setLayoutManager(new LinearLayoutManager(PlaceSearchActivity.this));
         mSearchedPlacesList = new ArrayList<>();
         mSelectedPlacesList = new ArrayList<>();
+        mSelectedPlacesCount = 0;
+
+        progressBarDialogBuilder = new AlertDialog.Builder(this);
 
         mRequestQueue = Volley.newRequestQueue(this);
 
         Places.initialize(getApplicationContext(), getString(R.string.googlePlacesAPIKey));
         mPlacesClient = Places.createClient(this);
 
+        mEmptyRecyclerLayout = findViewById(R.id.emptyRecyclerLayout);
+
+        HandleEmptyRecyclerView();
+
+
+    }
+
+    private void HandleEmptyRecyclerView() {
+
+        if (!mSearchedPlacesList.isEmpty()) {
+
+            //if data is available, don't show the empty text
+            mEmptyRecyclerLayout.setVisibility(View.INVISIBLE);
+            //RecyclerAdapter adapter = new RecyclerAdapter(data); // pass the data to your adapter here
+            //recyclerView.setAdapter(adapter);
+
+        } else
+            mEmptyRecyclerLayout.setVisibility(View.VISIBLE);
+        mRecyclerView.setVisibility(View.INVISIBLE);
     }
 
     @Override
@@ -81,6 +121,16 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
         return true;
     }
 
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        MenuItem savePlaceSelectionMenuItem = menu.findItem(R.id.action_menu_saveplacelist);
+        if (mSelectedPlacesCount > 0) {
+            savePlaceSelectionMenuItem.setVisible(true);
+        } else {
+            savePlaceSelectionMenuItem.setVisible(false);
+        }
+        return true;
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -92,9 +142,15 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
             launchPlaceAutocomplete();
         }
         if (id == R.id.action_menu_saveplacelist) {
-            return true;
+            openDialog();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void openDialog() {
+        SavePlaceDialog dialog = new SavePlaceDialog();
+        dialog.show(getSupportFragmentManager(), "Save place selection dialog");
+
     }
 
     private void launchPlaceAutocomplete() {
@@ -107,15 +163,22 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
 
 // Start the autocomplete intent.
         Intent intent = new Autocomplete.IntentBuilder(
-                AutocompleteActivityMode.OVERLAY, fields)
+                AutocompleteActivityMode.FULLSCREEN, fields)
                 .setTypeFilter(TypeFilter.CITIES)
                 .build(this);
         startActivityForResult(intent, AUTOCOMPLETE_REQUEST_CODE);
+
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode == AUTOCOMPLETE_REQUEST_CODE) {
+            //handle progress bar
+            progressBarDialogBuilder.setCancelable(false); // if you want user to wait for some process to finish,
+            progressBarDialogBuilder.setView(R.layout.progress_bar_layout);
+            mDialog = progressBarDialogBuilder.create();
+            mDialog.show();
+
             if (resultCode == RESULT_OK) {
                 Place place = Autocomplete.getPlaceFromIntent(data);
                 Log.i("Place Details: ", "Place: " + place.getName() + ", " + place.getId());
@@ -128,11 +191,19 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
                 }
 
                 String requestURL = generateNearbyRequestURL(latitude, longitude);
+
                 ParseNearbySearchJSON(requestURL);
+
                 Log.i("Place details", "Place: " + place.getName() + ", " + place.getId());
+                mDialog.dismiss();
             } else if (resultCode == AutocompleteActivity.RESULT_ERROR) {
                 Status status = Autocomplete.getStatusFromIntent(data);
                 Log.i("Error: ", status.getStatusMessage());
+                mHeadingTextView = findViewById(R.id.HeadingTextView);
+                mMessageTextView = findViewById(R.id.messageTextView);
+
+                mHeadingTextView.setText("Error");
+                mMessageTextView.setText(status.getStatusMessage());
             } else if (resultCode == RESULT_CANCELED) {
                 // The user canceled the operation.
             }
@@ -144,6 +215,9 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
             @Override
             public void onResponse(JSONObject response) {
                 try {
+                    mRecyclerView.setVisibility(View.VISIBLE);
+                    mEmptyRecyclerLayout.setVisibility(View.INVISIBLE);
+
                     JSONArray jsonArray = response.getJSONArray("results");
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject result = jsonArray.getJSONObject(i);
@@ -160,6 +234,9 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
                     mRecyclerView.setAdapter(mSearchedPlacesAdapter);
                     mSearchedPlacesAdapter.SetOnItemClickListener(PlaceSearchActivity.this);
                     mSearchedPlacesAdapter.notifyDataSetChanged();
+
+                    //make the recycler visible
+
                 } catch (JSONException e) {
                     Log.d("Parse error", e.toString());
                 }
@@ -201,8 +278,18 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
     public void onCheckboxClick(int position, CheckBox chk) {
         if (chk.isChecked()) {
             mSelectedPlacesList.add(mSearchedPlacesList.get(position));
+            mSelectedPlacesCount++;
+
         } else if (!chk.isChecked()) {
             mSelectedPlacesList.remove(mSearchedPlacesList.get(position));
+            mSelectedPlacesCount--;
+
         }
+
+        if (mSelectedPlacesList.size() >= 0) {
+            invalidateOptionsMenu();
+        }
+
+
     }
 }
