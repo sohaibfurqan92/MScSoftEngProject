@@ -1,29 +1,20 @@
 package uk.ac.le.cityTourPlanner;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.CheckBox;
-import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,6 +26,8 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.libraries.places.api.Places;
 import com.google.android.libraries.places.api.model.Place;
 import com.google.android.libraries.places.api.model.TypeFilter;
@@ -42,6 +35,9 @@ import com.google.android.libraries.places.api.net.PlacesClient;
 import com.google.android.libraries.places.widget.Autocomplete;
 import com.google.android.libraries.places.widget.AutocompleteActivity;
 import com.google.android.libraries.places.widget.model.AutocompleteActivityMode;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -49,9 +45,11 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-public class PlaceSearchActivity extends AppCompatActivity implements SearchedPlacesAdapter.onItemClickListener {
+public class PlaceSearchActivity extends AppCompatActivity implements SearchedPlacesAdapter.onItemClickListener, SavePlaceDialog.SaveTripDialogListener {
 
     int AUTOCOMPLETE_REQUEST_CODE = 1;
     public static final String EXTRA_PLACE_ID = "uk.ac.le.cityTourPlanner.PLACE_ID";
@@ -65,10 +63,9 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
     PlacesClient mPlacesClient;
     int mSelectedPlacesCount;
     private ConstraintLayout mEmptyRecyclerLayout;
-    AlertDialog.Builder progressBarDialogBuilder;
-    private AlertDialog mDialog;
-    private TextView mHeadingTextView;
-    private TextView mMessageTextView;
+    private String mNameOfTrip;
+    private String mDateOfTrip;
+    private Place mPlace; //place object from Android places SDK to retrieve places in city
 
 
     @Override
@@ -86,7 +83,7 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
         mSelectedPlacesList = new ArrayList<>();
         mSelectedPlacesCount = 0;
 
-        progressBarDialogBuilder = new AlertDialog.Builder(this);
+
 
         mRequestQueue = Volley.newRequestQueue(this);
 
@@ -111,7 +108,7 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
 
         } else
             mEmptyRecyclerLayout.setVisibility(View.VISIBLE);
-        mRecyclerView.setVisibility(View.INVISIBLE);
+            mRecyclerView.setVisibility(View.INVISIBLE);
     }
 
     @Override
@@ -173,18 +170,14 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode == AUTOCOMPLETE_REQUEST_CODE) {
-            //handle progress bar
-            progressBarDialogBuilder.setCancelable(false); // if you want user to wait for some process to finish,
-            progressBarDialogBuilder.setView(R.layout.progress_bar_layout);
-            mDialog = progressBarDialogBuilder.create();
-            mDialog.show();
+
 
             if (resultCode == RESULT_OK) {
-                Place place = Autocomplete.getPlaceFromIntent(data);
-                Log.i("Place Details: ", "Place: " + place.getName() + ", " + place.getId());
+                mPlace = Autocomplete.getPlaceFromIntent(data);
+                Log.i("Place Details: ", "Place: " + mPlace.getName() + ", " + mPlace.getId());
                 mSearchedPlacesList.clear();
                 double latitude = 0.0, longitude = 0.0;
-                LatLng latLng = place.getLatLng();
+                LatLng latLng = mPlace.getLatLng();
                 if (latLng != null) {
                     latitude = latLng.latitude;
                     longitude = latLng.longitude;
@@ -194,16 +187,16 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
 
                 ParseNearbySearchJSON(requestURL);
 
-                Log.i("Place details", "Place: " + place.getName() + ", " + place.getId());
-                mDialog.dismiss();
+                Log.i("Place details", "Place: " + mPlace.getName() + ", " + mPlace.getId());
+
             } else if (resultCode == AutocompleteActivity.RESULT_ERROR) {
                 Status status = Autocomplete.getStatusFromIntent(data);
                 Log.i("Error: ", status.getStatusMessage());
-                mHeadingTextView = findViewById(R.id.HeadingTextView);
-                mMessageTextView = findViewById(R.id.messageTextView);
+                TextView headingTextView = findViewById(R.id.HeadingTextView);
+                TextView messageTextView = findViewById(R.id.messageTextView);
 
-                mHeadingTextView.setText("Error");
-                mMessageTextView.setText(status.getStatusMessage());
+                headingTextView.setText("Error");
+                messageTextView.setText(status.getStatusMessage());
             } else if (resultCode == RESULT_CANCELED) {
                 // The user canceled the operation.
             }
@@ -235,7 +228,6 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
                     mSearchedPlacesAdapter.SetOnItemClickListener(PlaceSearchActivity.this);
                     mSearchedPlacesAdapter.notifyDataSetChanged();
 
-                    //make the recycler visible
 
                 } catch (JSONException e) {
                     Log.d("Parse error", e.toString());
@@ -289,6 +281,56 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
         if (mSelectedPlacesList.size() >= 0) {
             invalidateOptionsMenu();
         }
+
+
+    }
+
+    @Override
+    public void passDataToActivity(String tripName, String tripDate) {
+        mNameOfTrip = tripName;
+        mDateOfTrip = tripDate;
+        
+        SaveTrip(mNameOfTrip,mDateOfTrip ,mSelectedPlacesList,mPlace );
+    }
+
+    private void SaveTrip(String TripName, String TripDate, List<SearchedPlacesItem> SelectedPlacesList, Place CityPlaceObject) {
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("Trips");
+
+        String generalDetailsPushKey = myRef.child("GeneralDetails").push().getKey();
+        String selectedPlacesPushKey = myRef.child("PlacesDetails").push().getKey();
+
+        String TripStatus = "Scheduled";
+
+        GeneratedTrip trip = new GeneratedTrip(TripName,TripDate,FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),null,CityPlaceObject,TripStatus);
+        myRef.child("GeneralDetails").child(generalDetailsPushKey).setValue(trip).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Toast.makeText(getApplicationContext(),"Trip Created",Toast.LENGTH_LONG).show();
+
+                //reset everything
+                mSearchedPlacesList.clear();
+                mSelectedPlacesList.clear();
+                mSelectedPlacesCount =0;
+                mSearchedPlacesAdapter.notifyDataSetChanged();
+
+                mRecyclerView.setVisibility(View.INVISIBLE);
+                mEmptyRecyclerLayout.setVisibility(View.VISIBLE);
+
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.e("ERROR:", "onFailure:"+e.getMessage());
+                    }
+                });
+
+        //insert place details at appropriate location
+        Map<String,Object> placeDetailsMap = new HashMap<>();
+        placeDetailsMap.put("TripName",trip.getTripName());
+        placeDetailsMap.put("SelectedPlaces",SelectedPlacesList);
+        myRef.child("SelectedPlaces").child(selectedPlacesPushKey).setValue(placeDetailsMap);
+
 
 
     }

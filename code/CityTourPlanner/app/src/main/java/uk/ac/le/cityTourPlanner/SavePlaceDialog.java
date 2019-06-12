@@ -14,11 +14,11 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
-import static android.support.v4.content.ContextCompat.getSystemService;
-
 public class SavePlaceDialog extends AppCompatDialogFragment {
     private EditText mEditTextTripName;
     private EditText mEditTextTripDate;
+    private SaveTripDialogListener mListener;
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -27,7 +27,7 @@ public class SavePlaceDialog extends AppCompatDialogFragment {
 
         builder.setView(view)
                 .setTitle("Enter trip name and date")
-                .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                     }
@@ -35,7 +35,10 @@ public class SavePlaceDialog extends AppCompatDialogFragment {
         .setPositiveButton("Save trip", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+                String tripName = mEditTextTripName.getText().toString();
+                String tripDate = mEditTextTripDate.getText().toString();
 
+                mListener.passDataToActivity(tripName,tripDate);
             }
         });
 
@@ -54,9 +57,9 @@ public class SavePlaceDialog extends AppCompatDialogFragment {
                     public void onDateSet(DatePicker view, int year, int monthOfYear,
                                           int dayOfMonth) {
 
-                        int s=monthOfYear+1;
-                        String a = dayOfMonth+"/"+s+"/"+year;
-                        mEditTextTripDate.setText(""+a);
+                        int month=monthOfYear+1;
+                        String date = dayOfMonth+"/"+month+"/"+year;
+                        mEditTextTripDate.setText(""+date);
                     }
                 };
 
@@ -72,10 +75,25 @@ public class SavePlaceDialog extends AppCompatDialogFragment {
         return builder.create();
     }
 
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
+        try {
+            mListener = (SaveTripDialogListener) context;
+        } catch (ClassCastException e) {
+           throw new ClassCastException(context.toString()+"must implement SavePlaceDialogListemer");
+        }
+    }
+
+    public interface SaveTripDialogListener {
+        void passDataToActivity(String tripName, String tripDate);
+    }
+
     public static void hideSoftKeyboardUsingView(Context context,View view) {
 
         InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+        imm.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_IMPLICIT_ONLY);
 
     }
 
