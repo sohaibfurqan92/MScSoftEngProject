@@ -45,32 +45,32 @@ public class SavePlaceDialog extends AppCompatDialogFragment {
         mEditTextTripName = view.findViewById(R.id.TripNameEditText);
         mEditTextTripDate = view.findViewById(R.id.TripDateEditText);
 
-        //EditText editText = (EditText)findViewById(R.id.maped);
-        mEditTextTripDate.setOnClickListener(new View.OnClickListener() {
+        mEditTextTripDate.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
-            public void onClick(View v) {
-                //close keyboard
-                hideSoftKeyboardUsingView(getContext(),mEditTextTripDate);
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(hasFocus){
+                    //close keyboard
+                    hideSoftKeyboardUsingView(getContext(),mEditTextTripDate);
 
-                DatePickerDialog.OnDateSetListener dpd = new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker view, int year, int monthOfYear,
-                                          int dayOfMonth) {
+                    DatePickerDialog.OnDateSetListener dpd = new DatePickerDialog.OnDateSetListener() {
+                        @Override
+                        public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                              int dayOfMonth) {
 
-                        int month=monthOfYear+1;
-                        String date = dayOfMonth+"/"+month+"/"+year;
-                        mEditTextTripDate.setText(""+date);
-                    }
-                };
+                            int month=monthOfYear+1;
+                            String date = dayOfMonth+"/"+month+"/"+year;
+                            mEditTextTripDate.setText(""+date);
+                            hideSoftKeyboardUsingView(getContext(),mEditTextTripDate);
+                        }
+                    };
 
-                Time date = new Time();
-                date.setToNow();
-                DatePickerDialog d = new DatePickerDialog(getContext(), dpd, date.year ,date.month, date.monthDay);
-                d.show();
-
+                    Time date = new Time();
+                    date.setToNow();
+                    DatePickerDialog d = new DatePickerDialog(getContext(), dpd, date.year ,date.month, date.monthDay);
+                    d.show();
+                }
             }
         });
-
 
         return builder.create();
     }

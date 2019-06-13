@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        navigationView.setCheckedItem(R.id.nav_camera);
+        navigationView.setCheckedItem(R.id.nav_trips);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_main);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -146,11 +146,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mPermissionListener = new PermissionListener() {
             @Override
             public void onPermissionGranted() {
-                //make views visible so that user can continue
-//                mTripNameEditText.setVisibility(View.VISIBLE);
-//                mTripDateEditText.setVisibility(View.VISIBLE);
-//                mCreateTripButton.setVisibility(View.VISIBLE);
-//                mPermissionsDeniedMessageTV.setVisibility(View.INVISIBLE);
+
                 startActivity(new Intent(MainActivity.this,PlaceSearchActivity.class));
             }
 
@@ -160,11 +156,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     TedPermission.with(MainActivity.this).setPermissions(item).check();
                 }
 
-//                //make views invisible so that user cannot continue
-//                mTripNameEditText.setVisibility(View.INVISIBLE);
-//                mTripDateEditText.setVisibility(View.INVISIBLE);
-//                mCreateTripButton.setVisibility(View.INVISIBLE);
-//                mPermissionsDeniedMessageTV.setVisibility(View.VISIBLE);
+
 
 
             }

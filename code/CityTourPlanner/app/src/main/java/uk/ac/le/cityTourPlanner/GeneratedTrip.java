@@ -1,25 +1,34 @@
 package uk.ac.le.cityTourPlanner;
 
-import com.google.android.libraries.places.api.model.Place;
-
 import java.util.List;
 
 //POJO class for inserting trip data to firebase
 
+/*
+* place object = id, latlng,name
+* */
 public class GeneratedTrip {
+    private String CityID;
+    private double CityLatitude;
+    private double CityLongitude;
+    private String CityName;
+
+
     private String TripName;
     private String TripDate;
     private String CreatedBy;
     private List<SearchedPlacesItem> SelectedPlaces;
-    private Place CityPlaceObject;
     private String TripStatus;
 
-    public GeneratedTrip(String tripName, String tripDate, String createdBy, List<SearchedPlacesItem> selectedPlaces, Place place,String tripStatus) {
+    public GeneratedTrip(String cityID, double cityLatitude, double cityLongitude, String cityName, String tripName, String tripDate, String createdBy, List<SearchedPlacesItem> selectedPlaces, String tripStatus) {
+        CityID = cityID;
+        CityLatitude = cityLatitude;
+        CityLongitude = cityLongitude;
+        CityName = cityName;
         TripName = tripName;
         TripDate = tripDate;
         CreatedBy = createdBy;
         SelectedPlaces = selectedPlaces;
-        CityPlaceObject = place;
         TripStatus=tripStatus;
     }
 
@@ -45,10 +54,6 @@ public class GeneratedTrip {
         SelectedPlaces = selectedPlaces;
     }
 
-    public void setCityPlaceObject(Place placeObject) {
-        CityPlaceObject = placeObject;
-    }
-
 
     public void setTripStatus(String tripStatus) {
         TripStatus = tripStatus;
@@ -71,13 +76,39 @@ public class GeneratedTrip {
         return SelectedPlaces;
     }
 
-    public Place getCityPlaceObject() {
-        return CityPlaceObject;
-    }
-
     public String getTripStatus() {
         return TripStatus;
     }
 
+    public String getCityID() {
+        return CityID;
+    }
 
+    public void setCityID(String cityID) {
+        CityID = cityID;
+    }
+
+    public double getCityLatitude() {
+        return CityLatitude;
+    }
+
+    public void setCityLatitude(double cityLatitude) {
+        CityLatitude = cityLatitude;
+    }
+
+    public double getCityLongitude() {
+        return CityLongitude;
+    }
+
+    public void setCityLongitude(double cityLongitude) {
+        CityLongitude = cityLongitude;
+    }
+
+    public String getCityName() {
+        return CityName;
+    }
+
+    public void setCityName(String cityName) {
+        CityName = cityName;
+    }
 }

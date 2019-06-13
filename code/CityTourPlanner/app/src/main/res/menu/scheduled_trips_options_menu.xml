@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/EditScheduledTripNameMenuItem"
+        android:title="Edit Trip Name"/>
+
+    <item
+        android:id="@+id/EditScheduledTripDateMenuItem"
+        android:title="Edit Trip Date"/>
+
+    <item
+        android:id="@+id/DeleteScheduledTripMenuItem"
+        android:title="Delete Trip"/>
+
+</menu>

@@ -1514,9 +1514,13 @@ drawable fui_idp_button_background_phone
 drawable fui_idp_button_background_twitter
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_about
 drawable ic_add_black_24dp
 drawable ic_add_fab
 drawable ic_add_recyclerview
+drawable ic_delete_scheduled_trip
+drawable ic_edit_scheduled_trip
+drawable ic_feedback
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_logout_settings
@@ -1531,6 +1535,8 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_save
 drawable ic_search
+drawable ic_settings
+drawable ic_trips
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1558,7 +1564,11 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
 id CTRL
+id DeleteScheduledTripMenuItem
+id EditScheduledTripDateMenuItem
+id EditScheduledTripNameMenuItem
 id EmailNavHeaderTextView
+id EmptyRecyclerViewTextView
 id FUNCTION
 id HeadingTextView
 id META
@@ -1723,10 +1733,11 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id name
 id name_layout
-id nav_camera
-id nav_gallery
-id nav_manage
-id nav_slideshow
+id nav_about
+id nav_feedback
+id nav_settings
+id nav_share
+id nav_trips
 id nav_view
 id navigation_header_container
 id never
@@ -1791,6 +1802,10 @@ id save_non_transition_alpha
 id save_remove_place
 id save_scale_type
 id scheduledFragmentTextView
+id scheduledTripDateTextView
+id scheduledTripNameTextView
+id scheduledTripOptionsTextView
+id scheduledTripsRecyclerView
 id screen
 id scroll
 id scrollIndicatorDown
@@ -2017,6 +2032,7 @@ layout places_autocomplete_progress
 layout places_autocomplete_search_bar
 layout progress_bar_layout
 layout save_place_selection_dialog
+layout scheduled_trip_item
 layout searched_places_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -2025,6 +2041,7 @@ layout support_simple_spinner_dropdown_item
 menu menu_main
 menu nav_drawer_menu
 menu place_search_menu
+menu scheduled_trips_options_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals fui_error_weak_password

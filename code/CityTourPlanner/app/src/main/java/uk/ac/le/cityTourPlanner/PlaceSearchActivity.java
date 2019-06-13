@@ -65,7 +65,14 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
     private ConstraintLayout mEmptyRecyclerLayout;
     private String mNameOfTrip;
     private String mDateOfTrip;
+
     private Place mPlace; //place object from Android places SDK to retrieve places in city
+
+    //These fields will store information regarding the city from which to select nearby places
+    private String mCityID;
+    private double mCityLatitude;
+    private double mCityLongitude;
+    private String mCityName;
 
 
     @Override
@@ -175,15 +182,19 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
             if (resultCode == RESULT_OK) {
                 mPlace = Autocomplete.getPlaceFromIntent(data);
                 Log.i("Place Details: ", "Place: " + mPlace.getName() + ", " + mPlace.getId());
+                mCityID = mPlace.getId();
+                mCityName = mPlace.getName();
+
                 mSearchedPlacesList.clear();
-                double latitude = 0.0, longitude = 0.0;
+                mCityLatitude = 0.0;
+                mCityLongitude = 0.0;
                 LatLng latLng = mPlace.getLatLng();
                 if (latLng != null) {
-                    latitude = latLng.latitude;
-                    longitude = latLng.longitude;
+                    mCityLatitude = latLng.latitude;
+                    mCityLongitude = latLng.longitude;
                 }
 
-                String requestURL = generateNearbyRequestURL(latitude, longitude);
+                String requestURL = generateNearbyRequestURL(mCityLatitude, mCityLongitude);
 
                 ParseNearbySearchJSON(requestURL);
 
@@ -289,20 +300,21 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
     public void passDataToActivity(String tripName, String tripDate) {
         mNameOfTrip = tripName;
         mDateOfTrip = tripDate;
+        String TripStatus = "Scheduled";
         
-        SaveTrip(mNameOfTrip,mDateOfTrip ,mSelectedPlacesList,mPlace );
+        SaveTrip(mCityID, mCityLatitude, mCityLongitude, mCityName, mNameOfTrip,mDateOfTrip ,mSelectedPlacesList,TripStatus );
     }
 
-    private void SaveTrip(String TripName, String TripDate, List<SearchedPlacesItem> SelectedPlacesList, Place CityPlaceObject) {
+    private void SaveTrip(String CityID, double CityLatitude, double CityLongitude, String CityName, String TripName, String TripDate, List<SearchedPlacesItem> SelectedPlacesList,String TripStatus) {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("Trips");
 
         String generalDetailsPushKey = myRef.child("GeneralDetails").push().getKey();
         String selectedPlacesPushKey = myRef.child("PlacesDetails").push().getKey();
 
-        String TripStatus = "Scheduled";
 
-        GeneratedTrip trip = new GeneratedTrip(TripName,TripDate,FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),null,CityPlaceObject,TripStatus);
+
+        GeneratedTrip trip = new GeneratedTrip(CityID,CityLatitude,CityLongitude,CityName,TripName,TripDate,FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),null,TripStatus);
         myRef.child("GeneralDetails").child(generalDetailsPushKey).setValue(trip).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
