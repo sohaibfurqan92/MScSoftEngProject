@@ -13,9 +13,9 @@ public class GeneratedTrip {
     private double CityLongitude;
     private String CityName;
 
-
-    private String TripName;
-    private String TripDate;
+    private String TripID;
+    private String tripName;
+    private String tripDate;
     private String CreatedBy;
     private List<SearchedPlacesItem> SelectedPlaces;
     private String TripStatus;
@@ -25,8 +25,8 @@ public class GeneratedTrip {
         CityLatitude = cityLatitude;
         CityLongitude = cityLongitude;
         CityName = cityName;
-        TripName = tripName;
-        TripDate = tripDate;
+        this.tripName = tripName;
+        this.tripDate = tripDate;
         CreatedBy = createdBy;
         SelectedPlaces = selectedPlaces;
         TripStatus=tripStatus;
@@ -34,17 +34,21 @@ public class GeneratedTrip {
 
     public GeneratedTrip(){}
 
+    public String getTripID() {
+        return TripID;
+    }
+
+    public void setTripID(String tripID) {
+        TripID = tripID;
+    }
 
     public void setTripName(String tripName) {
-        TripName = tripName;
+        this.tripName = tripName;
     }
-
 
     public void setTripDate(String tripDate) {
-        TripDate = tripDate;
+        this.tripDate = tripDate;
     }
-
-
 
     public void setCreatedBy(String createdBy) {
         CreatedBy = createdBy;
@@ -61,11 +65,11 @@ public class GeneratedTrip {
 
 
     public String getTripName() {
-        return TripName;
+        return tripName;
     }
 
     public String getTripDate() {
-        return TripDate;
+        return tripDate;
     }
 
     public String getCreatedBy() {
@@ -110,5 +114,15 @@ public class GeneratedTrip {
 
     public void setCityName(String cityName) {
         CityName = cityName;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof GeneratedTrip){
+            GeneratedTrip trip = (GeneratedTrip) obj;
+            return this.TripID.equals(trip.getTripID());
+        }
+        else
+            return false;
     }
 }

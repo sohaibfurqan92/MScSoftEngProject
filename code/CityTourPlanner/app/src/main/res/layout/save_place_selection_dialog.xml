@@ -4,18 +4,18 @@
     android:padding="16dp">
     
     <EditText
-        android:id="@+id/TripNameEditText"
+        android:id="@+id/UserNameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter trip name"/>
 
     <EditText
-        android:id="@+id/TripDateEditText"
+        android:id="@+id/UserEmailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter trip date"
         android:inputType="date"
-        android:layout_below="@id/TripNameEditText"
+        android:layout_below="@id/UserNameEditText"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true" />
 

@@ -310,7 +310,7 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
         DatabaseReference myRef = database.getReference("Trips");
 
         String generalDetailsPushKey = myRef.child("GeneralDetails").push().getKey();
-        String selectedPlacesPushKey = myRef.child("PlacesDetails").push().getKey();
+        //String selectedPlacesPushKey = myRef.child("PlacesDetails").push().getKey();
 
 
 
@@ -341,7 +341,7 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
         Map<String,Object> placeDetailsMap = new HashMap<>();
         placeDetailsMap.put("TripName",trip.getTripName());
         placeDetailsMap.put("SelectedPlaces",SelectedPlacesList);
-        myRef.child("SelectedPlaces").child(selectedPlacesPushKey).setValue(placeDetailsMap);
+        myRef.child("SelectedPlaces").child(generalDetailsPushKey).setValue(placeDetailsMap);
 
 
 

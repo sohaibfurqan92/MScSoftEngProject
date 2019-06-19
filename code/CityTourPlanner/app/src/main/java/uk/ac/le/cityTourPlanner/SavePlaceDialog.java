@@ -42,8 +42,8 @@ public class SavePlaceDialog extends AppCompatDialogFragment {
             }
         });
 
-        mEditTextTripName = view.findViewById(R.id.TripNameEditText);
-        mEditTextTripDate = view.findViewById(R.id.TripDateEditText);
+        mEditTextTripName = view.findViewById(R.id.UserNameEditText);
+        mEditTextTripDate = view.findViewById(R.id.UserEmailEditText);
 
         mEditTextTripDate.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override

@@ -26,5 +26,9 @@
     <string name="place_details_imageview_desc">Place Details ImageView</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_place_search">Place Search</string>
+    <string name="about_dialog_text">City Tour Planner is a trip planning application developed in fulfillment of the Final Project requirement at the University of Leicester. The project is supervised by Dr. Rayna Dimitrova and Dr. Reiko Heckel is the second marker.</string>
+    <string name="nav_drawer_open">Drawer Open</string>
+    <string name="nav_drawer_close">Drawer close</string>
+    <string name="title_activity_edit_trip_headers">Edit Trip Name and Date</string>
 
 </resources>

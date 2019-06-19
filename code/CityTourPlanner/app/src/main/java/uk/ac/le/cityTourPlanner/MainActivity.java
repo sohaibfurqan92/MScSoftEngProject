@@ -2,13 +2,12 @@ package uk.ac.le.cityTourPlanner;
 
 import android.Manifest;
 import android.content.Intent;
-import android.content.res.Configuration;
-import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -26,16 +25,22 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.firebase.ui.auth.data.model.User;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, AboutDialog.AboutDialogListener, FeedbackDialog.FeedbackDialogListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -47,13 +52,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
 
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
-    private ViewPager mViewPager;
     private FirebaseAuth mFirebaseAuth;
     private FirebaseUser mUser;
-    private PermissionListener mPermissionListener;
+    private OnSuccessListener mFeedbackSuccessListener;
+    private OnFailureListener mFeedbackFailureListener;
+    private ActionBarDrawerToggle mActionBarDrawerToggle;
 
 
     @Override
@@ -63,21 +66,29 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout_main);
+        mActionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout,toolbar,R.string.nav_drawer_open,R.string.nav_drawer_close);
+
+        drawerLayout.addDrawerListener(mActionBarDrawerToggle);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.container);
-        mViewPager.setAdapter(mSectionsPagerAdapter);
+        /**
+         * The {@link ViewPager} that will host the section contents.
+         */
+        ViewPager viewPager = (ViewPager) findViewById(R.id.container);
+        viewPager.setAdapter(mSectionsPagerAdapter);
 
         mFirebaseAuth=FirebaseAuth.getInstance();
 
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 
-        mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(viewPager));
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -93,9 +104,34 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         });
 
+        View header = navigationView.getHeaderView(0);
+        TextView navUserNameTextView = (TextView) header.findViewById(R.id.NameNavHeaderTextView);
+        navUserNameTextView.setText(mFirebaseAuth.getCurrentUser().getDisplayName());
+        TextView navUserEmailTextView = (TextView) header.findViewById(R.id.EmailNavHeaderTextView);
+        navUserEmailTextView.setText(mFirebaseAuth.getCurrentUser().getEmail());
+
+        mFeedbackSuccessListener = new OnSuccessListener() {
+            @Override
+            public void onSuccess(Object o) {
+                Toast.makeText(MainActivity.this,"Thank you for your feedback",Toast.LENGTH_LONG).show();
+            }
+        };
+
+        mFeedbackFailureListener = new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(MainActivity.this,"An error occurred. Please try again later.",Toast.LENGTH_LONG).show();
+                Log.e("Feedback failure", e.getMessage() );
+            }
+        };
+
     }
 
-
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        mActionBarDrawerToggle.syncState();
+    }
 
     @Override
     protected void onStart() {
@@ -117,7 +153,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
+
         if (id == R.id.action_settings) {
             return true;
         }
@@ -143,26 +179,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void StartTedPermissions() {
-        mPermissionListener = new PermissionListener() {
+        PermissionListener permissionListener = new PermissionListener() {
             @Override
             public void onPermissionGranted() {
 
-                startActivity(new Intent(MainActivity.this,PlaceSearchActivity.class));
+                startActivity(new Intent(MainActivity.this, PlaceSearchActivity.class));
             }
 
             @Override
             public void onPermissionDenied(List<String> deniedPermissions) {
-                for(String item:deniedPermissions){
+                for (String item : deniedPermissions) {
                     TedPermission.with(MainActivity.this).setPermissions(item).check();
                 }
-
-
-
-
             }
         };
         TedPermission.with(this)
-                .setPermissionListener(mPermissionListener)
+                .setPermissionListener(permissionListener)
                 .setRationaleMessage("This application needs to use certain features to work correctly. Please allow")
                 .setDeniedMessage("If you reject permission,you can not use this service\n\nPlease turn on permissions at [Setting] > [Permission]")
                 .setRationaleConfirmText("OK")
@@ -172,7 +204,66 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        return false;
+        int id = menuItem.getItemId();
+
+        if(id == R.id.nav_trips){
+            startActivity(new Intent(this,MainActivity.class));
+        }
+        if(id==R.id.nav_about){
+            openAboutDialog();
+        }
+        if(id==R.id.nav_feedback){
+            openFeedbackDialog();
+        }
+        if(id==R.id.nav_settings){
+
+        }
+        if(id==R.id.nav_share){
+            shareApp();
+        }
+
+        return  true;
+    }
+
+    private void shareApp() {
+        Intent sendIntent = new Intent(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT,
+                "Hey check out my app - City Tour Planner!");
+        sendIntent.setType("text/plain");
+        startActivity(sendIntent);
+    }
+
+    private void openAboutDialog() {
+        AboutDialog dialog = new AboutDialog();
+        dialog.show(getSupportFragmentManager(), "Nav bar About dialog");
+
+    }
+
+    private void openFeedbackDialog() {
+        FeedbackDialog dialog = new FeedbackDialog();
+        dialog.show(getSupportFragmentManager(), "Nav bar feedback dialog");
+
+    }
+
+    @Override
+    public void passDataToActivity(String username, String useremail, String usercomments) {
+        SaveFeedback(username,useremail,usercomments);
+    }
+
+    private void SaveFeedback(String username, String useremail, String usercomments) {
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference();
+
+        String appFeedbackPushKey = myRef.child("AppFeedback").push().getKey();
+
+        //insert place details at appropriate location
+        Map<String,Object> feedbackMap = new HashMap<>();
+        feedbackMap.put("UserName",username);
+        feedbackMap.put("UserEmail",useremail);
+        feedbackMap.put("UserComments",usercomments);
+
+        myRef.child("AppFeedback").child(appFeedbackPushKey).setValue(feedbackMap).addOnSuccessListener(mFeedbackSuccessListener).addOnFailureListener(mFeedbackFailureListener);
+
     }
 
     /**

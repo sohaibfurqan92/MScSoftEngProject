@@ -33,6 +33,15 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="uk.ac.le.cityTourPlanner.EditTripHeaders"
+            android:label="@string/title_activity_edit_trip_headers"
+            android:parentActivityName="uk.ac.le.cityTourPlanner.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.ac.le.cityTourPlanner.MainActivity" />
+        </activity>
+        <activity
             android:name="uk.ac.le.cityTourPlanner.PlaceSearchActivity"
             android:label="@string/title_activity_place_search"
             android:parentActivityName="uk.ac.le.cityTourPlanner.MainActivity"

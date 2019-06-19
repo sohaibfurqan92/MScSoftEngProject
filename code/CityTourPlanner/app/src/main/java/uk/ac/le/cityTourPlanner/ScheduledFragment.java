@@ -67,6 +67,7 @@ public class ScheduledFragment extends Fragment {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 GeneratedTrip generatedTrip  =dataSnapshot.getValue(GeneratedTrip.class);
+               generatedTrip.setTripID(dataSnapshot.getKey());
                 mTripsList.add(generatedTrip);
                 mScheduledTripAdapter.notifyDataSetChanged();
                 if(dataSnapshot.hasChildren()){
@@ -82,7 +83,10 @@ public class ScheduledFragment extends Fragment {
 
             @Override
             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
+                GeneratedTrip trip = dataSnapshot.getValue(GeneratedTrip.class);
+                trip.setTripID(dataSnapshot.getKey());
+                mTripsList.remove(trip);
+                mScheduledTripAdapter.notifyDataSetChanged();
             }
 
             @Override
