@@ -1568,6 +1568,7 @@ id AboutDescriptionTextView
 id AboutFooterTextView
 id AboutHeaderTextView
 id CTRL
+id DeletePastTripMenuItem
 id DeleteScheduledTripMenuItem
 id EditScheduledTripDetailsMenuItem
 id EditTripDateEditText
@@ -1578,6 +1579,8 @@ id FUNCTION
 id HeadingTextView
 id META
 id NameNavHeaderTextView
+id PastTripsRecyclerView
+id ReschedulePastTripMenuItem
 id SHIFT
 id SYM
 id UserCommentsEditText
@@ -1760,6 +1763,10 @@ id parentPanel
 id parent_matrix
 id password
 id password_layout
+id pastFragmentTextView
+id pastTripDateTextView
+id pastTripNameTextView
+id pastTripOptionsTextView
 id percent
 id phone_button
 id phone_layout
@@ -1808,9 +1815,7 @@ id save_non_transition_alpha
 id save_remove_place
 id save_scale_type
 id scheduledFragmentTextView
-id scheduledTripDateTextView
 id scheduledTripNameTextView
-id scheduledTripOptionsTextView
 id scheduledTripsRecyclerView
 id screen
 id scroll
@@ -2034,6 +2039,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout past_trip_item
 layout places_autocomplete_error_text
 layout places_autocomplete_fragment
 layout places_autocomplete_item_powered_by_google
@@ -2053,6 +2059,7 @@ layout support_simple_spinner_dropdown_item
 menu edit_trip_headers_menu
 menu menu_main
 menu nav_drawer_menu
+menu past_trips_options_menu
 menu place_search_menu
 menu scheduled_trips_options_menu
 mipmap ic_launcher

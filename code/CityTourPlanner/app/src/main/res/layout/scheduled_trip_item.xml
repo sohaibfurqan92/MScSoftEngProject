@@ -26,13 +26,13 @@
             android:text="Trip Name"
             android:textSize="30sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/scheduledTripDateTextView"
-            app:layout_constraintEnd_toStartOf="@+id/scheduledTripOptionsTextView"
+            app:layout_constraintBottom_toTopOf="@+id/pastTripDateTextView"
+            app:layout_constraintEnd_toStartOf="@+id/pastTripOptionsTextView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/scheduledTripDateTextView"
+            android:id="@+id/pastTripDateTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -44,11 +44,11 @@
             android:text="Trip Date"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/scheduledTripOptionsTextView"
+            app:layout_constraintEnd_toStartOf="@+id/pastTripOptionsTextView"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/scheduledTripOptionsTextView"
+            android:id="@+id/pastTripOptionsTextView"
             android:layout_width="35dp"
             android:layout_height="74dp"
             android:layout_alignParentTop="true"

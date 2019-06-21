@@ -12,11 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,26 +69,29 @@ public class ScheduledFragment extends Fragment {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 GeneratedTrip generatedTrip  =dataSnapshot.getValue(GeneratedTrip.class);
-               generatedTrip.setTripID(dataSnapshot.getKey());
-                mTripsList.add(generatedTrip);
-                mScheduledTripAdapter.notifyDataSetChanged();
-                if(dataSnapshot.hasChildren()){
-                    HandleEmptyRecyclerView();
+                if(generatedTrip.getTripStatus().equals("Scheduled")){
+                    generatedTrip.setTripID(dataSnapshot.getKey());
+                    mTripsList.add(generatedTrip);
+                    mScheduledTripAdapter.notifyDataSetChanged();
+                    if(dataSnapshot.hasChildren()){
+                        HandleEmptyRecyclerView();
+                    }
                 }
-
             }
 
             @Override
             public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                GeneratedTrip trip = dataSnapshot.getValue(GeneratedTrip.class);
+                trip.setTripID(dataSnapshot.getKey());
+                mTripsList.remove(trip);
+                 mScheduledTripAdapter.notifyDataSetChanged();
 
+                defaultTextView.setVisibility(View.VISIBLE);
             }
 
             @Override
             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-                GeneratedTrip trip = dataSnapshot.getValue(GeneratedTrip.class);
-                trip.setTripID(dataSnapshot.getKey());
-                mTripsList.remove(trip);
-                mScheduledTripAdapter.notifyDataSetChanged();
+                //
             }
 
             @Override
@@ -100,7 +105,11 @@ public class ScheduledFragment extends Fragment {
             }
         };
 
-        mRef.addChildEventListener(mChildEventListener);
+        //query database for all trips that have been created by the current user
+        Query currentUserQuery = mRef.orderByChild("createdBy").equalTo(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
+        currentUserQuery.addChildEventListener(mChildEventListener);
+
+       // mRef.addChildEventListener(mChildEventListener);
         //HandleEmptyRecyclerView();
 
 

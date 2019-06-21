@@ -6,26 +6,22 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
 import java.util.List;
-
-import static android.support.v4.content.ContextCompat.getSystemService;
+import java.util.Map;
 
 
 public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<ScheduledTripRecyclerViewAdapter.ScheduledTripViewHolder> {
@@ -77,8 +73,11 @@ public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<Sched
                                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                                             @Override
                                             public void onClick(DialogInterface dialog, int which) {
+
                                                 String TripID = generatedTrip.getTripID();
-                                                FirebaseDatabase.getInstance().getReference("Trips/GeneralDetails").child(TripID).removeValue()
+                                                Map<String,Object> modifiedValues= new HashMap<>();
+                                                modifiedValues.put("Trips/GeneralDetails/"+TripID+"/tripStatus","Deleted");
+                                                FirebaseDatabase.getInstance().getReference().updateChildren(modifiedValues)
                                                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                             @Override
                                                             public void onSuccess(Void aVoid) {
@@ -94,7 +93,7 @@ public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<Sched
 
                                                 //delete from selected places
 
-                                                FirebaseDatabase.getInstance().getReference("Trips/SelectedPlaces").child(TripID).removeValue();
+                                                //FirebaseDatabase.getInstance().getReference("Trips/SelectedPlaces").child(TripID).removeValue();
                                             }
                                         })
                                         .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -117,6 +116,8 @@ public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<Sched
 
     }
 
+
+
     @Override
     public int getItemCount() {
         return mTripList.size();
@@ -131,8 +132,10 @@ public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<Sched
             super(itemView);
 
             ScheduledTripNameTextView = (TextView)itemView.findViewById(R.id.scheduledTripNameTextView);
-            ScheduledTripDateTextView = (TextView)itemView.findViewById(R.id.scheduledTripDateTextView);
-            ScheduledTripOptionsMenuTextView = (TextView)itemView.findViewById(R.id.scheduledTripOptionsTextView);
+            ScheduledTripDateTextView = (TextView)itemView.findViewById(R.id.pastTripDateTextView);
+            ScheduledTripOptionsMenuTextView = (TextView)itemView.findViewById(R.id.pastTripOptionsTextView);
         }
     }
+
+
 }

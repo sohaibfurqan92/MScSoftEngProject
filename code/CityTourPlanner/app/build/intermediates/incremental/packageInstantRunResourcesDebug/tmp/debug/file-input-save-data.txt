@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Tue May 21 21:16:47 PKT 2019
-0.baseType=DIRECTORY
-0.base=E\:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
-0.path=crashlytics-build.properties
-0.set=ASSET
-count=1
