@@ -2,6 +2,7 @@ package uk.ac.le.cityTourPlanner;
 
 
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -49,7 +50,7 @@ public class PastFragment extends Fragment {
     private TextView defaultTextView;
 
     String mCurrentFormattedDate;
-
+    private Parcelable mListState;
 
 
     public PastFragment() {
@@ -74,11 +75,16 @@ public class PastFragment extends Fragment {
 
        GetCurrentFormattedDate();
 
+        if(savedInstanceState!=null){
+            RestorePreviousState();
+        }
+
         //implement childlistener
         mChildEventListener = new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 GeneratedTrip generatedTrip  =dataSnapshot.getValue(GeneratedTrip.class);
+                generatedTrip.setTripID(dataSnapshot.getKey());
                 String tripDate = generatedTrip.getTripDate();
                 if(CompareDates(mCurrentFormattedDate,tripDate)<0){
                     String TripID = generatedTrip.getTripID();
@@ -109,6 +115,8 @@ public class PastFragment extends Fragment {
                 }
 
             }
+
+
 
             @Override
             public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
@@ -170,12 +178,33 @@ public class PastFragment extends Fragment {
         //recyclerView.setAdapter(adapter);
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        if(mPastTripsList.size()>0){
+            HandleEmptyRecyclerView();
+        }
+    }
+
     private void GetCurrentFormattedDate(){
         Date c = Calendar.getInstance().getTime();
         //System.out.println("Current time => " + c);
 
         SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
         mCurrentFormattedDate = df.format(c);
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        mListState = mPastTripsRecyclerView.getLayoutManager().onSaveInstanceState();
+        super.onSaveInstanceState(outState);
+    }
+
+    private void RestorePreviousState() {
+        if(mListState!=null){
+            mPastTripsRecyclerView.getLayoutManager().onRestoreInstanceState(mListState);
+        }
+
     }
 
 }

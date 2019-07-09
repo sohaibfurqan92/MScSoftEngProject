@@ -31,4 +31,41 @@
     <string name="nav_drawer_close">Drawer close</string>
     <string name="title_activity_edit_trip_headers">Edit Trip Name and Date</string>
 
+    <!--String resources for settings page-->
+    <string name="pref_user_profile_title">Profile Settings</string>
+    <string name="pref_user_profile_summary">Manage your account</string>
+    <string name="pref_trips_title">Trip Preferences</string>
+    <string name="pref_trips_summary">Manage preferences for trips</string>
+    <string name="pref_displayname_title">Display Name</string>
+    <string name="pref_email_title">Email</string>
+    <string name="pref_password_title">Password</string>
+    <string name="pref_accountdel_title">Delete your account</string>
+    <string name="pref_accountdel_summary">This action is permanent and cannot be undone. Saved user data will also be deleted.</string>
+    <string name="pref_email_summary">Edit your account email address</string>
+    <string name="pref_password_summary">Change the password you use to login to the application</string>
+    <string name="pref_displayname_summary">Edit your display name</string>
+    <string name="pref_delete_account_title">Delete Account</string>
+    <string name="place_category_title">Select a place category</string>
+    <string name="place_category_summary">Restricts retrieved places to only the selected type</string>
+    <string name="place_category_dialogtitle">Place Categories</string>
+    <string name="custom_places_switch_title">Retrieve Custom Places</string>
+    <string name="custom_places_switch_summary">Allows you to retrieve a specific category of places</string>
+
+    <string-array name="place_category_entries">
+        <item>Museum</item>
+        <item>Parks</item>
+        <item>Hotels</item>
+        <item>Art Galleries</item>
+    </string-array>
+
+    <string-array name="place_category_entryvalues">
+        <item>museum</item>
+        <item>park</item>
+        <item>restaurant</item>
+        <item>cinemas</item>
+        <item>art_gallery</item>
+    </string-array>
+    <string name="title_activity_update_password">Update Password</string>
+    <string name="title_activity_update_email">UpdateEmail</string>
+
 </resources>

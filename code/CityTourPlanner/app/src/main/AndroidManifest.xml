@@ -13,6 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".UpdatePasswordActivity"
+            android:label="@string/title_activity_update_password"
+            android:parentActivityName=".SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.ac.le.cityTourPlanner.SettingsActivity" />
+        </activity>
+        <activity
             android:name=".EditTripHeaders"
             android:label="@string/title_activity_edit_trip_headers"
             android:parentActivityName=".MainActivity"
@@ -50,6 +59,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SettingsActivity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

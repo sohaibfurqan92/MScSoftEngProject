@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_user_profile_title">
+        <EditTextPreference
+            android:key="user_display_name_pref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_displayname_title"
+            android:summary="@string/pref_displayname_summary" />
+
+        <EditTextPreference
+            android:key="user_email_pref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_email_title"
+            android:summary="@string/pref_email_summary"/>
+
+        <Preference
+            android:key="user_password_pref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_password_title"
+            android:summary="@string/pref_password_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_delete_account_title">
+
+        <Preference
+            android:defaultValue="false"
+            android:key="acc_delete_pref"
+            android:title="@string/pref_accountdel_title"
+            android:summary="@string/pref_accountdel_summary"/>
+
+    </PreferenceCategory>
+
+        />
+</PreferenceScreen>

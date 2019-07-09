@@ -132,8 +132,8 @@ public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<Sched
             super(itemView);
 
             ScheduledTripNameTextView = (TextView)itemView.findViewById(R.id.scheduledTripNameTextView);
-            ScheduledTripDateTextView = (TextView)itemView.findViewById(R.id.pastTripDateTextView);
-            ScheduledTripOptionsMenuTextView = (TextView)itemView.findViewById(R.id.pastTripOptionsTextView);
+            ScheduledTripDateTextView = (TextView)itemView.findViewById(R.id.deletedTripDateTextView);
+            ScheduledTripOptionsMenuTextView = (TextView)itemView.findViewById(R.id.deletedTripOptionsTextView);
         }
     }
 

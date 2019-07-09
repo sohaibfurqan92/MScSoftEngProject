@@ -1,10 +1,11 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-76:12
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-86:12
 MERGED from [com.google.android.libraries.places:places:1.1.0] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\places-1.1.0.aar\8b7a08350ad3333127e02ab47449de2d\AndroidManifest.xml:2:1-26:12
+MERGED from [com.android.support:preference-v7:28.0.0] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\preference-v7-28.0.0.aar\3045ebb278621bbdbf27ed1ef5e51e9a\AndroidManifest.xml:17:1-22:12
 MERGED from [gun0912.ted:tedpermission:2.2.2] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\d4fb5d1dbb199cb49b985ada3d672f9b\AndroidManifest.xml:2:1-17:12
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-4.3.1.aar\080bb55d37dd22abdf522d6ac45685ba\AndroidManifest.xml:2:1-109:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\3360bf4e249c3b1809c735ecf1cdf357\AndroidManifest.xml:17:1-24:12
@@ -75,20 +76,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sohai\.gradle\
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e0f3a5508c64dc755186cd3159f08de9\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.3.1] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\glide-4.3.1.aar\c2ace5a479070ac3aec65f02d30d27f6\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\firebase-database-collection-16.0.1.aar\f926ac92689e941315c00edbc411ff46\AndroidManifest.xml:2:1-7:12
-INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-86:12
 	package
 		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml
 		INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-76:12
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-86:12
 		INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-76:12
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:1-86:12
 		INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:2:11-69
@@ -121,7 +122,7 @@ MERGED from [com.google.android.libraries.places:places:1.1.0] C:\Users\sohai\.g
 	android:name
 		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:8:5-74:19
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:8:5-84:19
 MERGED from [com.google.android.libraries.places:places:1.1.0] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\places-1.1.0.aar\8b7a08350ad3333127e02ab47449de2d\AndroidManifest.xml:13:5-24:19
 MERGED from [com.google.android.libraries.places:places:1.1.0] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\places-1.1.0.aar\8b7a08350ad3333127e02ab47449de2d\AndroidManifest.xml:13:5-24:19
 MERGED from [gun0912.ted:tedpermission:2.2.2] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\d4fb5d1dbb199cb49b985ada3d672f9b\AndroidManifest.xml:9:5-15:19
@@ -208,118 +209,134 @@ MERGED from [com.github.bumptech.glide:glide:4.3.1] C:\Users\sohai\.gradle\cache
 		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
 		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:14:9-40
-activity#uk.ac.le.cityTourPlanner.EditTripHeaders
+activity#uk.ac.le.cityTourPlanner.UpdatePasswordActivity
 ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:15:9-23:20
 	android:parentActivityName
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:18:13-55
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:18:13-59
 	android:label
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:17:13-69
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:17:13-67
 	android:theme
 		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:19:13-56
 	android:name
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:16:13-44
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:16:13-51
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:20:13-22:73
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:20:13-22:77
 	android:value
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:22:17-70
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:22:17-74
 	android:name
 		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:21:17-63
-activity#uk.ac.le.cityTourPlanner.PlaceSearchActivity
+activity#uk.ac.le.cityTourPlanner.EditTripHeaders
 ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:24:9-32:20
 	android:parentActivityName
 		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:27:13-55
 	android:label
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:26:13-64
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:26:13-69
 	android:theme
 		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:28:13-56
 	android:name
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:25:13-48
-activity#uk.ac.le.cityTourPlanner.PlaceDetailActivity
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:25:13-44
+activity#uk.ac.le.cityTourPlanner.PlaceSearchActivity
 ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:33:9-41:20
 	android:parentActivityName
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:36:13-62
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:36:13-55
 	android:label
 		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:35:13-64
 	android:theme
 		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:37:13-56
 	android:name
 		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:34:13-48
-activity#uk.ac.le.cityTourPlanner.MainActivity
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:42:9-45:59
+activity#uk.ac.le.cityTourPlanner.PlaceDetailActivity
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:42:9-50:20
+	android:parentActivityName
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:45:13-62
 	android:label
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:44:13-56
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:44:13-64
 	android:theme
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:45:13-56
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:46:13-56
 	android:name
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:43:13-41
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:43:13-48
+activity#uk.ac.le.cityTourPlanner.MainActivity
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:51:9-54:59
+	android:label
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:53:13-56
+	android:theme
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:54:13-56
+	android:name
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:52:13-41
 activity#uk.ac.le.cityTourPlanner.LoginActivity
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:46:9-52:20
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:55:9-61:20
 	android:name
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:46:19-48
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:55:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:47:13-51:29
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:56:13-60:29
 action#android.intent.action.MAIN
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:48:17-69
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:57:17-69
 	android:name
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:48:25-66
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:57:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:50:17-77
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:59:17-77
 	android:name
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:50:27-74
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:59:27-74
+activity#uk.ac.le.cityTourPlanner.SettingsActivity
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:62:9-54
+	android:name
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:62:19-51
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:54:9-56:63
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:64:9-66:63
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-4.3.1.aar\080bb55d37dd22abdf522d6ac45685ba\AndroidManifest.xml:19:9-21:63
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-4.3.1.aar\080bb55d37dd22abdf522d6ac45685ba\AndroidManifest.xml:19:9-21:63
 	android:value
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:56:13-60
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:66:13-60
 	android:name
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:55:13-58
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:65:13-58
 activity#com.facebook.FacebookActivity
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:58:9-61:48
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:68:9-71:48
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-4.3.1.aar\080bb55d37dd22abdf522d6ac45685ba\AndroidManifest.xml:83:9-87:48
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-4.3.1.aar\080bb55d37dd22abdf522d6ac45685ba\AndroidManifest.xml:83:9-87:48
 	android:label
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:61:13-45
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:71:13-45
 	tools:ignore
 		ADDED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-4.3.1.aar\080bb55d37dd22abdf522d6ac45685ba\AndroidManifest.xml:87:13-45
 	android:configChanges
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:60:13-96
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:70:13-96
 	android:name
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:59:13-57
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:69:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:62:9-73:20
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:72:9-83:20
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-4.3.1.aar\080bb55d37dd22abdf522d6ac45685ba\AndroidManifest.xml:88:9-100:20
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-4.3.1.aar\080bb55d37dd22abdf522d6ac45685ba\AndroidManifest.xml:88:9-100:20
 	android:exported
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:64:13-36
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:74:13-36
 	tools:ignore
 		ADDED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-4.3.1.aar\080bb55d37dd22abdf522d6ac45685ba\AndroidManifest.xml:91:13-45
 	android:name
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:63:13-58
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:73:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/facebook_login_protocol_scheme
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:65:13-72:29
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:75:13-82:29
 action#android.intent.action.VIEW
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:66:17-69
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:76:17-69
 	android:name
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:66:25-66
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:76:25-66
 category#android.intent.category.DEFAULT
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:68:17-76
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:78:17-76
 	android:name
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:68:27-73
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:78:27-73
 category#android.intent.category.BROWSABLE
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:69:17-78
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:79:17-78
 	android:name
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:69:27-75
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:79:27-75
 data
-ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:71:17-81
+ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:81:17-81
 	android:scheme
-		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:71:23-78
+		ADDED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml:81:23-78
 uses-sdk
 INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml
 INJECTED from E:\UOL_STUDY_FOLDER\Semester-4\Individual Project\Current\FinalProject\msf7\code\CityTourPlanner\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.libraries.places:places:1.1.0] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\places-1.1.0.aar\8b7a08350ad3333127e02ab47449de2d\AndroidManifest.xml:7:5-44
 MERGED from [com.google.android.libraries.places:places:1.1.0] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\places-1.1.0.aar\8b7a08350ad3333127e02ab47449de2d\AndroidManifest.xml:7:5-44
+MERGED from [com.android.support:preference-v7:28.0.0] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\preference-v7-28.0.0.aar\3045ebb278621bbdbf27ed1ef5e51e9a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:preference-v7:28.0.0] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\preference-v7-28.0.0.aar\3045ebb278621bbdbf27ed1ef5e51e9a\AndroidManifest.xml:20:5-44
 MERGED from [gun0912.ted:tedpermission:2.2.2] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\d4fb5d1dbb199cb49b985ada3d672f9b\AndroidManifest.xml:5:5-7:41
 MERGED from [gun0912.ted:tedpermission:2.2.2] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\d4fb5d1dbb199cb49b985ada3d672f9b\AndroidManifest.xml:5:5-7:41
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\sohai\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-4.3.1.aar\080bb55d37dd22abdf522d6ac45685ba\AndroidManifest.xml:8:5-10:41

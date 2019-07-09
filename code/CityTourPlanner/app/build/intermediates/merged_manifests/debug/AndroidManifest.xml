@@ -32,6 +32,15 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="uk.ac.le.cityTourPlanner.UpdatePasswordActivity"
+            android:label="@string/title_activity_update_password"
+            android:parentActivityName="uk.ac.le.cityTourPlanner.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.ac.le.cityTourPlanner.SettingsActivity" />
+        </activity>
+        <activity
             android:name="uk.ac.le.cityTourPlanner.EditTripHeaders"
             android:label="@string/title_activity_edit_trip_headers"
             android:parentActivityName="uk.ac.le.cityTourPlanner.MainActivity"
@@ -69,6 +78,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="uk.ac.le.cityTourPlanner.SettingsActivity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

@@ -248,7 +248,8 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.e("Error", error.toString());
+                Log.e("Error fetching results", error.toString());
+                Toast.makeText(PlaceSearchActivity.this,"Server Error! If the problem persists contact administrator.",Toast.LENGTH_LONG).show();
             }
         });
         mRequestQueue.add(request);

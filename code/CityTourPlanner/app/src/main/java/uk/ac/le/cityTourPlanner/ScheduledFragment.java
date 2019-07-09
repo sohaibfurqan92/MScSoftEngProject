@@ -2,6 +2,7 @@ package uk.ac.le.cityTourPlanner;
 
 
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -38,7 +39,7 @@ public class ScheduledFragment extends Fragment {
     private FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference mRef;
     private TextView defaultTextView;
-
+    private Parcelable mListState;
 
 
     public ScheduledFragment() {
@@ -64,18 +65,22 @@ public class ScheduledFragment extends Fragment {
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mRef=mFirebaseDatabase.getReference("Trips/GeneralDetails");
 
+        if(savedInstanceState!=null){
+            RestorePreviousState();
+        }
+
         //implement childlistener
         mChildEventListener = new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 GeneratedTrip generatedTrip  =dataSnapshot.getValue(GeneratedTrip.class);
-                if(generatedTrip.getTripStatus().equals("Scheduled")){
-                    generatedTrip.setTripID(dataSnapshot.getKey());
-                    mTripsList.add(generatedTrip);
-                    mScheduledTripAdapter.notifyDataSetChanged();
-                    if(dataSnapshot.hasChildren()){
-                        HandleEmptyRecyclerView();
-                    }
+                    if(generatedTrip.getTripStatus().equals("Scheduled")){
+                        generatedTrip.setTripID(dataSnapshot.getKey());
+                        mTripsList.add(generatedTrip);
+                        mScheduledTripAdapter.notifyDataSetChanged();
+                        if(dataSnapshot.hasChildren()){
+                            HandleEmptyRecyclerView();
+                        }
                 }
             }
 
@@ -109,11 +114,28 @@ public class ScheduledFragment extends Fragment {
         Query currentUserQuery = mRef.orderByChild("createdBy").equalTo(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
         currentUserQuery.addChildEventListener(mChildEventListener);
 
-       // mRef.addChildEventListener(mChildEventListener);
-        //HandleEmptyRecyclerView();
-
-
         return view;
+    }
+
+    private void RestorePreviousState() {
+        if(mListState!=null){
+            mScheduledTripsRecyclerView.getLayoutManager().onRestoreInstanceState(mListState);
+        }
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if(mTripsList.size()>0){
+            HandleEmptyRecyclerView();
+        }
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        mListState = mScheduledTripsRecyclerView.getLayoutManager().onSaveInstanceState();
+        super.onSaveInstanceState(outState);
     }
 
     @Override

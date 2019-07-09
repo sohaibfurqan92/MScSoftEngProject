@@ -2,7 +2,6 @@ package uk.ac.le.cityTourPlanner;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
@@ -62,7 +61,7 @@ public class PastTripRecyclerViewAdapter extends RecyclerView.Adapter<PastTripRe
                             case R.id.ReschedulePastTripMenuItem:
                                 //TODO
                                 break;
-                            case R.id.DeleteScheduledTripMenuItem:
+                            case R.id.DeletePastTripMenuItem:
                                 new AlertDialog.Builder(mContext)
                                         .setTitle("Are you sure you want to delete this trip?")
                                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -121,9 +120,9 @@ public class PastTripRecyclerViewAdapter extends RecyclerView.Adapter<PastTripRe
         public PastTripViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            PastTripNameTextView = (TextView)itemView.findViewById(R.id.pastTripNameTextView);
-            PastTripDateTextView = (TextView)itemView.findViewById(R.id.pastTripDateTextView);
-            PastTripOptionsMenuTextView = (TextView)itemView.findViewById(R.id.pastTripOptionsTextView);
+            PastTripNameTextView = (TextView)itemView.findViewById(R.id.deletedTripNameTextView);
+            PastTripDateTextView = (TextView)itemView.findViewById(R.id.deletedTripDateTextView);
+            PastTripOptionsMenuTextView = (TextView)itemView.findViewById(R.id.deletedTripOptionsTextView);
         }
     }
 }

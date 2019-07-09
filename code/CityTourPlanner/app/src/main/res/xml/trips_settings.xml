@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory
+    android:title="Customize Trip Settings"/>
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="key_customize_trips"
+        android:title="@string/custom_places_switch_title"
+        android:summary="@string/custom_places_switch_summary"
+        />
+
+    <ListPreference
+        android:dependency="key_customize_trips"
+        android:key="specify_places_list"
+        android:title="@string/place_category_title"
+        android:summary="@string/place_category_summary"
+        android:dialogTitle="@string/place_category_dialogtitle"
+        android:entries="@array/place_category_entries"
+        android:entryValues="@array/place_category_entryvalues"
+        android:defaultValue="point_of_interest"/>
+
+
+</PreferenceScreen>

@@ -1,7 +1,9 @@
 package uk.ac.le.cityTourPlanner;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
@@ -80,6 +82,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
          * The {@link ViewPager} that will host the section contents.
          */
         ViewPager viewPager = (ViewPager) findViewById(R.id.container);
+        viewPager.setOffscreenPageLimit(3);
         viewPager.setAdapter(mSectionsPagerAdapter);
 
         mFirebaseAuth=FirebaseAuth.getInstance();
@@ -109,6 +112,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navUserNameTextView.setText(mFirebaseAuth.getCurrentUser().getDisplayName());
         TextView navUserEmailTextView = (TextView) header.findViewById(R.id.EmailNavHeaderTextView);
         navUserEmailTextView.setText(mFirebaseAuth.getCurrentUser().getEmail());
+
 
         mFeedbackSuccessListener = new OnSuccessListener() {
             @Override
@@ -155,7 +159,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
         if (id == R.id.action_settings) {
-            return true;
+            startActivity(new Intent(this,SettingsActivity.class));
         }
         if(id == R.id.action_logout){
             signUserOut();
