@@ -6444,7 +6444,8 @@ public final class R {
     public static final int select_dialog_multichoice_material=0x7f0c0082;
     public static final int select_dialog_singlechoice_material=0x7f0c0083;
     public static final int support_simple_spinner_dropdown_item=0x7f0c0084;
-    public static final int trash_trip_item=0x7f0c0085;
+    public static final int toolbar_settings=0x7f0c0085;
+    public static final int trash_trip_item=0x7f0c0086;
   }
   public static final class menu {
     public static final int edit_trip_headers_menu=0x7f0d0000;

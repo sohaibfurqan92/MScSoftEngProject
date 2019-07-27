@@ -2168,7 +2168,8 @@ int layout select_dialog_item_material 0x7f0c0081
 int layout select_dialog_multichoice_material 0x7f0c0082
 int layout select_dialog_singlechoice_material 0x7f0c0083
 int layout support_simple_spinner_dropdown_item 0x7f0c0084
-int layout trash_trip_item 0x7f0c0085
+int layout toolbar_settings 0x7f0c0085
+int layout trash_trip_item 0x7f0c0086
 int menu edit_trip_headers_menu 0x7f0d0000
 int menu menu_main 0x7f0d0001
 int menu nav_drawer_menu 0x7f0d0002

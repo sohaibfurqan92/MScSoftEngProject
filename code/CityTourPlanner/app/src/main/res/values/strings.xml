@@ -52,6 +52,7 @@
     <string name="custom_places_switch_summary">Allows you to retrieve a specific category of places</string>
 
     <string-array name="place_category_entries">
+        <item>Point of Interest</item>
         <item>Museum</item>
         <item>Parks</item>
         <item>Hotels</item>
@@ -59,6 +60,7 @@
     </string-array>
 
     <string-array name="place_category_entryvalues">
+        <item>point_of_interest</item>
         <item>museum</item>
         <item>park</item>
         <item>restaurant</item>

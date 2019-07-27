@@ -11,7 +11,7 @@
 
     <ListPreference
         android:dependency="key_customize_trips"
-        android:key="specify_places_list"
+        android:key="specify_places_type_pref"
         android:title="@string/place_category_title"
         android:summary="@string/place_category_summary"
         android:dialogTitle="@string/place_category_dialogtitle"

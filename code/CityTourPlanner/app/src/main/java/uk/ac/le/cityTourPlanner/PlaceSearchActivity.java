@@ -2,6 +2,7 @@ package uk.ac.le.cityTourPlanner;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
@@ -260,7 +261,7 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
         // json?location=-33.8670522,151.1957362&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyBrqqD2yEMKBRABm-3hFUzZy3xzZ-hI-to";
 
         double radius = 50000;
-        String type = "point_of_interest";
+        String type = PreferenceManager.getDefaultSharedPreferences(this).getString("specify_places_type_pref","point_of_interest");
         String outputFormat = "json";
         String formattedNearbyRequestURL;
 
