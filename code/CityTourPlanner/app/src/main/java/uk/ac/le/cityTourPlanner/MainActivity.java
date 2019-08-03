@@ -220,13 +220,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             openFeedbackDialog();
         }
         if(id==R.id.nav_settings){
-
+            openSettings();
         }
         if(id==R.id.nav_share){
             shareApp();
         }
 
         return  true;
+    }
+
+    private void openSettings() {
+        startActivity(new Intent(MainActivity.this,SettingsActivity.class));
     }
 
     private void shareApp() {

@@ -91,12 +91,6 @@ public class TrashFragment extends Fragment {
 
             @Override
             public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-               /* GeneratedTrip trip = dataSnapshot.getValue(GeneratedTrip.class);
-                trip.setTripID(dataSnapshot.getKey());
-                mTrashTripsList.remove(trip);
-                mTrashTripAdapter.notifyDataSetChanged();
-
-                defaultTextView.setVisibility(View.VISIBLE);*/
 
                 GeneratedTrip generatedTrip  =dataSnapshot.getValue(GeneratedTrip.class);
                 if(generatedTrip.getTripStatus().equals("Deleted")){
@@ -111,6 +105,7 @@ public class TrashFragment extends Fragment {
 
             @Override
             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+                mTrashTripAdapter.notifyDataSetChanged();
 
             }
 

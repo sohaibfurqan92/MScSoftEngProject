@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/chosenPlaceIconImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Icon Image"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/chosenPlaceNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/icon_imageview"
+            android:layout_toRightOf="@id/chosenPlaceIconImageView"
+            android:gravity="center"
+            android:text="Place Name"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/chosenPLaceDescTextView"
+            app:layout_constraintEnd_toStartOf="@+id/chosenPlaceOptionsTextView"
+            app:layout_constraintStart_toEndOf="@+id/chosenPlaceIconImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/chosenPLaceDescTextView"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_below="@+id/chosenPlaceNameTextView"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/icon_imageview"
+            android:layout_toRightOf="@id/icon_imageview"
+            android:gravity="center"
+            android:text="Place Description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/chosenPlaceOptionsTextView"
+            app:layout_constraintStart_toEndOf="@+id/chosenPlaceIconImageView" />
+
+        <TextView
+            android:id="@+id/chosenPlaceOptionsTextView"
+            android:layout_width="35dp"
+            android:layout_height="74dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="&#8942;"
+            android:textAppearance="?android:textAppearanceLarge"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

@@ -12,13 +12,15 @@ public class GeneratedTrip {
     private double CityLatitude;
     private double CityLongitude;
     private String CityName;
-
+    private String IconURL;
     private String TripID;
     private String tripName;
     private String tripDate;
     private String CreatedBy;
     private List<SearchedPlacesItem> SelectedPlaces;
     private String TripStatus;
+
+
 
     public GeneratedTrip(String cityID, double cityLatitude, double cityLongitude, String cityName, String tripName, String tripDate, String createdBy, List<SearchedPlacesItem> selectedPlaces, String tripStatus) {
         CityID = cityID;
@@ -84,6 +86,7 @@ public class GeneratedTrip {
         return TripStatus;
     }
 
+
     public String getCityID() {
         return CityID;
     }
@@ -124,5 +127,13 @@ public class GeneratedTrip {
         }
         else
             return false;
+    }
+
+    public String getIconURL() {
+        return IconURL;
+    }
+
+    public void setIconURL(String iconURL) {
+        IconURL = iconURL;
     }
 }

@@ -1645,6 +1645,7 @@ id AboutHeaderTextView
 id CTRL
 id DeletePastTripMenuItem
 id DeleteScheduledTripMenuItem
+id DeleteSelectedPlaceMenuItem
 id EditScheduledTripDetailsMenuItem
 id EditTripDateEditText
 id EditTripNameEditText
@@ -1654,12 +1655,24 @@ id FUNCTION
 id HeadingTextView
 id META
 id NameNavHeaderTextView
+id PastTripDateTextView
+id PastTripIconImageView
+id PastTripNameTextView
+id PastTripOptionsTextView
 id PastTripsRecyclerView
 id PermanentlyDeleteTripMenuItem
 id RescheduleDeletedTripMenuItem
 id ReschedulePastTripMenuItem
 id SHIFT
 id SYM
+id ScheduledTripDateTextView
+id ScheduledTripIconImageView
+id ScheduledTripNameTextView
+id ScheduledTripOptionsTextView
+id TrashTripDateTextView
+id TrashTripIconImageView
+id TrashTripNameTextView
+id TrashTripOptionsTextView
 id UserCommentsEditText
 id UserEmailEditText
 id UserNameEditText
@@ -1721,6 +1734,10 @@ id center_horizontal
 id center_vertical
 id chains
 id checkbox
+id chosenPLaceDescTextView
+id chosenPlaceIconImageView
+id chosenPlaceNameTextView
+id chosenPlaceOptionsTextView
 id chronometer
 id circular
 id clip_horizontal
@@ -1744,9 +1761,6 @@ id customPanel
 id dark
 id decor_content_parent
 id default_activity_button
-id deletedTripDateTextView
-id deletedTripNameTextView
-id deletedTripOptionsTextView
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1806,6 +1820,7 @@ id invisible
 id invisible_frame
 id italic
 id item_touch_helper_previous_elevation
+id itineraryRecyclerView
 id labeled
 id largeLabel
 id left
@@ -1902,7 +1917,6 @@ id save_image_matrix
 id save_non_transition_alpha
 id save_remove_place
 id save_scale_type
-id scheduledTripNameTextView
 id scheduledTripsRecyclerView
 id screen
 id scroll
@@ -2066,6 +2080,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout about_dialog
 layout activity_edit_trip_headers
+layout activity_itinarary
 layout activity_login
 layout activity_main
 layout activity_place_detail
@@ -2073,6 +2088,7 @@ layout activity_place_search
 layout activity_update_password
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout chosen_places_item
 layout content_edit_trip_headers
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2177,6 +2193,7 @@ menu nav_drawer_menu
 menu past_trips_options_menu
 menu place_search_menu
 menu scheduled_trips_options_menu
+menu selected_places_options_menu
 menu trash_trips_options_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -2406,6 +2423,7 @@ string tedpermission_close
 string tedpermission_confirm
 string tedpermission_setting
 string title_activity_edit_trip_headers
+string title_activity_itinarary
 string title_activity_main
 string title_activity_main2
 string title_activity_new_trip_creation

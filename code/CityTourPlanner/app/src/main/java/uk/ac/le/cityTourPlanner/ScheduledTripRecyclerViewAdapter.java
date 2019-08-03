@@ -11,6 +11,9 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,17 +31,26 @@ public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<Sched
 
     private Context mContext;
     private List<GeneratedTrip> mTripList;
+    private onItemClickListener mListener;
 
     public ScheduledTripRecyclerViewAdapter(Context context, List<GeneratedTrip> tripList) {
         mContext = context;
         mTripList = tripList;
     }
 
+    public void SetOnItemClickListener(ScheduledTripRecyclerViewAdapter.onItemClickListener listener){
+        mListener = listener;
+    }
+
+    public interface onItemClickListener{
+        void onItemClick(int position);
+    }
+
     @NonNull
     @Override
     public ScheduledTripViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.scheduled_trip_item,viewGroup,false);
-        return new ScheduledTripViewHolder(view);
+        return new ScheduledTripViewHolder(view,mListener);
     }
 
     @Override
@@ -46,6 +58,14 @@ public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<Sched
         final GeneratedTrip generatedTrip = mTripList.get(i);
         viewHolder.ScheduledTripNameTextView.setText(generatedTrip.getTripName());
         viewHolder.ScheduledTripDateTextView.setText(generatedTrip.getTripDate());
+       viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, ItinararyActivity.class);
+                intent.putExtra("trip_id",generatedTrip.getTripID());
+                mContext.startActivity(intent);
+            }
+        });
 
         viewHolder.ScheduledTripOptionsMenuTextView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,13 +147,17 @@ public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<Sched
         public TextView ScheduledTripNameTextView;
         public TextView ScheduledTripDateTextView;
         public TextView ScheduledTripOptionsMenuTextView;
+        public ImageView ScheduledTripImageView;
 
-        public ScheduledTripViewHolder(@NonNull View itemView) {
+        public ScheduledTripViewHolder(@NonNull View itemView, final onItemClickListener listener) {
             super(itemView);
 
-            ScheduledTripNameTextView = (TextView)itemView.findViewById(R.id.scheduledTripNameTextView);
-            ScheduledTripDateTextView = (TextView)itemView.findViewById(R.id.deletedTripDateTextView);
-            ScheduledTripOptionsMenuTextView = (TextView)itemView.findViewById(R.id.deletedTripOptionsTextView);
+            ScheduledTripNameTextView = (TextView)itemView.findViewById(R.id.ScheduledTripNameTextView);
+            ScheduledTripDateTextView = (TextView)itemView.findViewById(R.id.ScheduledTripDateTextView);
+            ScheduledTripOptionsMenuTextView = (TextView)itemView.findViewById(R.id.ScheduledTripOptionsTextView);
+            ScheduledTripImageView = (ImageView)itemView.findViewById(R.id.ScheduledTripIconImageView);
+
+
         }
     }
 

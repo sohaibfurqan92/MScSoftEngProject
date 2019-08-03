@@ -1,6 +1,7 @@
 package uk.ac.le.cityTourPlanner;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.annotation.NonNull;
@@ -41,6 +42,8 @@ public class ScheduledFragment extends Fragment {
     private TextView defaultTextView;
     private Parcelable mListState;
 
+    public static final String EXTRA_TRIP_ID = "uk.ac.le.cityTourPlanner.TRIP_ID";
+
 
     public ScheduledFragment() {
         // Required empty public constructor
@@ -63,7 +66,7 @@ public class ScheduledFragment extends Fragment {
         mScheduledTripsRecyclerView.setAdapter(mScheduledTripAdapter);
 
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mRef=mFirebaseDatabase.getReference("Trips/GeneralDetails");
+        mRef=mFirebaseDatabase.getReference("Trips/GeneralDetails/");
 
         if(savedInstanceState!=null){
             RestorePreviousState();
@@ -96,7 +99,7 @@ public class ScheduledFragment extends Fragment {
 
             @Override
             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-                //
+                mScheduledTripAdapter.notifyDataSetChanged();
             }
 
             @Override
@@ -150,4 +153,5 @@ public class ScheduledFragment extends Fragment {
             //RecyclerAdapter adapter = new RecyclerAdapter(data); // pass the data to your adapter here
             //recyclerView.setAdapter(adapter);
         }
+
 }

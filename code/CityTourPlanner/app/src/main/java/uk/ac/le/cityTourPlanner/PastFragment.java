@@ -130,7 +130,7 @@ public class PastFragment extends Fragment {
 
             @Override
             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-                //
+                mPastTripAdapter.notifyDataSetChanged();
             }
 
             @Override

@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -113,14 +114,16 @@ public class TrashTripRecyclerViewAdapter extends RecyclerView.Adapter<TrashTrip
         public TextView TrashTripNameTextView;
         public TextView TrashTripDateTextView;
         public TextView TrashTripOptionsMenuTextView;
+        public ImageView TrashTripImageView;
 
 
         public DeletedTripViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            TrashTripNameTextView = (TextView)itemView.findViewById(R.id.deletedTripNameTextView);
-            TrashTripDateTextView = (TextView)itemView.findViewById(R.id.deletedTripDateTextView);
-            TrashTripOptionsMenuTextView = (TextView)itemView.findViewById(R.id.deletedTripOptionsTextView);
+            TrashTripNameTextView = (TextView)itemView.findViewById(R.id.TrashTripNameTextView);
+            TrashTripDateTextView = (TextView)itemView.findViewById(R.id.TrashTripDateTextView);
+            TrashTripOptionsMenuTextView = (TextView)itemView.findViewById(R.id.TrashTripOptionsTextView);
+            TrashTripImageView = (ImageView)itemView.findViewById(R.id.TrashTripIconImageView);
         }
     }
 }

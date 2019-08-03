@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Auth exception update" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Fetchingchild" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
@@ -34,8 +34,8 @@
     <session id="1441400236">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="109" />
-          <entry key="project.open.time.1" value="5" />
+          <entry key="project.closed" value="118" />
+          <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="3" />
@@ -44,134 +44,81 @@
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.20" value="9" />
-          <entry key="project.open.time.21" value="7" />
+          <entry key="project.open.time.21" value="8" />
           <entry key="project.open.time.22" value="8" />
-          <entry key="project.open.time.23" value="9" />
+          <entry key="project.open.time.23" value="10" />
           <entry key="project.open.time.24" value="3" />
           <entry key="project.open.time.25" value="5" />
           <entry key="project.open.time.26" value="8" />
           <entry key="project.open.time.27" value="6" />
-          <entry key="project.open.time.28" value="3" />
-          <entry key="project.open.time.29" value="7" />
+          <entry key="project.open.time.28" value="4" />
+          <entry key="project.open.time.29" value="8" />
           <entry key="project.open.time.3" value="3" />
-          <entry key="project.open.time.30" value="3" />
+          <entry key="project.open.time.30" value="4" />
           <entry key="project.open.time.31" value="4" />
           <entry key="project.open.time.32" value="5" />
           <entry key="project.open.time.33" value="2" />
-          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.34" value="2" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.36" value="2" />
           <entry key="project.open.time.37" value="4" />
-          <entry key="project.open.time.38" value="4" />
+          <entry key="project.open.time.38" value="5" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.42" value="2" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.63" value="2" />
-          <entry key="project.opened" value="128" />
+          <entry key="project.opened" value="137" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="4" />
-          <entry key="gradle" value="15" />
-          <entry key="java" value="297" />
-          <entry key="xml" value="310" />
+          <entry key="class" value="9" />
+          <entry key="gradle" value="16" />
+          <entry key="java" value="368" />
+          <entry key="xml" value="337" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="4" />
-          <entry key="Groovy" value="15" />
-          <entry key="JAVA" value="297" />
-          <entry key="XML" value="310" />
+          <entry key="CLASS" value="9" />
+          <entry key="Groovy" value="16" />
+          <entry key="JAVA" value="368" />
+          <entry key="XML" value="337" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="gradle" value="173" />
-          <entry key="java" value="34971" />
+          <entry key="gradle" value="182" />
+          <entry key="java" value="38796" />
           <entry key="txt" value="604" />
-          <entry key="xml" value="9190" />
+          <entry key="xml" value="10255" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="173" />
-          <entry key="JAVA" value="34971" />
+          <entry key="Groovy" value="182" />
+          <entry key="JAVA" value="38796" />
           <entry key="PLAIN_TEXT" value="613" />
-          <entry key="XML" value="9190" />
+          <entry key="XML" value="10255" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SettingsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
-              <folding>
-                <element signature="e#1054#1115#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SettingsFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/toolbar_settings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/AppCompatPreferenceActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-610">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#0#3744#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#1928#1929#0" expanded="true" />
-                <element signature="e#1986#1987#0" expanded="true" />
-                <element signature="e#2167#2168#0" expanded="true" />
-                <element signature="e#2221#2222#0" expanded="true" />
-                <element signature="e#2411#2412#0" expanded="true" />
-                <element signature="e#2461#2462#0" expanded="true" />
-                <element signature="e#3504#3505#0" expanded="true" />
-                <element signature="e#3557#3558#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="layoutResourceFile_vertical" />
-        <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -184,6 +131,8 @@
       <find>viewpager</find>
       <find>openD</find>
       <find>Interface</find>
+      <find>intent</find>
+      <find>desc</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -2473,40 +2422,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/about_dialog.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/feedback_dialog.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/FeedbackDialog.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/trips_recycler_context_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/scheduled_trips_recycler_context_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/scheduled_trip_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/scheduled_trips_options_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/edit_trip_headers_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_trip_headers.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_update_trip_headers.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/EditTripHeaders.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/GeneratedTrip.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/past_trip_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/past_trips_options_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PlaceDetailsViewpagerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/ScheduledTripRecyclerViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PastTripRecyclerViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_past.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_scheduled.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SearchedPlacesItem.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/trash_trip_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/trash_trips_options_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/DeletedTripRecyclerViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_trash.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/TrashTripRecyclerViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/ScheduledFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PastFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/TrashFragment.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/header_preference.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/user_profile_settings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/update_password_dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/confirm_current_password_dialog.xml" />
@@ -2518,12 +2448,31 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/password_reauth_prompt_dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/trips_settings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PlaceSearchActivity.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/AppCompatPreferenceActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/toolbar_settings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SettingsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/itinerary_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/selected_places_options_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_itinarary.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SearchedPlacesItem.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/ItinararyActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/chosen_places_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/ItinararyAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/ScheduledTripRecyclerViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PlaceSearchActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/GeneratedTrip.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PastTripRecyclerViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/past_trip_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/scheduled_trip_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/trash_trip_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/TrashTripRecyclerViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/TrashFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PastFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/ScheduledFragment.java" />
       </list>
     </option>
   </component>
@@ -2538,7 +2487,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2557,23 +2506,12 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="cityTourPlanner" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CityTourPlanner" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="CityTourPlanner" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2593,9 +2531,9 @@
       <recent name="uk.ac.le.cityTourPlanner" />
     </key>
     <key name="android.template.parentActivityClass">
+      <recent name="uk.ac.le.cityTourPlanner.MainActivity" />
       <recent name="" />
       <recent name="uk.ac.le.cityTourPlanner.SettingsActivity" />
-      <recent name="uk.ac.le.cityTourPlanner.MainActivity" />
       <recent name="uk.ac.le.cityTourPlanner.PlaceSearchActivity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -2723,6 +2661,9 @@
     <history-entry file="menu_in_app - 2019.06.15 at 21h 39m 29s.xml">
       <configuration name="menu in app" configurationId="AndroidJUnit" />
     </history-entry>
+    <history-entry file="menu_in_app - 2019.07.31 at 12h 30m 45s.xml">
+      <configuration name="menu in app" configurationId="AndroidJUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2735,10 +2676,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22982885" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23166259" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" weight="0.3294621" />
@@ -2746,7 +2686,33 @@
       <window_info id="Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.32911393" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32911393" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.35903338" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32911393" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32911393" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32911393" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3095512" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32911393" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.3294621" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Preview" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23166259" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" weight="0.3294621" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.35903338" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32911393" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32911393" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32911393" />
@@ -2761,150 +2727,12 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Preview" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22982885" />
-      <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Build Variants" order="4" side_tool="true" weight="0.3294621" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Designer" order="6" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.32911393" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32911393" />
-      <window_info anchor="bottom" id="TODO" order="2" weight="0.32911393" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32911393" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32911393" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3095512" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.32911393" />
-      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PlaceSearchActivity.java</url>
-          <line>263</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/past_trips_options_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/trash_trips_options_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_scheduled.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="55" lean-forward="true" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-database-16.1.0.aar/1c63769a094ad81de587c02020d0642b/jars/classes.jar!/com/google/firebase/database/core/ChildEventRegistration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/trash_trip_item.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_past.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="26" column="46" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="46" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_trash.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="47" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_trips.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_edit_trip_headers.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/header_preference.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/save_place_selection_dialog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SavePlaceDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/confirm_current_password_dialog.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/ConfirmCurrentPasswordDialog.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_update_password.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_update_email.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_update_password.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -2925,6 +2753,7 @@
       <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
@@ -2933,33 +2762,11 @@
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/GeneratedTrip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1212">
-          <caret line="125" column="12" selection-start-line="125" selection-start-column="12" selection-end-line="125" selection-end-column="12" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/FeedbackDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="60" column="20" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -2977,27 +2784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PastFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="207" column="5" lean-forward="true" selection-start-line="207" selection-start-column="5" selection-end-line="207" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PastTripRecyclerViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-525">
-          <caret line="38" column="65" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PlaceDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="141" column="64" selection-start-line="141" selection-start-column="40" selection-end-line="141" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PlaceDetailsViewpagerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -3009,55 +2795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="46" column="29" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/TrashFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="88" selection-start-line="79" selection-start-column="16" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/TrashTripRecyclerViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="52" column="65" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/ScheduledFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="83" column="17" selection-start-line="75" selection-start-column="15" selection-end-line="83" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/ScheduledTripRecyclerViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="95" column="85" selection-start-line="95" selection-start-column="85" selection-end-line="95" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SearchedPlacesItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SearchedPlacesAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PlaceSearchActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="267" selection-start-line="267" selection-end-line="267" />
         </state>
       </provider>
     </entry>
@@ -3098,32 +2835,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        <state relative-caret-position="291">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/AppCompatPreferenceActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-610">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#3744#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1928#1929#0" expanded="true" />
-            <element signature="e#1986#1987#0" expanded="true" />
-            <element signature="e#2167#2168#0" expanded="true" />
-            <element signature="e#2221#2222#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
-            <element signature="e#2461#2462#0" expanded="true" />
-            <element signature="e#3504#3505#0" expanded="true" />
-            <element signature="e#3557#3558#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_itinarary.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/toolbar_settings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -3132,20 +2851,240 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SettingsFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PlaceDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+        <state relative-caret-position="1456">
+          <caret line="141" column="64" selection-start-line="141" selection-start-column="40" selection-end-line="141" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SettingsActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/scheduled_trips_options_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+        <state relative-caret-position="68">
+          <caret line="4" column="43" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/selected_places_options_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080">
+          <caret line="232" column="73" selection-start-line="232" selection-start-column="73" selection-end-line="232" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-database-16.1.0.aar/1c63769a094ad81de587c02020d0642b/jars/classes.jar!/com/google/firebase/database/core/ValueEventRegistration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SettingsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="47" column="87" selection-start-line="47" selection-start-column="87" selection-end-line="47" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/itinerary_item.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SavePlaceDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/AppCompatPreferenceActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-database-16.1.0.aar/1c63769a094ad81de587c02020d0642b/jars/classes.jar!/com/google/firebase/database/core/view/DataEvent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-database-16.1.0.aar/1c63769a094ad81de587c02020d0642b/jars/classes.jar!/com/google/firebase/database/core/ChildEventRegistration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="7137" selection-start-line="7137" selection-end-line="7137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="195" selection-start-line="195" selection-end-line="195" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/ItinararyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_itinarary.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SearchedPlacesItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/FeedbackDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/ItinararyAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="41" column="120" selection-start-line="41" selection-start-column="120" selection-end-line="41" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/chosen_places_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="44" column="79" selection-end-line="81" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/GeneratedTrip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="99" selection-start-line="24" selection-start-column="99" selection-end-line="24" selection-end-column="99" />
           <folding>
-            <element signature="e#1054#1115#0" expanded="true" />
+            <element signature="e#3044#3045#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3120#3121#0" expanded="true" />
+            <element signature="e#3153#3154#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PastTripRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="127" column="91" selection-start-line="127" selection-start-column="91" selection-end-line="127" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/scheduled_trip_item.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="55" selection-end-line="83" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/past_trip_item.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="45" column="57" selection-end-line="83" selection-end-column="37" />
+          <folding>
+            <element signature="e#3281#3316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/trash_trip_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
+          <folding>
+            <element signature="e#3303#3338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/ScheduledTripRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="157" column="12" selection-start-line="157" selection-start-column="12" selection-end-line="157" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/TrashFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="107" column="18" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/TrashTripRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1362">
+          <caret line="125" column="95" selection-start-line="125" selection-start-column="95" selection-end-line="125" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PastFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="132" column="32" selection-start-line="132" selection-start-column="32" selection-end-line="132" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/ScheduledFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1141">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/SearchedPlacesAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/uk/ac/le/cityTourPlanner/PlaceSearchActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="204" column="71" lean-forward="true" selection-start-line="204" selection-start-column="71" selection-end-line="204" selection-end-column="71" />
         </state>
       </provider>
     </entry>

@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -115,14 +116,16 @@ public class PastTripRecyclerViewAdapter extends RecyclerView.Adapter<PastTripRe
         public TextView PastTripNameTextView;
         public TextView PastTripDateTextView;
         public TextView PastTripOptionsMenuTextView;
+        public ImageView PastTripImageView;
 
 
         public PastTripViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            PastTripNameTextView = (TextView)itemView.findViewById(R.id.deletedTripNameTextView);
-            PastTripDateTextView = (TextView)itemView.findViewById(R.id.deletedTripDateTextView);
-            PastTripOptionsMenuTextView = (TextView)itemView.findViewById(R.id.deletedTripOptionsTextView);
+            PastTripNameTextView = (TextView)itemView.findViewById(R.id.PastTripNameTextView);
+            PastTripDateTextView = (TextView)itemView.findViewById(R.id.PastTripDateTextView);
+            PastTripOptionsMenuTextView = (TextView)itemView.findViewById(R.id.PastTripOptionsTextView);
+            PastTripImageView = (ImageView)itemView.findViewById(R.id.PastTripIconImageView);
         }
     }
 }

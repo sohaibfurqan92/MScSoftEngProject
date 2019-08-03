@@ -316,7 +316,7 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
 
 
 
-        GeneratedTrip trip = new GeneratedTrip(CityID,CityLatitude,CityLongitude,CityName,TripName,TripDate,FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),null,TripStatus);
+        GeneratedTrip trip = new GeneratedTrip(CityID,CityLatitude,CityLongitude,CityName, TripName,TripDate,FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),null,TripStatus);
         myRef.child("GeneralDetails").child(generalDetailsPushKey).setValue(trip).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
@@ -341,8 +341,12 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
 
         //insert place details at appropriate location
         Map<String,Object> placeDetailsMap = new HashMap<>();
-        placeDetailsMap.put("TripName",trip.getTripName());
-        placeDetailsMap.put("SelectedPlaces",SelectedPlacesList);
+        int numberOfSelectedPlaces = SelectedPlacesList.size();
+        for(int i=0; i<numberOfSelectedPlaces; i++){
+            placeDetailsMap.put("Place"+(i+1),SelectedPlacesList.get(i));
+        }
+        //placeDetailsMap.put("TripName",trip.getTripName());
+        //placeDetailsMap.put("",SelectedPlacesList);
         myRef.child("SelectedPlaces").child(generalDetailsPushKey).setValue(placeDetailsMap);
 
 
