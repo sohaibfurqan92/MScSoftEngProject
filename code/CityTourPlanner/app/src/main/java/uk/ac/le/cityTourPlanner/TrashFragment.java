@@ -120,7 +120,7 @@ public class TrashFragment extends Fragment {
             }
         };
 
-        Query currentUserQuery = mRef.orderByChild("createdBy").equalTo(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
+        Query currentUserQuery = mRef.orderByChild("createdBy").equalTo(FirebaseAuth.getInstance().getCurrentUser().getEmail());
         currentUserQuery.addChildEventListener(mChildEventListener);
 
         return view;

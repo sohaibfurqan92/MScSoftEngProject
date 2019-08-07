@@ -11,8 +11,6 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
@@ -61,7 +59,7 @@ public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<Sched
        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext, ItinararyActivity.class);
+                Intent intent = new Intent(mContext, TripPlacesActivity.class);
                 intent.putExtra("trip_id",generatedTrip.getTripID());
                 mContext.startActivity(intent);
             }

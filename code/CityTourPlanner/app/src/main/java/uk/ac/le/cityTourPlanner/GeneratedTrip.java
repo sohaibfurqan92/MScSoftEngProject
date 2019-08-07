@@ -8,30 +8,30 @@ import java.util.List;
 * place object = id, latlng,name
 * */
 public class GeneratedTrip {
-    private String CityID;
-    private double CityLatitude;
-    private double CityLongitude;
-    private String CityName;
-    private String IconURL;
+    private String cityID;
+    private double cityLatitude;
+    private double cityLongitude;
+    private String cityName;
+    private String placeIconURL;
     private String TripID;
     private String tripName;
     private String tripDate;
-    private String CreatedBy;
+    private String createdBy;
     private List<SearchedPlacesItem> SelectedPlaces;
-    private String TripStatus;
+    private String tripStatus;
 
 
 
     public GeneratedTrip(String cityID, double cityLatitude, double cityLongitude, String cityName, String tripName, String tripDate, String createdBy, List<SearchedPlacesItem> selectedPlaces, String tripStatus) {
-        CityID = cityID;
-        CityLatitude = cityLatitude;
-        CityLongitude = cityLongitude;
-        CityName = cityName;
+        this.cityID = cityID;
+        this.cityLatitude = cityLatitude;
+        this.cityLongitude = cityLongitude;
+        this.cityName = cityName;
         this.tripName = tripName;
         this.tripDate = tripDate;
-        CreatedBy = createdBy;
+        this.createdBy = createdBy;
         SelectedPlaces = selectedPlaces;
-        TripStatus=tripStatus;
+        this.tripStatus =tripStatus;
     }
 
     public GeneratedTrip(){}
@@ -53,7 +53,7 @@ public class GeneratedTrip {
     }
 
     public void setCreatedBy(String createdBy) {
-        CreatedBy = createdBy;
+        this.createdBy = createdBy;
     }
 
     public void setSelectedPlaces(List<SearchedPlacesItem> selectedPlaces) {
@@ -62,7 +62,7 @@ public class GeneratedTrip {
 
 
     public void setTripStatus(String tripStatus) {
-        TripStatus = tripStatus;
+        this.tripStatus = tripStatus;
     }
 
 
@@ -75,7 +75,7 @@ public class GeneratedTrip {
     }
 
     public String getCreatedBy() {
-        return CreatedBy;
+        return createdBy;
     }
 
     public List<SearchedPlacesItem> getSelectedPlaces() {
@@ -83,40 +83,40 @@ public class GeneratedTrip {
     }
 
     public String getTripStatus() {
-        return TripStatus;
+        return tripStatus;
     }
 
 
     public String getCityID() {
-        return CityID;
+        return cityID;
     }
 
     public void setCityID(String cityID) {
-        CityID = cityID;
+        this.cityID = cityID;
     }
 
     public double getCityLatitude() {
-        return CityLatitude;
+        return cityLatitude;
     }
 
     public void setCityLatitude(double cityLatitude) {
-        CityLatitude = cityLatitude;
+        this.cityLatitude = cityLatitude;
     }
 
     public double getCityLongitude() {
-        return CityLongitude;
+        return cityLongitude;
     }
 
     public void setCityLongitude(double cityLongitude) {
-        CityLongitude = cityLongitude;
+        this.cityLongitude = cityLongitude;
     }
 
     public String getCityName() {
-        return CityName;
+        return cityName;
     }
 
     public void setCityName(String cityName) {
-        CityName = cityName;
+        this.cityName = cityName;
     }
 
     @Override
@@ -129,11 +129,11 @@ public class GeneratedTrip {
             return false;
     }
 
-    public String getIconURL() {
-        return IconURL;
+    public String getPlaceIconURL() {
+        return placeIconURL;
     }
 
-    public void setIconURL(String iconURL) {
-        IconURL = iconURL;
+    public void setPlaceIconURL(String placeIconURL) {
+        this.placeIconURL = placeIconURL;
     }
 }

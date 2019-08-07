@@ -33,10 +33,10 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="uk.ac.le.cityTourPlanner.ItinararyActivity"
+            android:name="uk.ac.le.cityTourPlanner.TripPlacesActivity"
             android:label="@string/title_activity_itinarary"
             android:parentActivityName="uk.ac.le.cityTourPlanner.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="uk.ac.le.cityTourPlanner.MainActivity" />

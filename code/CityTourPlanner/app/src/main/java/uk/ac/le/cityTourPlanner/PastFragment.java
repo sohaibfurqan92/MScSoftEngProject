@@ -145,7 +145,7 @@ public class PastFragment extends Fragment {
         };
 
         //query database for all trips that have been created by the current user
-        Query currentUserQuery = mRef.orderByChild("createdBy").equalTo(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
+        Query currentUserQuery = mRef.orderByChild("createdBy").equalTo(FirebaseAuth.getInstance().getCurrentUser().getEmail());
         currentUserQuery.addChildEventListener(mChildEventListener);
 
         return view;

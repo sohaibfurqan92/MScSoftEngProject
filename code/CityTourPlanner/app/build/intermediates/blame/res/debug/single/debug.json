@@ -80,10 +80,6 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\menu_selected_places_options_menu.xml.flat",
-        "source": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\src\\main\\res\\menu\\selected_places_options_menu.xml"
-    },
-    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_past.xml.flat",
         "source": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\src\\main\\res\\layout\\fragment_past.xml"
     },
@@ -658,6 +654,10 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fui_ic_check_circle_black_128dp.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.3.1.aar\\080bb55d37dd22abdf522d6ac45685ba\\res\\drawable\\fui_ic_check_circle_black_128dp.xml"
+    },
+    {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_trip_places.xml.flat",
+        "source": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\src\\main\\res\\layout\\activity_trip_places.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -1664,6 +1664,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.1.0.aar\\4d16c39dd3c4f40e784d58b81b4d69e8\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\menu_trip_places_options_menu.xml.flat",
+        "source": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\src\\main\\res\\menu\\trip_places_options_menu.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_light.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable\\abc_item_background_holo_light.xml"
     },
@@ -1916,6 +1920,10 @@
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\preference-v7-28.0.0.aar\\3045ebb278621bbdbf27ed1ef5e51e9a\\res\\layout-v21\\preference_information_material.xml"
     },
     {
+        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_trip_places_item.xml.flat",
+        "source": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\src\\main\\res\\layout\\trip_places_item.xml"
+    },
+    {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
@@ -2154,10 +2162,6 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_spinner.xml.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\color-v23\\abc_tint_spinner.xml"
-    },
-    {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_chosen_places_item.xml.flat",
-        "source": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\src\\main\\res\\layout\\chosen_places_item.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -2734,10 +2738,6 @@
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
         "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.1.0.aar\\4d16c39dd3c4f40e784d58b81b4d69e8\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
-    },
-    {
-        "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_itinarary.xml.flat",
-        "source": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\src\\main\\res\\layout\\activity_itinarary.xml"
     },
     {
         "merged": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_transformation_sheet_expand_spec.xml.flat",

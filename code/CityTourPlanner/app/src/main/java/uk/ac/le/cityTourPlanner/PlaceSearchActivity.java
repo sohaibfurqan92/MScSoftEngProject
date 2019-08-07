@@ -316,7 +316,7 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
 
 
 
-        GeneratedTrip trip = new GeneratedTrip(CityID,CityLatitude,CityLongitude,CityName, TripName,TripDate,FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),null,TripStatus);
+        GeneratedTrip trip = new GeneratedTrip(CityID,CityLatitude,CityLongitude,CityName, TripName,TripDate,FirebaseAuth.getInstance().getCurrentUser().getEmail(),null,TripStatus);
         myRef.child("GeneralDetails").child(generalDetailsPushKey).setValue(trip).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
