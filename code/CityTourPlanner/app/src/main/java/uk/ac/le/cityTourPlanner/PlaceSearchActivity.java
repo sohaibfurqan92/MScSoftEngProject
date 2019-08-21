@@ -27,9 +27,11 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.libraries.places.api.Places;
+import com.google.android.libraries.places.api.internal.impl.net.pablo.PlaceResult;
 import com.google.android.libraries.places.api.model.Place;
 import com.google.android.libraries.places.api.model.TypeFilter;
 import com.google.android.libraries.places.api.net.PlacesClient;
@@ -74,6 +76,12 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
     private double mCityLatitude;
     private double mCityLongitude;
     private String mCityName;
+    private LatLngBounds mLatLngBounds;
+    private double mSouthwestLatitude;
+    private double mSouthwestLongitude;
+    private double mNortheastLatitude;
+    private double mNortheastLongitude;
+
 
 
     @Override
@@ -163,7 +171,7 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
 
 // Set the fields to specify which types of place data to
 // return after the user has made a selection.
-        List<Place.Field> fields = Arrays.asList(Place.Field.ID, Place.Field.NAME, Place.Field.LAT_LNG);
+        List<Place.Field> fields = Arrays.asList(Place.Field.ID, Place.Field.NAME, Place.Field.LAT_LNG, Place.Field.VIEWPORT);
 
 
 // Start the autocomplete intent.
@@ -186,6 +194,21 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
                 mCityID = mPlace.getId();
                 mCityName = mPlace.getName();
 
+               mLatLngBounds=  mPlace.getViewport();
+
+                LatLng southwestLatLng = mLatLngBounds.southwest;
+                LatLng northeastLatLng= mLatLngBounds.northeast;
+
+                mSouthwestLatitude = southwestLatLng.latitude;
+                mSouthwestLongitude = southwestLatLng.longitude;
+                mNortheastLatitude = northeastLatLng.latitude;
+                mNortheastLongitude = northeastLatLng.longitude;
+
+
+
+               // Log.i("LatLngBounds", "onActivityResult: "+ mLatLngBounds);
+
+
                 mSearchedPlacesList.clear();
                 mCityLatitude = 0.0;
                 mCityLongitude = 0.0;
@@ -199,7 +222,7 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
 
                 ParseNearbySearchJSON(requestURL);
 
-                Log.i("Place details", "Place: " + mPlace.getName() + ", " + mPlace.getId());
+                Log.i("Place details", "Place: " + mPlace.getName() + ", " + mPlace.getId() +mPlace.getViewport());
 
             } else if (resultCode == AutocompleteActivity.RESULT_ERROR) {
                 Status status = Autocomplete.getStatusFromIntent(data);
@@ -227,13 +250,13 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject result = jsonArray.getJSONObject(i);
 
-                        String placeID = result.getString("place_id");
+                       String mPlaceID = result.getString("place_id");
                         String placeName = result.getString("name");
                         Log.d("placeName", "onResponse: placeName " + placeName);
                         String placeSummary = result.getString("vicinity");
                         String iconURL = result.getString("icon");
 
-                        mSearchedPlacesList.add(new SearchedPlacesItem(placeName, placeSummary, iconURL, placeID));
+                        mSearchedPlacesList.add(new SearchedPlacesItem(placeName, placeSummary, iconURL, mPlaceID));
                     }
                     mSearchedPlacesAdapter = new SearchedPlacesAdapter(PlaceSearchActivity.this, mSearchedPlacesList);
                     mRecyclerView.setAdapter(mSearchedPlacesAdapter);
@@ -304,10 +327,10 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
         mDateOfTrip = tripDate;
         String TripStatus = "Scheduled";
         
-        SaveTrip(mCityID, mCityLatitude, mCityLongitude, mCityName, mNameOfTrip,mDateOfTrip ,mSelectedPlacesList,TripStatus );
+        SaveTrip(mCityID, mCityLatitude, mCityLongitude, mSouthwestLatitude, mSouthwestLongitude,mNortheastLatitude,mNortheastLongitude, mCityName, mNameOfTrip,mDateOfTrip ,mSelectedPlacesList,TripStatus );
     }
 
-    private void SaveTrip(String CityID, double CityLatitude, double CityLongitude, String CityName, String TripName, String TripDate, List<SearchedPlacesItem> SelectedPlacesList,String TripStatus) {
+    private void SaveTrip(String CityID, double CityLatitude, double CityLongitude, double southwestLatitude, double southwestLongitude, double northeastLatitude, double northeastLongitude, String CityName, String TripName, String TripDate, List<SearchedPlacesItem> SelectedPlacesList, String TripStatus) {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("Trips");
 
@@ -316,7 +339,7 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
 
 
 
-        GeneratedTrip trip = new GeneratedTrip(CityID,CityLatitude,CityLongitude,CityName, TripName,TripDate,FirebaseAuth.getInstance().getCurrentUser().getEmail(),null,TripStatus);
+        GeneratedTrip trip = new GeneratedTrip(CityID,CityLatitude,CityLongitude,southwestLatitude,southwestLongitude,northeastLatitude,northeastLongitude, CityName, TripName,TripDate,FirebaseAuth.getInstance().getCurrentUser().getEmail(),null,TripStatus);
         myRef.child("GeneralDetails").child(generalDetailsPushKey).setValue(trip).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
@@ -344,6 +367,7 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
         int numberOfSelectedPlaces = SelectedPlacesList.size();
         for(int i=0; i<numberOfSelectedPlaces; i++){
             placeDetailsMap.put("Place"+(i+1),SelectedPlacesList.get(i));
+
         }
         //placeDetailsMap.put("TripName",trip.getTripName());
         //placeDetailsMap.put("",SelectedPlacesList);

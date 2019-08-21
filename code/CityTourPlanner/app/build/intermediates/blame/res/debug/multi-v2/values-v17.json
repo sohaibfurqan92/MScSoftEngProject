@@ -4,7 +4,7 @@
             "outputFile": "E:\\UOL_STUDY_FOLDER\\Semester-4\\Individual Project\\Current\\FinalProject\\msf7\\code\\CityTourPlanner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\preference-v7-28.0.0.aar\\3045ebb278621bbdbf27ed1ef5e51e9a\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-2\\files-2.1\\2a6ed1d205d0ddf141187dde957556d7\\preference-v7-28.0.0\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,7,11",
                         "startColumns": "4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a336013cbfb322693da16d38b6c5e31d\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\sohai\\.gradle\\caches\\transforms-2\\files-2.1\\b320a443effd06c78f4f9e5ddfe89b1a\\appcompat-v7-28.0.0\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

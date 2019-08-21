@@ -32,6 +32,15 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="uk.ac.le.cityTourPlanner.ManageDurationActivity"
+            android:label="@string/title_activity_manage_duration"
+            android:parentActivityName="uk.ac.le.cityTourPlanner.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.ac.le.cityTourPlanner.TripPlacesActivity" />
+        </activity>
+        <activity
             android:name="uk.ac.le.cityTourPlanner.TripPlacesActivity"
             android:label="@string/title_activity_itinarary"
             android:parentActivityName="uk.ac.le.cityTourPlanner.MainActivity"
@@ -296,10 +305,6 @@
             android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
             android:authorities="uk.ac.le.cityTourPlanner.lifecycle-trojan"
             android:exported="false"
-            android:multiprocess="true" />
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="uk.ac.le.cityTourPlanner.com.android.tools.ir.server.InstantRunContentProvider"
             android:multiprocess="true" />
     </application>
 

@@ -70,5 +70,6 @@
     <string name="title_activity_update_password">Update Password</string>
     <string name="title_activity_update_email">UpdateEmail</string>
     <string name="title_activity_itinarary">Trip Places</string>
+    <string name="title_activity_manage_duration">Manage Place Durations</string>
 
 </resources>

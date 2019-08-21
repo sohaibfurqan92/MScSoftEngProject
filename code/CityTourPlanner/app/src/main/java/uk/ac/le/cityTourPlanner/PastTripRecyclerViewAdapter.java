@@ -2,6 +2,7 @@ package uk.ac.le.cityTourPlanner;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
@@ -47,21 +48,27 @@ public class PastTripRecyclerViewAdapter extends RecyclerView.Adapter<PastTripRe
         pastTripViewHolder.PastTripNameTextView.setText(generatedTrip.getTripName());
         pastTripViewHolder.PastTripDateTextView.setText(generatedTrip.getTripDate());
 
+        pastTripViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, TripPlacesActivity.class);
+                intent.putExtra("trip_id",generatedTrip.getTripID());
+                mContext.startActivity(intent);
+            }
+        });
+
         pastTripViewHolder.PastTripOptionsMenuTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //create an object of PopUpMenu
                 PopupMenu popupMenu = new PopupMenu(mContext,pastTripViewHolder.PastTripOptionsMenuTextView);
                 //inflate menu from xml resource
-                popupMenu.inflate(R.menu.past_trips_options_menu);
+                popupMenu.inflate(R.menu.past_trips_context_menu);
                 //add click listener for individual menu items
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()){
-                            case R.id.ReschedulePastTripMenuItem:
-                                //TODO
-                                break;
                             case R.id.DeletePastTripMenuItem:
                                 new AlertDialog.Builder(mContext)
                                         .setTitle("Are you sure you want to delete this trip?")

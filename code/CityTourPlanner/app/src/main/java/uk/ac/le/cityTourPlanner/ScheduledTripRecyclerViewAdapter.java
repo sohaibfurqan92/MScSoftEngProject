@@ -71,7 +71,7 @@ public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<Sched
                 //create an object of PopUpMenu
                 PopupMenu popupMenu = new PopupMenu(mContext,viewHolder.ScheduledTripOptionsMenuTextView);
                 //inflate menu from xml resource
-                popupMenu.inflate(R.menu.scheduled_trips_options_menu);
+                popupMenu.inflate(R.menu.scheduled_trips_context_menu);
                 //add click listener for individual menu items
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override

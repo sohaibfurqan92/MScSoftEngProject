@@ -6,6 +6,8 @@ public class SearchedPlacesItem {
         private String placeName;
         private String placeDesc;
         private String iconURL;
+        //private String placeHours;
+        //private String placeMinutes;
 
     public SearchedPlacesItem() {
     }
@@ -48,6 +50,22 @@ public class SearchedPlacesItem {
     public void setIconURL(String iconURL) {
         this.iconURL = iconURL;
     }
+
+//    public String getPlaceHours() {
+//        return placeHours;
+//    }
+
+//    public void setPlaceHours(String placeHours) {
+//        this.placeHours = placeHours;
+//    }
+
+//    public String getPlaceMinutes() {
+//        return placeMinutes;
+//    }
+
+//    public void setPlaceMinutes(String placeMinutes) {
+//        this.placeMinutes = placeMinutes;
+//    }
 }
 
 

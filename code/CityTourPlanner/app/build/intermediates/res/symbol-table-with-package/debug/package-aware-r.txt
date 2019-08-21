@@ -1586,11 +1586,11 @@ drawable fui_idp_button_background_twitter
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_about
-drawable ic_add_black_24dp
 drawable ic_add_fab
+drawable ic_add_place
 drawable ic_add_recyclerview
 drawable ic_arrow_down_24dp
-drawable ic_delete_scheduled_trip
+drawable ic_delete
 drawable ic_edit_scheduled_trip
 drawable ic_feedback
 drawable ic_launcher_background
@@ -1605,6 +1605,7 @@ drawable ic_menu_slideshow
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_place_duration
 drawable ic_save
 drawable ic_search
 drawable ic_settings
@@ -1642,12 +1643,12 @@ id ALT
 id AboutDescriptionTextView
 id AboutFooterTextView
 id AboutHeaderTextView
-id AssignDurationMenuItem
+id AddPlaceMenuItem
 id CTRL
+id ChosenPlaceDurationTextView
 id DeletePastTripMenuItem
 id DeleteScheduledTripMenuItem
 id DeleteSelectedPlaceMenuItem
-id DurationTextView
 id EditScheduledTripDetailsMenuItem
 id EditTripDateEditText
 id EditTripNameEditText
@@ -1656,6 +1657,7 @@ id EmptyRecyclerViewTextView
 id FUNCTION
 id HeadingTextView
 id META
+id ManageDurationsMenuItem
 id NameNavHeaderTextView
 id PastTripDateTextView
 id PastTripIconImageView
@@ -1663,8 +1665,6 @@ id PastTripNameTextView
 id PastTripOptionsTextView
 id PastTripsRecyclerView
 id PermanentlyDeleteTripMenuItem
-id RescheduleDeletedTripMenuItem
-id ReschedulePastTripMenuItem
 id SHIFT
 id SYM
 id ScheduledTripDateTextView
@@ -1763,6 +1763,7 @@ id customPanel
 id dark
 id decor_content_parent
 id default_activity_button
+id deleteDurationMenuItem
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1808,6 +1809,9 @@ id heading
 id home
 id homeAsUp
 id horizontal
+id hoursEditText
+id hoursInstructionTextView
+id hoursTextInputLayout
 id hybrid
 id icon
 id icon_frame
@@ -1840,6 +1844,9 @@ id message
 id messageTextView
 id middle
 id mini
+id minutesEditText
+id minutesInstructionTextVIew
+id minutesTextInputLayout
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1877,6 +1884,7 @@ id phone_layout
 id phone_number
 id pin
 id placeCheckBox
+id placeSpinner
 id place_detail_toolbar
 id place_image_viewpager
 id place_name_textview
@@ -1915,6 +1923,7 @@ id right_icon
 id right_side
 id root
 id satellite
+id saveDurationMenuItem
 id save_image_matrix
 id save_non_transition_alpha
 id save_remove_place
@@ -1985,6 +1994,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id textViewAddress_details
 id textViewName_details
 id textViewPhoneNum_details
@@ -2084,6 +2094,7 @@ layout about_dialog
 layout activity_edit_trip_headers
 layout activity_login
 layout activity_main
+layout activity_manage_duration
 layout activity_place_detail
 layout activity_place_search
 layout activity_trip_places
@@ -2190,13 +2201,15 @@ layout toolbar_settings
 layout trash_trip_item
 layout trip_places_item
 menu edit_trip_headers_menu
+menu manage_duration_menu
 menu menu_main
 menu nav_drawer_menu
-menu past_trips_options_menu
+menu past_trips_context_menu
 menu place_search_menu
-menu scheduled_trips_options_menu
-menu trash_trips_options_menu
-menu trip_places_options_menu
+menu scheduled_trips_context_menu
+menu trash_trips_context_menu
+menu trip_places_context_menu
+menu trip_places_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals fui_error_weak_password
@@ -2428,6 +2441,7 @@ string title_activity_edit_trip_headers
 string title_activity_itinarary
 string title_activity_main
 string title_activity_main2
+string title_activity_manage_duration
 string title_activity_new_trip_creation
 string title_activity_place_detail
 string title_activity_place_search
