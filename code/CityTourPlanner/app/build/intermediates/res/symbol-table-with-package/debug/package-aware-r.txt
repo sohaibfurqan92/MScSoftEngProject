@@ -1609,6 +1609,7 @@ drawable ic_place_duration
 drawable ic_save
 drawable ic_search
 drawable ic_settings
+drawable ic_trip_summary
 drawable ic_trips
 drawable ic_trips_prefs
 drawable ic_update_trip_headers
@@ -1675,6 +1676,7 @@ id TrashTripDateTextView
 id TrashTripIconImageView
 id TrashTripNameTextView
 id TrashTripOptionsTextView
+id TripSummaryItem
 id UserCommentsEditText
 id UserEmailEditText
 id UserNameEditText
@@ -1995,6 +1997,11 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView2
+id textView4
+id textView5
+id textView6
+id textView7
 id textViewAddress_details
 id textViewName_details
 id textViewPhoneNum_details
@@ -2022,7 +2029,12 @@ id transition_scene_layoutid_cache
 id transition_transform
 id trashFragmentTextView
 id trashTripsRecyclerView
+id tripDateTextView
+id tripDurationTextView
+id tripEndTimeTextView
 id tripHeadersAppBarLayout
+id tripNameTextView
+id tripStartTimeTextView
 id trouble_signing_in
 id trouble_signing_in_possible_fixes
 id uniform
@@ -2200,6 +2212,7 @@ layout support_simple_spinner_dropdown_item
 layout toolbar_settings
 layout trash_trip_item
 layout trip_places_item
+layout trip_summary_dialog
 menu edit_trip_headers_menu
 menu manage_duration_menu
 menu menu_main

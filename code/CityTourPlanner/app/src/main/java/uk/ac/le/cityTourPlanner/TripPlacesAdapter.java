@@ -37,8 +37,6 @@ public class TripPlacesAdapter extends RecyclerView.Adapter<TripPlacesAdapter.It
     private List<SearchedPlacesItem> mPlaceList;
     private String mPlaceID;
     private DatabaseReference mMRef;
-    private EditText mPlaceHoursEditText;
-    private EditText mPlaceMinutesEditText;
 
     public TripPlacesAdapter(Context context, List<SearchedPlacesItem> placeList) {
         mContext = context;

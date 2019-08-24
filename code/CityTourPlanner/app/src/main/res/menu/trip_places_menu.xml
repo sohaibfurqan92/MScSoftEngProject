@@ -12,4 +12,10 @@
         android:title="Add Place"
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_add_place" />
+
+    <item
+        android:id="@+id/TripSummaryItem"
+        android:title="Summary"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_trip_summary"/>
 </menu>

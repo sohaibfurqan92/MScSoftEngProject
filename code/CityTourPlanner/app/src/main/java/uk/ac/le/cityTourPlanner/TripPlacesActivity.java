@@ -12,10 +12,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -68,17 +70,17 @@ public class TripPlacesActivity extends AppCompatActivity {
     private ChildEventListener mChildEventListener;
     private FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference mRef;
-    String mSelectedTripID;
+    private String mSelectedTripID;
     private Parcelable mListState;
     private Place mPlace;
     private String mPlaceID;
     private String mPlaceName;
     private RequestQueue mRequestQueue;
     private PlacesClient mPlacesClient;
-    private double mSouthWestLat;
-    private double mSouthWestLong;
-    private double mNorthEastLat;
-    private double mNorthEastLong;
+    private double mSouthWestLat=0.0;
+    private double mSouthWestLong=0.0;
+    private double mNorthEastLat=0.0;
+    private double mNorthEastLong=0.0;
     private String mPlaceSummary;
     private String mIconURL;
 
@@ -89,6 +91,7 @@ public class TripPlacesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_trip_places);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         mSelectedTripID = getIntent().getStringExtra("trip_id");
 
@@ -199,10 +202,105 @@ public class TripPlacesActivity extends AppCompatActivity {
             case R.id.AddPlaceMenuItem:
                 launchPlaceAutocomplete();
                 break;
+
+            case R.id.TripSummaryItem:
+                calculateTripSummary();
+                break;
                 default:
                     return super.onOptionsItemSelected(item);
         }
         return true;
+    }
+
+    private void calculateTripSummary() {
+
+
+
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Trips/SelectedPlaces/"+mSelectedTripID);
+        reference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                int durationAssignedNum=0;
+                int totalHours =0; int totalMinutes = 0;
+
+                for(DataSnapshot snapshot: dataSnapshot.getChildren()){
+                    if(snapshot.child("placeHours").exists() && snapshot.child("placeMinutes").exists()){
+                        durationAssignedNum++;
+
+                        Long hours = snapshot.child("placeHours").getValue(Long.class);
+                        Long minutes = snapshot.child("placeMinutes").getValue(Long.class);
+                        totalHours+=hours;
+                        totalMinutes+=minutes;
+                        Log.d("placeHours", "onDataChange: Hours "+hours);
+
+
+                        if(durationAssignedNum == dataSnapshot.getChildrenCount()){
+                            //Toast.makeText(TripPlacesActivity.this, "Duration assigned to all places", Toast.LENGTH_SHORT).show();
+                            launchSummaryDialog(totalHours,totalMinutes);
+                        } else{
+                            Toast.makeText(TripPlacesActivity.this,"Please assign duration to all places", Toast.LENGTH_LONG).show();
+                        }
+                    }
+                }
+                Log.d("totalTime", "onDataChange: totalHours"+totalHours);
+                Log.d("totalTime", "onDataChange: totalMinutes"+totalMinutes);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    private void launchSummaryDialog(final int totalHours, final int totalMinutes) {
+        LayoutInflater layoutInflater = LayoutInflater.from(this);
+        View tripSummaryDialog = layoutInflater.inflate(R.layout.trip_summary_dialog,null);
+        AlertDialog.Builder summaryBuilder = new AlertDialog.Builder(this);
+        summaryBuilder.setView(tripSummaryDialog);
+
+        final TextView tripNameTextView = tripSummaryDialog.findViewById(R.id.tripNameTextView);
+        final TextView tripDateTextView = tripSummaryDialog.findViewById(R.id.tripDateTextView);
+        final TextView startTimeTextView = tripSummaryDialog.findViewById(R.id.tripStartTimeTextView);
+        final TextView durationTextView = tripSummaryDialog.findViewById(R.id.tripDurationTextView);
+        final TextView endTimeTextView = tripSummaryDialog.findViewById(R.id.tripEndTimeTextView);
+
+        DatabaseReference mRef = FirebaseDatabase.getInstance().getReference("Trips/GeneralDetails/"+mSelectedTripID);
+
+        mRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                tripNameTextView.setText(dataSnapshot.child("tripName").getValue(String.class));
+                tripDateTextView.setText(dataSnapshot.child("tripDate").getValue(String.class));
+                if(dataSnapshot.child("tripStartTime").exists()){
+                    startTimeTextView.setText(dataSnapshot.child("tripStartTime").getValue(String.class));
+                }
+                else{
+                    startTimeTextView.setText("Start time not set");
+                }
+                durationTextView.setText(String.format("%s hours and %s minutes",totalHours,totalMinutes));
+                if(!dataSnapshot.child("tripStartTime").exists()){
+                    endTimeTextView.setText("Not applicable. Assign start time.");
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+        summaryBuilder.setCancelable(true)
+                .setTitle("Trip Summary")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+
+        AlertDialog alertDialog = summaryBuilder.create();
+        alertDialog.show();
     }
 
     @Override
@@ -292,6 +390,8 @@ public class TripPlacesActivity extends AppCompatActivity {
                 + outputFormat + "?input=" + placeName + "&inputtype=textquery&fields="+fields + "&key=" + getString(R.string.googlePlacesAPIKey);
 
         return formattedPlaceSearchURL;
+
+
 
 
     }

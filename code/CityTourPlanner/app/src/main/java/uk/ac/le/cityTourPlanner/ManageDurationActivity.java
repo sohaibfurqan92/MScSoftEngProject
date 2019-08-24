@@ -54,6 +54,8 @@ public class ManageDurationActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mSelectedTripID = getIntent().getStringExtra("trip_id");
+
+        //setTitle(mSelectedTripID);
         mRef = FirebaseDatabase.getInstance().getReference("Trips/SelectedPlaces/" + mSelectedTripID);
 
         mPlacesSpinner = (Spinner) findViewById(R.id.placeSpinner);

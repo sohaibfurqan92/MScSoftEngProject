@@ -54,17 +54,21 @@ public class SearchedPlacesItem {
 //    public String getPlaceHours() {
 //        return placeHours;
 //    }
-
+//
 //    public void setPlaceHours(String placeHours) {
 //        this.placeHours = placeHours;
 //    }
-
+//
 //    public String getPlaceMinutes() {
 //        return placeMinutes;
 //    }
-
+//
 //    public void setPlaceMinutes(String placeMinutes) {
 //        this.placeMinutes = placeMinutes;
+//    }
+
+//    public String getPlaceDuration(){
+//        return String.format("%s hours %s minutes",getPlaceHours(),getPlaceMinutes());
 //    }
 }
 

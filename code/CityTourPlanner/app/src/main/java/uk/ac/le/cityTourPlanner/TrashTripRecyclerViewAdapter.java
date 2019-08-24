@@ -51,6 +51,7 @@ public class TrashTripRecyclerViewAdapter extends RecyclerView.Adapter<TrashTrip
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, TripPlacesActivity.class);
                 intent.putExtra("trip_id",generatedTrip.getTripID());
+                intent.putExtra("trip_name",generatedTrip.getTripName());
                 mContext.startActivity(intent);
             }
         });
