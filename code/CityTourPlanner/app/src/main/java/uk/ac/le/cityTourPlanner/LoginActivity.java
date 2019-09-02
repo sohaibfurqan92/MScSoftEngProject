@@ -54,8 +54,13 @@ public class LoginActivity extends AppCompatActivity {
 
                 }
                 else{
-                    startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder().setAvailableProviders(providers).
-                            setIsSmartLockEnabled(false).build(),RC_SIGN_IN);
+                    startActivityForResult(AuthUI.getInstance()
+                            .createSignInIntentBuilder()
+                            .setAvailableProviders(providers)
+                            .setIsSmartLockEnabled(false)
+                            .setLogo(R.drawable.bus_on_road)
+                            .build()
+                            ,RC_SIGN_IN);
                 }
             }
         };

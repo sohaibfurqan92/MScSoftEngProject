@@ -1645,6 +1645,7 @@ id AboutDescriptionTextView
 id AboutFooterTextView
 id AboutHeaderTextView
 id AddPlaceMenuItem
+id AssignStartTimeMenuItem
 id CTRL
 id ChosenPlaceDurationTextView
 id DeletePastTripMenuItem
@@ -1713,6 +1714,7 @@ id always
 id anonymous_button
 id appBarLayout
 id appbar
+id assignedTimeTextView
 id async
 id auto
 id barrier
@@ -1928,7 +1930,6 @@ id satellite
 id saveDurationMenuItem
 id save_image_matrix
 id save_non_transition_alpha
-id save_remove_place
 id save_scale_type
 id scheduledTripsRecyclerView
 id screen
@@ -1998,6 +1999,7 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView2
+id textView3
 id textView4
 id textView5
 id textView6
@@ -2034,6 +2036,7 @@ id tripDurationTextView
 id tripEndTimeTextView
 id tripHeadersAppBarLayout
 id tripNameTextView
+id tripStartTimePicker
 id tripStartTimeTextView
 id trouble_signing_in
 id trouble_signing_in_possible_fixes
@@ -2209,6 +2212,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout time_picker_layout
 layout toolbar_settings
 layout trash_trip_item
 layout trip_places_item

@@ -160,11 +160,6 @@ public class EditTripHeaders extends AppCompatActivity {
         updatedValues.put("Trips/GeneralDetails/"+mTripID+"/tripName",mModifiedTripName);
         updatedValues.put("Trips/GeneralDetails/"+mTripID+"/tripDate",mModifiedTripDate);
 
-
-        //update in the places section
-
-        updatedValues.put("Trips/SelectedPlaces/"+mTripID+"/TripName",mModifiedTripName);
-
         // call the update method
 
         DatabaseReference mRef = FirebaseDatabase.getInstance().getReference();

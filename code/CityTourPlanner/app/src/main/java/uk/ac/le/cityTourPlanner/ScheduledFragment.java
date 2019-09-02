@@ -114,8 +114,11 @@ public class ScheduledFragment extends Fragment {
         };
 
         //query database for all trips that have been created by the current user
-        Query currentUserQuery = mRef.orderByChild("createdBy").equalTo(FirebaseAuth.getInstance().getCurrentUser().getEmail());
-        currentUserQuery.addChildEventListener(mChildEventListener);
+   Query currentUserQuery = mRef.orderByChild("createdBy").equalTo(FirebaseAuth.getInstance().getCurrentUser().getEmail());
+currentUserQuery.addChildEventListener(mChildEventListener);
+
+
+     HandleEmptyRecyclerView();
 
         return view;
     }
@@ -141,17 +144,19 @@ public class ScheduledFragment extends Fragment {
         super.onSaveInstanceState(outState);
     }
 
+
+    private void HandleEmptyRecyclerView(){
+            //if data is available, don't show the empty text
+        if(mTripsList.size()>0)
+            defaultTextView.setVisibility(View.INVISIBLE);
+            //RecyclerAdapter adapter = new RecyclerAdapter(data); // pass the data to your adapter here
+            //recyclerView.setAdapter(adapter);
+        }
+
     @Override
     public void onDestroy() {
         super.onDestroy();
         mRef.removeEventListener(mChildEventListener);
     }
-
-    private void HandleEmptyRecyclerView() {
-            //if data is available, don't show the empty text
-            defaultTextView.setVisibility(View.INVISIBLE);
-            //RecyclerAdapter adapter = new RecyclerAdapter(data); // pass the data to your adapter here
-            //recyclerView.setAdapter(adapter);
-        }
 
 }

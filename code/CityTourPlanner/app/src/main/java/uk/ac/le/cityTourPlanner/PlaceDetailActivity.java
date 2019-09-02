@@ -56,6 +56,8 @@ public class PlaceDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_place_detail);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setTitle("Place Details");
+
 
         Intent intent = getIntent();
         placeID = intent.getStringExtra("uk.ac.le.cityTourPlanner.PLACE_ID");
@@ -117,21 +119,57 @@ public class PlaceDetailActivity extends AppCompatActivity {
                 try {
                     mProgressDialog.setMessage("Getting place details...");
                     JSONObject result = response.getJSONObject("result");
-                    mPlaceName = "Name: " + result.getString("name");
-                    placeNameTextView.setText(mPlaceName);
-                    mPlaceAddress = "Address: " + result.getString("formatted_address");
-                    placeAddressTextView.setText(mPlaceAddress);
-                    mPhoneNo = "Phone Number: " + result.getString("international_phone_number");
-                    phoneNumTextView.setText(mPhoneNo);
-                    mRating = "Rating:" + result.getString("rating");
-                    ratingsTextView.setText(mRating);
-                    mWebsiteURL = result.getString("website");
+                    if(result.has("name")){
+                        mPlaceName = "Name: " + result.getString("name");
+                        placeNameTextView.setText(mPlaceName);
+                        placeNameTextView.setVisibility(View.VISIBLE);
+                    }else{
+                        placeNameTextView.setText("Place Name not available.");
+                        placeNameTextView.setVisibility(View.VISIBLE);
+                    }
+                    if(result.has("formatted_address")){
+                        mPlaceAddress = "Address: " + result.getString("formatted_address");
+                        placeAddressTextView.setText(mPlaceAddress);
+                        placeAddressTextView.setVisibility(View.VISIBLE);
+                    }else{
+                        placeNameTextView.setText("Place Address not available.");
+                        placeNameTextView.setVisibility(View.VISIBLE);
+                    }
+                   if(result.has("international_phone_number")){
+                       mPhoneNo = "Phone Number: " + result.getString("international_phone_number");
+                       phoneNumTextView.setText(mPhoneNo);
+                       phoneNumTextView.setVisibility(View.VISIBLE);
+                   }else{
+                       placeNameTextView.setText("Phone number not available.");
+                       placeNameTextView.setVisibility(View.VISIBLE);
+                   }
 
-                    String linkedText = "<b>Website: </b> " +
-                            String.format("<a href=\"%s\">Click Here</a> ", mWebsiteURL);
+                   if(result.has("rating")){
+                       mRating = "Rating:" + result.getString("rating");
+                       ratingsTextView.setText(mRating);
+                       ratingsTextView.setVisibility(View.VISIBLE);
+                   }else{
+                       placeNameTextView.setText("Place rating not available.");
+                       placeNameTextView.setVisibility(View.VISIBLE);
+                   }
 
-                    websiteTextView.setText(Html.fromHtml(linkedText));
-                    websiteTextView.setMovementMethod(LinkMovementMethod.getInstance());
+                   if(result.has("website")){
+                       mWebsiteURL = result.getString("website");
+
+                       String linkedText = "<b>Website: </b> " +
+                               String.format("<a href=\"%s\">Click Here</a> ", mWebsiteURL);
+
+                       websiteTextView.setText(Html.fromHtml(linkedText));
+                       websiteTextView.setMovementMethod(LinkMovementMethod.getInstance());
+                       websiteTextView.setVisibility(View.VISIBLE);
+                   }
+                   else{
+                       placeNameTextView.setText("Website not available.");
+                       placeNameTextView.setVisibility(View.VISIBLE);
+                   }
+
+
+
 
                     JSONArray photos = result.getJSONArray("photos");
 

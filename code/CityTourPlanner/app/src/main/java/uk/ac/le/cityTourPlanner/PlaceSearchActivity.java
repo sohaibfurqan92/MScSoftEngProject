@@ -239,6 +239,8 @@ public class PlaceSearchActivity extends AppCompatActivity implements SearchedPl
     }
 
     private void ParseNearbySearchJSON(String requestURL) {
+        mSearchedPlacesList.clear();
+
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, requestURL, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {

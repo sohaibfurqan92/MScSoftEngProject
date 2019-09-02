@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -317,6 +318,8 @@ public class ManageDurationActivity extends AppCompatActivity {
         }
         return true;
     }
+
+
 
     private void deleteDuration() {
         mRef.addListenerForSingleValueEvent(new ValueEventListener() {

@@ -2,6 +2,7 @@ package uk.ac.le.cityTourPlanner;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
@@ -33,6 +34,8 @@ import java.util.Map;
 
 public class TripPlacesAdapter extends RecyclerView.Adapter<TripPlacesAdapter.ItinararyViewHolder> {
 
+    public static final String EXTRA_PLACE_ID = "uk.ac.le.cityTourPlanner.PLACE_ID";
+
     private Context mContext;
     private List<SearchedPlacesItem> mPlaceList;
     private String mPlaceID;
@@ -58,6 +61,15 @@ public class TripPlacesAdapter extends RecyclerView.Adapter<TripPlacesAdapter.It
         Picasso.with(mContext).load(placeIconURL).fit().centerInside().into(itinararyViewHolder.ChosenPlaceIconImageView);
         itinararyViewHolder.ChosenPlaceNameTextView.setText(selectedPlace.getPlaceName());
         itinararyViewHolder.ChosenPlaceDescTextView.setText(selectedPlace.getPlaceDesc());
+        itinararyViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent detailIntent = new Intent(mContext, PlaceDetailActivity.class);
+                SearchedPlacesItem clickedItem = mPlaceList.get(itinararyViewHolder.getAdapterPosition());
+                detailIntent.putExtra(EXTRA_PLACE_ID, clickedItem.getPlaceID());
+                mContext.startActivity(detailIntent);
+            }
+        });
 
         itinararyViewHolder.ChosenPlaceOptionsMenuTextView.setOnClickListener(new View.OnClickListener() {
             @Override

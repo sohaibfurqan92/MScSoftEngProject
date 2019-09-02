@@ -120,8 +120,10 @@ public class TrashFragment extends Fragment {
             }
         };
 
-        Query currentUserQuery = mRef.orderByChild("createdBy").equalTo(FirebaseAuth.getInstance().getCurrentUser().getEmail());
+  Query currentUserQuery = mRef.orderByChild("createdBy").equalTo(FirebaseAuth.getInstance().getCurrentUser().getEmail());
         currentUserQuery.addChildEventListener(mChildEventListener);
+
+        HandleEmptyRecyclerView();
 
         return view;
     }
@@ -138,25 +140,16 @@ public class TrashFragment extends Fragment {
         if(mTrashTripsList.size()>0){
             mTrashTripAdapter.notifyDataSetChanged();
             HandleEmptyRecyclerView();
+
+
         }
     }
 
-    private int CompareDates(String currentDate, String tripDate) {
-        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-        Date TripDateObj = null,CurrentDateObj = null;
-        try{
-            CurrentDateObj = format.parse(currentDate);
-            TripDateObj = format.parse(tripDate);
 
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-        return TripDateObj.compareTo(CurrentDateObj);
-    }
 
     private void HandleEmptyRecyclerView() {
         //if data is available, don't show the empty text
+        if(mTrashTripsList.size()>0)
         defaultTextView.setVisibility(View.INVISIBLE);
         //RecyclerAdapter adapter = new RecyclerAdapter(data); // pass the data to your adapter here
         //recyclerView.setAdapter(adapter);

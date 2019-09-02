@@ -145,8 +145,10 @@ public class PastFragment extends Fragment {
         };
 
         //query database for all trips that have been created by the current user
-        Query currentUserQuery = mRef.orderByChild("createdBy").equalTo(FirebaseAuth.getInstance().getCurrentUser().getEmail());
-        currentUserQuery.addChildEventListener(mChildEventListener);
+   Query currentUserQuery = mRef.orderByChild("createdBy").equalTo(FirebaseAuth.getInstance().getCurrentUser().getEmail());
+       currentUserQuery.addChildEventListener(mChildEventListener);
+
+        HandleEmptyRecyclerView();
 
         return view;
     }
@@ -173,6 +175,7 @@ public class PastFragment extends Fragment {
 
     private void HandleEmptyRecyclerView() {
         //if data is available, don't show the empty text
+        if(mPastTripsList.size()>0)
         defaultTextView.setVisibility(View.INVISIBLE);
         //RecyclerAdapter adapter = new RecyclerAdapter(data); // pass the data to your adapter here
         //recyclerView.setAdapter(adapter);
@@ -183,8 +186,13 @@ public class PastFragment extends Fragment {
         super.onResume();
         if(mPastTripsList.size()>0){
             HandleEmptyRecyclerView();
+
+//            Query currentUserQuery = mRef.orderByChild("createdBy").equalTo(FirebaseAuth.getInstance().getCurrentUser().getEmail());
+//            currentUserQuery.addChildEventListener(mChildEventListener);
         }
     }
+
+
 
     private void GetCurrentFormattedDate(){
         Date c = Calendar.getInstance().getTime();
@@ -206,5 +214,6 @@ public class PastFragment extends Fragment {
         }
 
     }
+
 
 }

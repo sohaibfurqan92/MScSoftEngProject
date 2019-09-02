@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -32,7 +33,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.libraries.places.api.Places;
-import com.google.android.libraries.places.api.model.LocalTime;
 import com.google.android.libraries.places.api.model.Place;
 import com.google.android.libraries.places.api.model.RectangularBounds;
 import com.google.android.libraries.places.api.net.PlacesClient;
@@ -50,8 +50,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.time.LocalTime;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -83,6 +86,10 @@ public class TripPlacesActivity extends AppCompatActivity {
     private double mNorthEastLong=0.0;
     private String mPlaceSummary;
     private String mIconURL;
+    private long mDurationAssignedNum=0;
+    private int mTotalHours=0;
+    private int mTotalMinutes=0;
+    private long numPlaces=0;
 
 
     @Override
@@ -128,6 +135,9 @@ public class TripPlacesActivity extends AppCompatActivity {
 //                Log.d("Fetchingchild", "onChildAdded: Name: "+place.getPlaceName());
 //                Log.d("Fetchingchild", "onChildAdded: Desc: "+place.getPlaceDesc());
                 mSelectedPlacesList.add(place);
+                if(dataSnapshot.child("placeHours").exists() && dataSnapshot.child("placeMinutes").exists()){
+                    mDurationAssignedNum++;
+                }
                 mItineraryAdapter.notifyDataSetChanged();
             }
 
@@ -154,6 +164,30 @@ public class TripPlacesActivity extends AppCompatActivity {
 
         mRef.addChildEventListener(mChildEventListener);
 
+        checkDurationAndPlaces(); //to decide whether summary item should be shown or not
+
+        //reorder place items
+
+        ItemTouchHelper helper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(ItemTouchHelper.UP|ItemTouchHelper.DOWN,0) {
+            @Override
+            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder dragged, @NonNull RecyclerView.ViewHolder target) {
+                int position_dragged = dragged.getAdapterPosition();
+                int position_target = target.getAdapterPosition();
+
+                Collections.swap(mSelectedPlacesList,position_dragged,position_target);
+
+                mItineraryAdapter.notifyItemMoved(position_dragged,position_target);
+
+                return false;
+            }
+
+            @Override
+            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
+
+            }
+        });
+
+        helper.attachToRecyclerView(mItineraryRecyclerView);
     }
 
     private void getCityBounds() {
@@ -220,30 +254,32 @@ public class TripPlacesActivity extends AppCompatActivity {
         reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                int durationAssignedNum=0;
-                int totalHours =0; int totalMinutes = 0;
+
+
 
                 for(DataSnapshot snapshot: dataSnapshot.getChildren()){
                     if(snapshot.child("placeHours").exists() && snapshot.child("placeMinutes").exists()){
-                        durationAssignedNum++;
+                        mDurationAssignedNum++;
 
                         Long hours = snapshot.child("placeHours").getValue(Long.class);
                         Long minutes = snapshot.child("placeMinutes").getValue(Long.class);
-                        totalHours+=hours;
-                        totalMinutes+=minutes;
+                        mTotalHours +=hours;
+                        mTotalMinutes +=minutes;
                         Log.d("placeHours", "onDataChange: Hours "+hours);
 
 
-                        if(durationAssignedNum == dataSnapshot.getChildrenCount()){
-                            //Toast.makeText(TripPlacesActivity.this, "Duration assigned to all places", Toast.LENGTH_SHORT).show();
-                            launchSummaryDialog(totalHours,totalMinutes);
-                        } else{
-                            Toast.makeText(TripPlacesActivity.this,"Please assign duration to all places", Toast.LENGTH_LONG).show();
-                        }
+//                        if(mDurationAssignedNum == dataSnapshot.getChildrenCount()){
+//                            //Toast.makeText(TripPlacesActivity.this, "Duration assigned to all places", Toast.LENGTH_SHORT).show();
+//                            launchSummaryDialog(totalHours,totalMinutes);
+//                        } else{
+//                            Toast.makeText(TripPlacesActivity.this,"Please assign duration to all places", Toast.LENGTH_LONG).show();
+//                        }
                     }
+
                 }
-                Log.d("totalTime", "onDataChange: totalHours"+totalHours);
-                Log.d("totalTime", "onDataChange: totalMinutes"+totalMinutes);
+                Log.d("totalTime", "onDataChange: totalHours"+ mTotalHours);
+                Log.d("totalTime", "onDataChange: totalMinutes"+ mTotalMinutes);
+
             }
 
             @Override
@@ -251,9 +287,27 @@ public class TripPlacesActivity extends AppCompatActivity {
 
             }
         });
+
+        if(mDurationAssignedNum!=numPlaces){
+            invalidateOptionsMenu();
+            Toast.makeText(TripPlacesActivity.this,"Please assign duration to all places", Toast.LENGTH_LONG).show();
+        }
+
+        else
+            launchSummaryDialog();
+
     }
 
-    private void launchSummaryDialog(final int totalHours, final int totalMinutes) {
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        if(mDurationAssignedNum!=numPlaces){
+            MenuItem summaryItem = menu.findItem(R.id.TripSummaryItem);
+            summaryItem.setVisible(false);
+        }
+        return true;
+    }
+
+    private void launchSummaryDialog() {
         LayoutInflater layoutInflater = LayoutInflater.from(this);
         View tripSummaryDialog = layoutInflater.inflate(R.layout.trip_summary_dialog,null);
         AlertDialog.Builder summaryBuilder = new AlertDialog.Builder(this);
@@ -278,9 +332,22 @@ public class TripPlacesActivity extends AppCompatActivity {
                 else{
                     startTimeTextView.setText("Start time not set");
                 }
-                durationTextView.setText(String.format("%s hours and %s minutes",totalHours,totalMinutes));
+                durationTextView.setText(String.format("%s hours and %s minutes",mTotalHours,mTotalMinutes));
                 if(!dataSnapshot.child("tripStartTime").exists()){
                     endTimeTextView.setText("Not applicable. Assign start time.");
+                }
+                else{
+                    String startTime = dataSnapshot.child("tripStartTime").getValue(String.class);
+                    String[] time = startTime.split(":");
+                    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                        LocalTime tripStartTime = LocalTime.parse(startTime);
+                        LocalTime tripEndTime = tripStartTime.plusHours(mTotalHours);
+                        tripEndTime=tripEndTime.plusMinutes(mTotalMinutes);
+                        endTimeTextView.setText(tripEndTime.toString());
+                    }
+                    else{
+                        endTimeTextView.setText("Supported on Android Oreo and above only!");
+                    }
                 }
             }
 
@@ -290,12 +357,12 @@ public class TripPlacesActivity extends AppCompatActivity {
             }
         });
 
-        summaryBuilder.setCancelable(true)
+        summaryBuilder.setCancelable(false)
                 .setTitle("Trip Summary")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
+                        mTotalHours=0; mTotalMinutes =0;
                     }
                 });
 
@@ -345,7 +412,7 @@ public class TripPlacesActivity extends AppCompatActivity {
 
 // Start the autocomplete intent.
         Intent intent = new Autocomplete.IntentBuilder(
-                AutocompleteActivityMode.FULLSCREEN, fields)
+                AutocompleteActivityMode.OVERLAY, fields)
                 .setLocationRestriction(RectangularBounds.newInstance(new LatLng(mSouthWestLat, mSouthWestLong),new LatLng(mNorthEastLat, mNorthEastLong)))
                 .build(this);
         startActivityForResult(intent, AUTOCOMPLETE_REQUEST_CODE);
@@ -478,6 +545,21 @@ public class TripPlacesActivity extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Log.e("AddPlace", "onCancelled: "+databaseError );
+            }
+        });
+    }
+
+    public void checkDurationAndPlaces(){
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Trips/SelectedPlaces/"+mSelectedTripID);
+        reference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                numPlaces=dataSnapshot.getChildrenCount();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
             }
         });
     }

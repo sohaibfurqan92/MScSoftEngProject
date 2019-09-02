@@ -1,8 +1,10 @@
 package uk.ac.le.cityTourPlanner;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
@@ -14,11 +16,16 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 import java.util.List;
@@ -122,6 +129,10 @@ public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<Sched
                                         })
                                         .setIcon(android.R.drawable.ic_dialog_alert).show();
                                 break;
+                            case R.id.AssignStartTimeMenuItem:
+                                String tripID = generatedTrip.getTripID();
+                                setTripStartTime(tripID);
+                                break;
                         }
                         return false;
                     }
@@ -133,7 +144,6 @@ public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<Sched
         });
 
     }
-
 
 
     @Override
@@ -157,6 +167,63 @@ public class ScheduledTripRecyclerViewAdapter extends RecyclerView.Adapter<Sched
 
 
         }
+    }
+
+    private void setTripStartTime(final String tripID) {
+
+        LayoutInflater layoutInflater = LayoutInflater.from(mContext);
+        View tripSummaryDialog = layoutInflater.inflate(R.layout.time_picker_layout,null);
+        final TimePicker timePicker = (TimePicker) tripSummaryDialog.findViewById(R.id.tripStartTimePicker);
+        final TextView currentStartTimeTextView = tripSummaryDialog.findViewById(R.id.assignedTimeTextView);
+       final DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Trips/GeneralDetails/"+tripID);
+        reference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.child("tripStartTime").exists()){
+                    currentStartTimeTextView.setText(dataSnapshot.child("tripStartTime").getValue(String.class));
+                }
+                else
+                    currentStartTimeTextView.setText("Not assigned");
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        timePicker.setIs24HourView(true);
+        AlertDialog.Builder startTimePicker = new AlertDialog.Builder(mContext);
+        startTimePicker.setView(tripSummaryDialog);
+        startTimePicker.setCancelable(false)
+                .setTitle("Select Start Time")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        int hour, minute;
+                        if(Build.VERSION.SDK_INT>=23){
+                            hour=timePicker.getHour();
+                            minute=timePicker.getMinute();
+                        }
+                        else{
+                            hour=timePicker.getCurrentHour();
+                            minute = timePicker.getCurrentMinute();
+                        }
+                        //Toast.makeText(mContext,"Time selected:\n "+hour+":"+minute,Toast.LENGTH_LONG).show();
+
+                        reference.child("tripStartTime").setValue(hour+":"+minute);
+                        ((Activity)mContext).finish();
+                        Toast.makeText(mContext,"Start time set to "+hour+":"+minute,Toast.LENGTH_LONG).show();
+
+                    }
+                })
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+        AlertDialog alertDialog = startTimePicker.create();
+        alertDialog.show();
     }
 
 
